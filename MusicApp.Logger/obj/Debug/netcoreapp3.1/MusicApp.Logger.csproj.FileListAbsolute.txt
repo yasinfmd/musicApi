@@ -1,0 +1,9 @@
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\bin\Debug\netcoreapp3.1\MusicApp.Logger.deps.json
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\bin\Debug\netcoreapp3.1\MusicApp.Logger.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\bin\Debug\netcoreapp3.1\MusicApp.Logger.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.AssemblyInfoInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.AssemblyInfo.cs
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.csproj.CoreCompileInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.csprojAssemblyReference.cache

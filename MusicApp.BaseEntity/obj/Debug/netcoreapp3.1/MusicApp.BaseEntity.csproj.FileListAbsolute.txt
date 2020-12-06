@@ -1,0 +1,8 @@
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.deps.json
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.AssemblyInfoInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.AssemblyInfo.cs
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.csproj.CoreCompileInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb

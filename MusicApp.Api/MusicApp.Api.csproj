@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicApp.DataAccess\MusicApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MusicApp.Logger\MusicApp.Logger.csproj" />
+  </ItemGroup>
+
+
+</Project>
