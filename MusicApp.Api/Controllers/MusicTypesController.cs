@@ -40,9 +40,13 @@ namespace MusicApp.Api.Controllers
             try
             {
                 _logger.LogInfo(this.ControllerContext.ActionDescriptor.DisplayName);
-                var newMusicTypes = await _musicTypesService.Insert(musicTypes);
-                _logger.LogInfo($"{this.ControllerContext.ActionDescriptor.DisplayName} MusicTypesCreated Name : {newMusicTypes.Result.Name} and Id : {newMusicTypes.Result.Id}");
-                return Created("Created", newMusicTypes);
+                if (ModelState.IsValid)
+                {
+                    var newMusicTypes = await _musicTypesService.Insert(musicTypes);
+                    _logger.LogInfo($"{this.ControllerContext.ActionDescriptor.DisplayName} MusicTypesCreated Name : {newMusicTypes.Result.Name} and Id : {newMusicTypes.Result.Id}");
+                    return Created("Created", newMusicTypes);
+                }
+                return BadRequest();
             }
             catch (Exception exception)
             {

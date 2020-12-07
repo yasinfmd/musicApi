@@ -1,20 +1,4 @@
-07-12-2020 19:45:28.588 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.WeatherForecastController.Get (MusicApp.Api) True
-07-12-2020 19:46:28.519 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
-07-12-2020 19:46:29.084 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Dto.MusicTypesDto
-07-12-2020 19:46:29.093 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) True
-07-12-2020 19:46:35.575 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
-07-12-2020 19:46:35.601 +03:00 [WRN] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Not Found Id : 123
-07-12-2020 19:46:35.611 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) True
-07-12-2020 19:49:23.028 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.WeatherForecastController.Get (MusicApp.Api) True
-07-12-2020 20:00:43.157 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.WeatherForecastController.Get (MusicApp.Api) True
-07-12-2020 20:00:47.209 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.WeatherForecastController.Get (MusicApp.Api) True
-07-12-2020 20:00:56.436 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
-07-12-2020 20:00:57.061 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name :  and Id : 13
-07-12-2020 20:37:21.743 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
-07-12-2020 20:37:22.333 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name :  and Id : 14
-07-12-2020 20:37:32.624 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) False
-07-12-2020 20:37:33.223 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) False
-07-12-2020 20:39:01.227 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
-07-12-2020 20:39:01.827 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name :  and Id : 15
-07-12-2020 20:39:04.355 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) False
-07-12-2020 20:39:05.550 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) False
+07-12-2020 23:33:43.478 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) False
+07-12-2020 23:33:43.529 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) Error Key : Name , ErrorValue: Müzik Tür Adı Boş Olamaz
+07-12-2020 23:51:04.002 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+07-12-2020 23:51:07.000 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) Error Key : Name , ErrorValue: Müzik Tür Adı Boş Olamaz
