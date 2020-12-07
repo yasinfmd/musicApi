@@ -17,7 +17,6 @@ using MusicApp.Api.Extentions;
 using MusicApp.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-
 namespace MusicApp
 {
     public class Startup
@@ -32,6 +31,9 @@ namespace MusicApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+        
+
+
             services.AddControllers(options =>
             {
                 options.Filters.Add<ValidationFilter>();
@@ -61,6 +63,11 @@ namespace MusicApp
                                   });
             });
             services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password="));
+
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "static"; 
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -83,10 +90,18 @@ namespace MusicApp
             {
                 endpoints.MapControllers();
 
-                endpoints.Map("/", async context =>
+                //endpoints.Map("/",  context =>
+                //{
+                   
+                //    //send static file index.html
+                //   // await context.Response.WriteAsync("Hello World");
+                //});
+            });
+            app.Map("/musicApp", spaApp =>
+            {
+                spaApp.UseSpa(spa =>
                 {
-                    //send static file index.html
-                    await context.Response.WriteAsync("Hello World");
+                    spaApp.UseStaticFiles("/static");
                 });
             });
         }

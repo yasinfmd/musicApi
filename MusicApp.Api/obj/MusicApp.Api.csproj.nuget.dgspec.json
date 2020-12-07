@@ -64,6 +64,10 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[9.3.0, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.9, )"
             }
           },
           "imports": [

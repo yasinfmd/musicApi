@@ -80,3 +80,12 @@ C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\AutoMa
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Dto.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Dto.pdb
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll

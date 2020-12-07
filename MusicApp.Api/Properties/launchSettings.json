@@ -9,22 +9,22 @@
         }
     },
     "profiles": {
-        "IIS Express": {
-            "commandName": "IISExpress",
-            "launchBrowser": true,
-            "launchUrl": "",
-            "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            }
-        },
-        "MusicApp.Api": {
-            "commandName": "Project",
-            "launchBrowser": true,
-            "launchUrl": "",
-            "applicationUrl": "http://localhost:5000",
-            "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            }
+      "IIS Express": {
+        "commandName": "IISExpress",
+        "launchBrowser": true,
+        "launchUrl": "musicApp",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
         }
+      },
+      "MusicApp.Api": {
+        "commandName": "Project",
+        "launchBrowser": true,
+        "launchUrl": "musicApp",
+        "applicationUrl": "http://localhost:5000",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+      }
     }
 }
