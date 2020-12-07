@@ -22,4 +22,9 @@
   </ItemGroup>
 
 
+	<!--<Target Name="SetACL" AfterTargets="Build">
+		--><!-- set security on binaries--><!--
+		<Exec Command="./update-database.bat" />
+	</Target>-->
+
 </Project>

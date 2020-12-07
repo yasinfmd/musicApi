@@ -14,6 +14,7 @@ namespace MusicApp.Api.Extentions
 		{
 			mvcBuilder.AddFluentValidation(x => {
 				x.RegisterValidatorsFromAssemblyContaining<MusicTypesValidator>();
+				x.ImplicitlyValidateChildProperties = true;
 			});
 			return mvcBuilder;
 		}

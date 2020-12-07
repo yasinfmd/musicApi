@@ -8,7 +8,7 @@ using System.Linq;
 namespace MusicApp.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private readonly ILogService _logger;
@@ -26,17 +26,15 @@ namespace MusicApp.Api.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            _logger.LogInfo("İnfo Verdimm ");
-     
             var rng = new Random();
-
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var asd= Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+            return asd;
 
         }
     }

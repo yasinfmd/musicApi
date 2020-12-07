@@ -12,10 +12,11 @@ using MusicApp.DataAccess.Abstract;
 using MusicApp.DataAccess.Concrate;
 using MusicApp.Business.Abstract;
 using MusicApp.Business.Concrate;
-using FluentValidation.AspNetCore;
 using MusicApp.Api.Filter;
 using MusicApp.Api.Extentions;
 using MusicApp.Dto;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace MusicApp
 {
@@ -36,6 +37,11 @@ namespace MusicApp
                 options.Filters.Add<ValidationFilter>();
             }).AddMusicAppFluentValidation();
 
+            services.Configure<ApiBehaviorOptions>(opt =>
+            {
+                opt.SuppressModelStateInvalidFilter = true;
+            });
+
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<ILogService, LogManager>();
             services.AddScoped<IMusicTypesRepository, MusicTypesRepository>();
@@ -55,7 +61,6 @@ namespace MusicApp
                                   });
             });
             services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password="));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,11 +81,14 @@ namespace MusicApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
-            });
+                endpoints.MapControllers();
 
+                endpoints.Map("/", async context =>
+                {
+                    //send static file index.html
+                    await context.Response.WriteAsync("Hello World");
+                });
+            });
         }
     }
 }

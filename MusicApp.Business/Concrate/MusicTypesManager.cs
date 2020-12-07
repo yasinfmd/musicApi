@@ -1,6 +1,9 @@
-﻿using MusicApp.Business.Abstract;
+﻿using AutoMapper;
+using MusicApp.Business.Abstract;
 using MusicApp.DataAccess.Abstract;
+using MusicApp.Dto;
 using MusicApp.Entity;
+using MusicApp.Entity.ResponseModels;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -12,10 +15,12 @@ namespace MusicApp.Business.Concrate
     public class MusicTypesManager : IMusicTypesService
     {
         private readonly IMusicTypesRepository _musicTypesRepository;
+        private readonly IMapper _mapper;
 
-        public MusicTypesManager(IMusicTypesRepository musicTypesRepository)
+        public MusicTypesManager(IMusicTypesRepository musicTypesRepository,IMapper mapper)
         {
             _musicTypesRepository = musicTypesRepository;
+            _mapper = mapper;
         }
         public Task<int> CountAll()
         {
@@ -42,24 +47,37 @@ namespace MusicApp.Business.Concrate
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<MusicTypes>> GetAll()
+        public async Task<BaseResponse<IEnumerable<MusicTypesDto>>> GetAll()
         {
-            throw new NotImplementedException();
+            BaseResponse<IEnumerable<MusicTypesDto>> baseResponse = new BaseResponse<IEnumerable<MusicTypesDto>>();
+            var allMusicTypesList = await _musicTypesRepository.GetAll();
+            baseResponse.Result = _mapper.Map<IEnumerable<MusicTypesDto>>(allMusicTypesList);
+            return baseResponse;
+
         }
 
-        public Task<MusicTypes> GetByID(int id)
+        public async Task<BaseResponse<MusicTypesDto>> GetByID(int id)
         {
-            throw new NotImplementedException();
+            BaseResponse<MusicTypesDto> baseResponse = new BaseResponse<MusicTypesDto>();
+            var musicType = await _musicTypesRepository.GetByID(id);
+            baseResponse.Result = _mapper.Map<MusicTypesDto>(musicType);
+            return baseResponse;
         }
 
-        public async Task<MusicTypes> Insert(MusicTypes musicTypes)
+        public async Task<BaseResponse<MusicTypesDto>> Insert(MusicTypes musicTypes)
         {
-            return await _musicTypesRepository.Insert(musicTypes);
+            BaseResponse<MusicTypesDto> baseResponse = new BaseResponse<MusicTypesDto>();
+            var newMusicTypes= await _musicTypesRepository.Insert(musicTypes);
+            baseResponse.Result = _mapper.Map<MusicTypesDto>(newMusicTypes);
+            return baseResponse;
+
         }
 
         public Task<MusicTypes> Update(MusicTypes entityToUpdate)
         {
             throw new NotImplementedException();
         }
+
+ 
     }
 }

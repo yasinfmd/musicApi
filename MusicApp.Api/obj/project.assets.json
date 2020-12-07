@@ -2167,7 +2167,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "MusicApp.DataAccess": "1.0.0",
+          "MusicApp.Dto": "1.0.0",
           "MusicApp.Entity": "1.0.0"
         },
         "compile": {

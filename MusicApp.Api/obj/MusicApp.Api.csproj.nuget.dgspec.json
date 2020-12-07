@@ -169,6 +169,9 @@
               "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj"
               },
+              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj": {
+                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj"
+              },
               "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj": {
                 "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj"
               }
@@ -184,6 +187,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

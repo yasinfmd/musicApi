@@ -79,3 +79,4 @@ C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\obj\Debug\netcoreapp3.1\MusicA
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Dto.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Dto.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

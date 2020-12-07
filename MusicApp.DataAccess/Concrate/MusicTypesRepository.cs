@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MusicApp.DataAccess.Abstract;
 using MusicApp.Entity;
+using MusicApp.Entity.ResponseModels;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MusicApp.DataAccess.Concrate
@@ -21,17 +21,17 @@ namespace MusicApp.DataAccess.Concrate
         }
         public async Task<int> CountAll()
         {
-            return  await _baseRepository.CountAll();
+            return await _baseRepository.CountAll();
         }
 
         public async Task<int> CountWhere(Expression<Func<MusicTypes, bool>> expression)
         {
-            return  await _baseRepository.CountWhere(expression);
+            return await _baseRepository.CountWhere(expression);
         }
 
         public async Task<int> Delete(MusicTypes musicTypes)
         {
-            return  await _baseRepository.Delete(musicTypes);
+            return await _baseRepository.Delete(musicTypes);
         }
 
         public async Task<List<MusicTypes>> Find(Expression<Func<MusicTypes, bool>> filter)
@@ -52,11 +52,12 @@ namespace MusicApp.DataAccess.Concrate
         public async Task<MusicTypes> GetByID(int id)
         {
             return await _baseRepository.GetByID(id);
+           
         }
 
-        public  async Task<MusicTypes> Insert(MusicTypes musicTypes)
+        public async Task<MusicTypes> Insert(MusicTypes musicTypes)
         {
-            return  await _baseRepository.Insert(musicTypes);
+            return await _baseRepository.Insert(musicTypes);
         }
 
 
