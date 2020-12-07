@@ -70,3 +70,12 @@ C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Micros
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Business.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Business.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\obj\Debug\netcoreapp3.1\MusicApp.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Dto.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Dto.pdb

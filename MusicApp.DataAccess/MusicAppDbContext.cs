@@ -15,7 +15,11 @@ namespace MusicApp.DataAccess
 
 
         public DbSet<AlbumsFiles> AlbumsFiles { get; set; }
+        public MusicAppDbContext(DbContextOptions<MusicAppDbContext> options)
+            : base(options)
+        {
 
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

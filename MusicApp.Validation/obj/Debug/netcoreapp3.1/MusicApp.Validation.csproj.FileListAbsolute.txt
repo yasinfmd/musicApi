@@ -1,0 +1,14 @@
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\bin\Debug\netcoreapp3.1\MusicApp.Validation.deps.json
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\bin\Debug\netcoreapp3.1\MusicApp.Validation.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\bin\Debug\netcoreapp3.1\MusicApp.Validation.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\bin\Debug\netcoreapp3.1\MusicApp.Entity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\bin\Debug\netcoreapp3.1\MusicApp.Entity.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\obj\Debug\netcoreapp3.1\MusicApp.Validation.csprojAssemblyReference.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\obj\Debug\netcoreapp3.1\MusicApp.Validation.AssemblyInfoInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\obj\Debug\netcoreapp3.1\MusicApp.Validation.AssemblyInfo.cs
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\obj\Debug\netcoreapp3.1\MusicApp.Validation.csproj.CoreCompileInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\obj\Debug\netcoreapp3.1\MusicApp.Validation.csproj.CopyComplete
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\obj\Debug\netcoreapp3.1\MusicApp.Validation.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Validation\obj\Debug\netcoreapp3.1\MusicApp.Validation.pdb

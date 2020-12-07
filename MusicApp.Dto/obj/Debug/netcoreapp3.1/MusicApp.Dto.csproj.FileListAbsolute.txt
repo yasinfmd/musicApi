@@ -1,0 +1,14 @@
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\bin\Debug\netcoreapp3.1\MusicApp.Dto.deps.json
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\bin\Debug\netcoreapp3.1\MusicApp.Dto.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\bin\Debug\netcoreapp3.1\MusicApp.Dto.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\bin\Debug\netcoreapp3.1\MusicApp.Entity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\bin\Debug\netcoreapp3.1\MusicApp.Entity.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\obj\Debug\netcoreapp3.1\MusicApp.Dto.csprojAssemblyReference.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\obj\Debug\netcoreapp3.1\MusicApp.Dto.AssemblyInfoInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\obj\Debug\netcoreapp3.1\MusicApp.Dto.AssemblyInfo.cs
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\obj\Debug\netcoreapp3.1\MusicApp.Dto.csproj.CoreCompileInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\obj\Debug\netcoreapp3.1\MusicApp.Dto.csproj.CopyComplete
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\obj\Debug\netcoreapp3.1\MusicApp.Dto.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Dto\obj\Debug\netcoreapp3.1\MusicApp.Dto.pdb

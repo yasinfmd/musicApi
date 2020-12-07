@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "oSDhLKB6k332KwYfivXa6MfZ0EzL8ZZh3WoaKt7VFBWOa1ea+RL/cX2kcKgYwQbhXjwPIpSz+LKrdqRU6t2luQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yasin\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Yasin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Yasin\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

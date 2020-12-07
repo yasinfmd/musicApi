@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,14 @@ using Microsoft.Extensions.Hosting;
 using MusicApp.Logger.Abstract;
 using MusicApp.Logger.Concrate;
 using MusicApp.DataAccess;
+using MusicApp.DataAccess.Abstract;
+using MusicApp.DataAccess.Concrate;
+using MusicApp.Business.Abstract;
+using MusicApp.Business.Concrate;
+using FluentValidation.AspNetCore;
+using MusicApp.Api.Filter;
+using MusicApp.Api.Extentions;
+using MusicApp.Dto;
 
 namespace MusicApp
 {
@@ -22,8 +31,17 @@ namespace MusicApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(options =>
+            {
+                options.Filters.Add<ValidationFilter>();
+            }).AddMusicAppFluentValidation();
+
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<ILogService, LogManager>();
+            services.AddScoped<IMusicTypesRepository, MusicTypesRepository>();
+            services.AddScoped<IMusicTypesService, MusicTypesManager>();
+            services.AddAutoMapper(typeof(AutoMapping));
+
 
             services.AddCors(options=>
             {
@@ -36,7 +54,7 @@ namespace MusicApp
                                
                                   });
             });
-            services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL(Configuration.GetConnectionString("MusicContext")));
+            services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password="));
 
         }
 
@@ -58,8 +76,11 @@ namespace MusicApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller}/{action=Index}/{id?}");
             });
+
         }
     }
 }

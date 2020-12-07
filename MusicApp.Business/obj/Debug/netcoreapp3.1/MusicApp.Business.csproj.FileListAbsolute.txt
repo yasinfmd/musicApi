@@ -1,0 +1,16 @@
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Business.deps.json
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Business.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Business.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Entity.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Entity.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.csprojAssemblyReference.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.AssemblyInfoInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.AssemblyInfo.cs
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.csproj.CoreCompileInputs.cache
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.csproj.CopyComplete
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.DataAccess.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.DataAccess.pdb
