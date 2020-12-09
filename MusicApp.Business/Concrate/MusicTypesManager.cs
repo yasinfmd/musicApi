@@ -22,9 +22,12 @@ namespace MusicApp.Business.Concrate
             _musicTypesRepository = musicTypesRepository;
             _mapper = mapper;
         }
-        public Task<int> CountAll()
+        public async Task<BaseResponse<string>> CountAll()
         {
-            throw new NotImplementedException();
+            BaseResponse<string> baseResponse = new BaseResponse<string>();
+            int count = await _musicTypesRepository.CountAll();
+            baseResponse.Result = count.ToString();
+            return baseResponse;
         }
 
         public Task<int> CountWhere(Expression<Func<MusicTypes, bool>> predicate)
@@ -32,9 +35,12 @@ namespace MusicApp.Business.Concrate
             throw new NotImplementedException();
         }
 
-        public Task<int> Delete(MusicTypes entityToDelete)
+        public async Task<BaseResponse<string>> Delete(MusicTypes musicTypes)
         {
-            throw new NotImplementedException();
+            BaseResponse<string> baseResponse = new BaseResponse<string>();
+            var isDeleted = await _musicTypesRepository.Delete(musicTypes);
+            baseResponse.Result = isDeleted > 0 ? "Success Delete" : null;
+            return baseResponse;
         }
 
         public Task<List<MusicTypes>> Find(Expression<Func<MusicTypes, bool>> filter)
@@ -56,12 +62,18 @@ namespace MusicApp.Business.Concrate
 
         }
 
-        public async Task<BaseResponse<MusicTypesDto>> GetByID(int id)
+        public async Task<BaseResponse<MusicTypes>> GetByID(int id)
         {
-            BaseResponse<MusicTypesDto> baseResponse = new BaseResponse<MusicTypesDto>();
+            BaseResponse<MusicTypes> baseResponse = new BaseResponse<MusicTypes>();
             var musicType = await _musicTypesRepository.GetByID(id);
-            baseResponse.Result = _mapper.Map<MusicTypesDto>(musicType);
+            baseResponse.Result = musicType;
+                //_mapper.Map<MusicTypesDto>(musicType);
             return baseResponse;
+        }
+
+        public async Task<MusicTypes> getid(int id)
+        {
+            return await _musicTypesRepository.GetByID(id);
         }
 
         public async Task<BaseResponse<MusicTypesDto>> Insert(MusicTypes musicTypes)
@@ -73,9 +85,17 @@ namespace MusicApp.Business.Concrate
 
         }
 
-        public Task<MusicTypes> Update(MusicTypes entityToUpdate)
+        public async Task<bool> isExists(Expression<Func<MusicTypes, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _musicTypesRepository.isExists(filter);
+        }
+
+        public async Task<BaseResponse<MusicTypesDto>> Update(MusicTypes musicTypes)
+        {
+            BaseResponse<MusicTypesDto> baseResponse = new BaseResponse<MusicTypesDto>();
+            var updatedMusicTypes = await _musicTypesRepository.Update(musicTypes);
+            baseResponse.Result = _mapper.Map<MusicTypesDto>(updatedMusicTypes);
+            return baseResponse;
         }
 
  

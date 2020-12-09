@@ -1,0 +1,58 @@
+09-12-2020 10:25:05.843 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+09-12-2020 10:25:06.552 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+09-12-2020 10:26:06.087 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+09-12-2020 10:26:06.699 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+09-12-2020 10:26:07.640 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+09-12-2020 10:26:07.652 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+09-12-2020 10:26:08.725 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+09-12-2020 10:26:08.735 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+09-12-2020 10:26:09.653 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+09-12-2020 10:26:09.667 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+09-12-2020 10:26:10.487 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+09-12-2020 10:26:10.499 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+09-12-2020 10:28:00.478 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+09-12-2020 10:28:01.096 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.ResponseModels.BaseResponse`1[MusicApp.Entity.MusicTypes]
+09-12-2020 10:33:16.187 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+09-12-2020 10:33:16.800 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.ResponseModels.BaseResponse`1[MusicApp.Entity.MusicTypes]
+09-12-2020 10:33:48.077 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+09-12-2020 10:33:48.090 +03:00 [WRN] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Not Found Id : 24
+09-12-2020 10:56:07.263 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.update (MusicApp.Api)
+09-12-2020 10:56:07.993 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.update (MusicApp.Api) MusicTypesCreated Name : Mahmut and Id : 25
+09-12-2020 10:56:19.555 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.update (MusicApp.Api)
+09-12-2020 10:56:19.817 +03:00 [ERR] MusicApp.Api.Controllers.MusicTypesController.update (MusicApp.Api) Exception Message : An exception was thrown while attempting to evaluate a LINQ query parameter expression. To show additional information call EnableSensitiveDataLogging() when overriding DbContext.OnConfiguring. - System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.GetValue(Expression expression, String& parameterName)
+System.InvalidOperationException: An exception was thrown while attempting to evaluate a LINQ query parameter expression. To show additional information call EnableSensitiveDataLogging() when overriding DbContext.OnConfiguring.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.GetValue(Expression expression, String& parameterName)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.GetValue(Expression expression, String& parameterName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Evaluate(Expression expression, Boolean generateParameter)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Linq.Expressions.ExpressionVisitor.VisitBinary(BinaryExpression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.VisitBinary(BinaryExpression binaryExpression)
+   at System.Linq.Expressions.BinaryExpression.Accept(ExpressionVisitor visitor)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Linq.Expressions.ExpressionVisitor.VisitLambda[T](Expression`1 node)
+   at System.Linq.Expressions.Expression`1.Accept(ExpressionVisitor visitor)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Linq.Expressions.ExpressionVisitor.VisitUnary(UnaryExpression node)
+   at System.Linq.Expressions.UnaryExpression.Accept(ExpressionVisitor visitor)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Dynamic.Utils.ExpressionVisitorUtils.VisitArguments(ExpressionVisitor visitor, IArgumentProvider nodes)
+   at System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(MethodCallExpression node)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.ExtractParameters(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExtractParameters(Expression query, IParameterValues parameterValues, IDiagnosticsLogger`1 logger, Boolean parameterize, Boolean generateContextAccessors)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 66
+   at MusicApp.DataAccess.Concrate.MusicTypesRepository.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\MusicTypesRepository.cs:line 66
+   at MusicApp.Business.Concrate.MusicTypesManager.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\MusicTypesManager.cs:line 90
+   at MusicApp.Api.Controllers.MusicTypesController.update(Int32 musicTypeId, MusicTypes musicTypes) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\MusicTypesController.cs:line 49
+09-12-2020 10:56:19.862 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.update (MusicApp.Api) Error Key : Name , ErrorValue: Müzik Tür Adı Boş Olamaz

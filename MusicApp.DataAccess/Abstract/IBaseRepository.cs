@@ -13,6 +13,7 @@ namespace MusicApp.DataAccess.Abstract
         Task<int> Delete(TEntity entityToDelete);
         Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> filter);
 
+        Task<bool> isExists(Expression<Func<TEntity, bool>> filter);
         Task<IEnumerable<TEntity>> GetAll();
 
 

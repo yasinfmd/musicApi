@@ -6,16 +6,80 @@
 <style>
     body {
         margin: 0;
-        padding: 0;
         box-sizing: border-box;
-        background: red;
+        height: 100vh;
+        background: #151320;
+        padding:100px;
     }
+   
+      .cards{
+          display:grid;
+          box-sizing:border-box;
+          grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+          grid-gap:40px;
 
+      }
+      .card{
+          background:#1c1b29;
+          border-radius:20px;
+          padding:20px;
+          box-shadow:0 0 20px rgba(0,0,0,0.18);
+      }
+    .container {
+        background: #c2c7cf;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius:16px;
+    }
+        .container::after {
+            box-sizing:border-box;
+            padding:8px;
+            content: 'MUSICAPP API';
+            position: absolute;
+            height: 50px;
+            background: #478eff;
+            width: 100px;
+            top: 75px;
+            transform: skewY(-20deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#ffffff;
+        }
+        .details{
+            margin-top:20px;
+            color:#ffffff;
+        }
 </style>
 </head>
 <body>
-    <div>
-        Spa Exten
+
+        <div class="cards">
+            <div class="card">
+                <div class="container">
+                </div>
+                <div class="details">
+                    <h3>Welcome</h3>
+                    <p>
+                        MusicApp API
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">MY</div>
+                <div class="details">
+                    <h3>Try </h3>
+                    <p>
+                       MusicApp Api
+                    </p>
+                </div>
+            </div>
+
+      
+           
     </div>
 </body>
 </html>

@@ -1,0 +1,79 @@
+08-12-2020 12:32:37.543 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+08-12-2020 12:32:38.179 +03:00 [WRN] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Not Found Id : 11
+08-12-2020 12:32:52.406 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+08-12-2020 12:32:52.518 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Dto.MusicTypesDto
+08-12-2020 12:33:09.442 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+08-12-2020 12:51:17.111 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+08-12-2020 12:51:17.720 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Dto.MusicTypesDto
+08-12-2020 12:51:29.495 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+08-12-2020 12:51:38.268 +03:00 [ERR] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Exception Message : The method or operation is not implemented. - 
+System.NotImplementedException: The method or operation is not implemented.
+   at MusicApp.Business.Concrate.MusicTypesManager.Delete(MusicTypes entityToDelete) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\MusicTypesManager.cs:line 37
+   at MusicApp.Api.Controllers.MusicTypesController.delete(Int32 musicTypeId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\MusicTypesController.cs:line 48
+08-12-2020 12:58:25.304 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+08-12-2020 12:59:06.965 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Dto.MusicTypesDto
+08-12-2020 12:59:08.307 +03:00 [ERR] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Exception Message : The instance of entity type 'MusicTypes' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values. - 
+System.InvalidOperationException: The instance of entity type 'MusicTypes' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Remove[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.Delete(T entity) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 33
+   at MusicApp.DataAccess.Concrate.MusicTypesRepository.Delete(MusicTypes musicTypes) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\MusicTypesRepository.cs:line 34
+   at MusicApp.Business.Concrate.MusicTypesManager.Delete(MusicTypesDto musicTypesDto) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\MusicTypesManager.cs:line 37
+   at MusicApp.Api.Controllers.MusicTypesController.delete(Int32 musicTypeId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\MusicTypesController.cs:line 49
+08-12-2020 13:01:15.812 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+08-12-2020 13:01:31.258 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Dto.MusicTypesDto
+08-12-2020 13:02:08.314 +03:00 [ERR] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Exception Message : The instance of entity type 'MusicTypes' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values. - 
+System.InvalidOperationException: The instance of entity type 'MusicTypes' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Remove[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.Delete(T entity) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 33
+   at MusicApp.DataAccess.Concrate.MusicTypesRepository.Delete(MusicTypes musicTypes) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\MusicTypesRepository.cs:line 34
+   at MusicApp.Business.Concrate.MusicTypesManager.Delete(MusicTypesDto musicTypesDto) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\MusicTypesManager.cs:line 38
+   at MusicApp.Api.Controllers.MusicTypesController.delete(Int32 musicTypeId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\MusicTypesController.cs:line 49
+08-12-2020 13:14:26.698 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+08-12-2020 13:14:30.410 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+08-12-2020 13:20:33.064 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+08-12-2020 13:20:33.699 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.ResponseModels.BaseResponse`1[MusicApp.Dto.MusicTypesDto]
+08-12-2020 13:21:37.920 +03:00 [ERR] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Exception Message : The instance of entity type 'MusicTypes' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values. - 
+System.InvalidOperationException: The instance of entity type 'MusicTypes' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Remove[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.Delete(T entity) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 33
+   at MusicApp.DataAccess.Concrate.MusicTypesRepository.Delete(MusicTypes musicTypes) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\MusicTypesRepository.cs:line 35
+   at MusicApp.Business.Concrate.MusicTypesManager.Delete(MusicTypesDto musicTypes) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\MusicTypesManager.cs:line 39
+   at MusicApp.Api.Controllers.MusicTypesController.delete(Int32 musicTypeId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\MusicTypesController.cs:line 49
+08-12-2020 13:25:46.440 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api)
+08-12-2020 13:25:47.030 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.ResponseModels.BaseResponse`1[MusicApp.Entity.MusicTypes]

@@ -12,11 +12,11 @@ namespace MusicApp.Business.Abstract
 {
     public interface IMusicTypesService 
     {
-        Task<BaseResponse<MusicTypesDto>> GetByID(int id);
+        Task<MusicTypes> getid(int id);
+        Task<BaseResponse<MusicTypes>> GetByID(int id);
 
-
-
-        Task<int> Delete(MusicTypes entityToDelete);
+        Task<bool> isExists(Expression<Func<MusicTypes, bool>> filter);
+        Task<BaseResponse<string>> Delete(MusicTypes musicTypes);
         Task<List<MusicTypes>> Find(Expression<Func<MusicTypes, bool>> filter);
 
         Task<BaseResponse<IEnumerable<MusicTypesDto>>> GetAll();
@@ -24,12 +24,12 @@ namespace MusicApp.Business.Abstract
 
 
         Task<BaseResponse<MusicTypesDto>> Insert(MusicTypes entity);
-        Task<MusicTypes> Update(MusicTypes entityToUpdate);
+        Task<BaseResponse<MusicTypesDto>> Update(MusicTypes musicTypes);
 
 
         Task<MusicTypes> FindOne(Expression<Func<MusicTypes, bool>> filter);
 
-        Task<int> CountAll();
+        Task<BaseResponse<string>> CountAll();
         Task<int> CountWhere(Expression<Func<MusicTypes, bool>> predicate);
     }
 }

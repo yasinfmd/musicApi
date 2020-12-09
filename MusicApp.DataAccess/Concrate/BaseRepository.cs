@@ -31,8 +31,7 @@ namespace MusicApp.DataAccess.Concrate
         public async Task<int> Delete(T entity)
         {
             dbSet.Remove(entity);
-            var isDeleted = await context.SaveChangesAsync();
-            return isDeleted;
+            return await context.SaveChangesAsync();
         }
 
         public async Task<List<T>> Find(Expression<Func<T, bool>> filter)
@@ -61,8 +60,12 @@ namespace MusicApp.DataAccess.Concrate
             await context.SaveChangesAsync();
             return entity;
         }
-            
-   
+
+        public async Task<bool> isExists(Expression<Func<T, bool>> filter)
+        {
+            return  await dbSet.AnyAsync(filter);
+           
+        }
 
         public async Task<T> Update(T entity)
         {

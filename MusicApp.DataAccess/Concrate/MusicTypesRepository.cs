@@ -31,6 +31,7 @@ namespace MusicApp.DataAccess.Concrate
 
         public async Task<int> Delete(MusicTypes musicTypes)
         {
+
             return await _baseRepository.Delete(musicTypes);
         }
 
@@ -60,6 +61,10 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.Insert(musicTypes);
         }
 
+        public async Task<bool> isExists(Expression<Func<MusicTypes, bool>> filter)
+        {
+            return await _baseRepository.isExists(filter);
+        }
 
         public async Task<MusicTypes> Update(MusicTypes musicTypes)
         {
