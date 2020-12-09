@@ -6,7 +6,9 @@ using MusicApp.Dto;
 using MusicApp.Entity;
 using MusicApp.Entity.ResponseModels;
 using MusicApp.Logger.Abstract;
+using Swashbuckle.AspNetCore.Filters;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -26,12 +28,22 @@ namespace MusicApp.Api.Controllers
             _logger = logService;
             _mapper = mapper;
         }
-
+        /// <summary>
+        ///  Update MusicTypes ById
+        /// </summary>
+        /// <response code="200">Returns deleted message</response>
+        /// <response code="400">If the item is null or if there is a  item name </response>   
+        /// <response code="500">If there is a server side error</response>   
+        /// <remarks>
+        /// </remarks>
+        /// <returns> </returns>
         [HttpPut]
         [Route("[action]/{musicTypeId}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(BaseResponse<MusicTypesDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<ValidationErrorExceptionModel>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+
         public async Task<IActionResult> update(int musicTypeId,[FromBody] MusicTypes musicTypes)
         {
             try
@@ -67,11 +79,19 @@ namespace MusicApp.Api.Controllers
         }
 
 
-
+        /// <summary>
+        ///  Delete MusicTypes ById
+        /// </summary>
+        /// <response code="200">Returns deleted message</response>
+        /// <response code="400">If the item is null or if there is a  item name </response>   
+        /// <response code="500">If there is a server side error</response>   
+        /// <remarks>
+        /// </remarks>
+        /// <returns> </returns>
         [HttpDelete]
         [Route("[action]/{musicTypeId}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> delete(int musicTypeId)
         {
             try
@@ -98,12 +118,27 @@ namespace MusicApp.Api.Controllers
             }
 
         }
-
+        /// <summary>
+        ///  Create New MusicTypesItem
+        /// </summary>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null or if there is a  item name </response>   
+        /// <response code="500">If there is a server side error</response>   
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///        "name": "Jazz"
+        ///     }
+        ///
+        /// </remarks>
+        /// <returns> </returns>
         [HttpPost]
         [Route("[action]")]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(BaseResponse<MusicTypesDto>), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(List<ValidationErrorExceptionModel>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> store([FromBody] MusicTypes musicTypes)
         {
             try
@@ -124,11 +159,19 @@ namespace MusicApp.Api.Controllers
             }
         }
 
+
+        /// <summary>
+        ///  Return  MusicTypes By Id
+        /// </summary>
+        /// <response code="200">Returns a single MusicType</response>
+        /// <response code="404">Not Found By Id</response>
+        /// <response code="500">If there is a server side error</response>   
+        /// <returns> </returns>
         [HttpGet]
         [Route("[action]/{musicTypeId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> show(int musicTypeId)
         {
             try
@@ -155,10 +198,16 @@ namespace MusicApp.Api.Controllers
             }
         }
 
+        /// <summary>
+        ///  Return All MusicTypes List BaseResponse
+        /// </summary>
+        /// <response code="200">Returns the all MusicTypes List</response>
+        /// <response code="500">If there is a server side error</response>   
+        /// <returns> </returns>
         [HttpGet]
         [Route("[action]")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(BaseResponse<IEnumerable<MusicTypesDto>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> index()
         {
             try

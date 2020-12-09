@@ -17,6 +17,11 @@ using MusicApp.Api.Extentions;
 using MusicApp.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using Microsoft.OpenApi.Models;
+using System;
+using System.Reflection;
+using System.IO;
+
 namespace MusicApp
 {
     public class Startup
@@ -64,6 +69,17 @@ namespace MusicApp
             });
             services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password="));
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MusicApp Api", Version = "1.0.0", Description = "Custom MusicApp Api",
+                    Contact = new OpenApiContact() { Email = "ysndlklc1234@gmail.com",Name="Yasin Efem Dalkýlýç", Url = new Uri("https://github.com/yasinfmd/"), } }) ;
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+
+            });
+    
+
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "static"; 
@@ -83,6 +99,15 @@ namespace MusicApp
             app.UseRouting();
 
             app.UseCors("CorsPolicy");
+
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MusicApp API V1");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseAuthorization();
 

@@ -56,3 +56,11 @@ System.InvalidOperationException: An exception was thrown while attempting to ev
    at MusicApp.Business.Concrate.MusicTypesManager.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\MusicTypesManager.cs:line 90
    at MusicApp.Api.Controllers.MusicTypesController.update(Int32 musicTypeId, MusicTypes musicTypes) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\MusicTypesController.cs:line 49
 09-12-2020 10:56:19.862 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.update (MusicApp.Api) Error Key : Name , ErrorValue: Müzik Tür Adı Boş Olamaz
+09-12-2020 11:13:20.793 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api)
+09-12-2020 11:13:21.326 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api) Total MusicTypesCount : 1
+09-12-2020 11:39:13.678 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api)
+09-12-2020 11:39:14.251 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.show (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.MusicTypes
+09-12-2020 11:39:32.017 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api)
+09-12-2020 11:39:32.053 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api) Total MusicTypesCount : 1
+09-12-2020 11:39:42.785 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api)
+09-12-2020 11:39:42.794 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api) Total MusicTypesCount : 1

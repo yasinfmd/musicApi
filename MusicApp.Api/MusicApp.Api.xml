@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MusicApp.Api</name>
+    </assembly>
+    <members>
+        <member name="M:MusicApp.Api.Controllers.MusicTypesController.delete(System.Int32)">
+            <summary>
+             Delete MusicTypes ById
+            </summary>
+            <response code="200">Returns deleted message</response>
+            <response code="400">If the item is null or if there is a  item name </response>   
+            <response code="500">If there is a server side error</response>   
+            <remarks>
+            </remarks>
+            <returns> </returns>
+        </member>
+        <member name="M:MusicApp.Api.Controllers.MusicTypesController.store(MusicApp.Entity.MusicTypes)">
+             <summary>
+              Create New MusicTypesItem
+             </summary>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null or if there is a  item name </response>   
+             <response code="500">If there is a server side error</response>   
+             <remarks>
+             Sample request:
+            
+                 {
+                    "name": "Jazz"
+                 }
+            
+             </remarks>
+             <returns>Data </returns>
+        </member>
+        <member name="M:MusicApp.Api.Controllers.MusicTypesController.show(System.Int32)">
+            <summary>
+             Return  MusicTypes By Id
+            </summary>
+            <response code="200">Returns a single MusicType</response>
+            <response code="404">Not Found By Id</response>
+            <response code="500">If there is a server side error</response>   
+            <returns> </returns>
+        </member>
+        <member name="M:MusicApp.Api.Controllers.MusicTypesController.index">
+            <summary>
+             Return All MusicTypes List BaseResponse
+            </summary>
+            <response code="200">Returns the all MusicTypes List</response>
+            <response code="500">If there is a server side error</response>   
+            <returns> </returns>
+        </member>
+    </members>
+</doc>
