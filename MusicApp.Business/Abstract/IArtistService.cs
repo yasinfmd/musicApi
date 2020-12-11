@@ -16,5 +16,9 @@ namespace MusicApp.Business.Abstract
 
         Task<BaseResponse<ArtistDto>> Insert(ArtistImageModel artist);
 
+        Task<BaseResponse<Artist>> GetByID(int id);
+        Task<BaseResponse<string>> Delete(Artist artist);
+
+
     }
 }

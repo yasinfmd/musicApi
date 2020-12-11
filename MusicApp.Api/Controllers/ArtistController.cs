@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MusicApp.Business.Abstract;
+using MusicApp.Dto;
 using MusicApp.Entity;
 using MusicApp.Entity.ParameterModels;
 using MusicApp.Entity.ResponseModels;
@@ -29,8 +30,44 @@ namespace MusicApp.Api.Controllers
             _filesService = filesService;
         }
 
+        [HttpDelete]
+        [Route("[action]/{artistId}")]
+        [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> delete(int artistId)
+        {
+            try
+            {
+                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                var isExists = await _artistService.GetByID(artistId);
+                if (isExists==null)
+                {
+                     
+                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {artistId}");
+                    return NotFound();
+                }
+                else
+                {
+                    return Ok();
+                    //var musicType = await _musicTypesService.GetByID(musicTypeId);
+                    //_logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded MusicTypes : {musicType}");
+                    //var deleted = await _musicTypesService.Delete(musicType.Result);
+
+                 //   return Ok(deleted);
+                }
+            }
+            catch (Exception exception)
+            {
+                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+
+        }
+
         [HttpPost]
         [Route("[action]")]
+        [ProducesResponseType(typeof(BaseResponse<ArtistDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<ValidationErrorExceptionModel>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> store([FromForm] ArtistImageModel artistImageModel)
         {
             try
@@ -46,6 +83,8 @@ namespace MusicApp.Api.Controllers
                     else
                     {
                         var result = await _artistService.Insert(artistImageModel);
+                        _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistCreated Name : {result.Result.Name}  Id : {result.Result.Id} Info : {result.Result.Info} and Gender : {result.Result.Gender}");
+
                         return Ok(result);
                     }
                 }

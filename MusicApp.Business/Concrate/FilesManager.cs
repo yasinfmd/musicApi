@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MusicApp.Business.Abstract;
 using MusicApp.DataAccess.Abstract;
+using MusicApp.Dto;
 using MusicApp.Entity;
 using MusicApp.Entity.ResponseModels;
 using MusicApp.Logger.Abstract;
@@ -24,6 +25,16 @@ namespace MusicApp.Business.Concrate
         {
             _logger = logService;
             _filesRepository = filesRepository;
+        }
+
+        public Task<BaseResponse<string>> Delete(FilesDto files)
+        {
+            string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+           // if (File.Exists(Path.Combine(pathBuild)))
+            //{
+
+//            }
+            throw new NotImplementedException();
         }
 
         public async Task<Files> Insert(Files files)

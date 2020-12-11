@@ -27,6 +27,19 @@ namespace MusicApp.Business.Concrate
             _filesService = filesService;
         }
 
+        public Task<BaseResponse<string>> Delete(Artist artist)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<BaseResponse<Artist>> GetByID(int id)
+        {
+            BaseResponse<Artist> baseResponse = new BaseResponse<Artist>();
+            var artist = await _artistRepository.GetByID(id);
+            baseResponse.Result = artist;
+            return baseResponse;
+        }
+
         public async Task<BaseResponse<ArtistDto>> Insert(ArtistImageModel artistImageModel)
         {
             BaseResponse<ArtistDto> baseResponse = new BaseResponse<ArtistDto>();

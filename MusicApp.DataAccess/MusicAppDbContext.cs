@@ -12,6 +12,8 @@ namespace MusicApp.DataAccess
         public DbSet<Music> Musics { get; set; }
 
         public DbSet<Albums> Albums { get; set; }
+        public DbSet<Artist> Artist { get; set; }
+
 
 
         public DbSet<AlbumsFiles> AlbumsFiles { get; set; }

@@ -1,4 +1,5 @@
-﻿using MusicApp.DataAccess.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using MusicApp.DataAccess.Abstract;
 using MusicApp.Entity;
 using System;
 using System.Collections.Generic;
@@ -12,18 +13,19 @@ namespace MusicApp.DataAccess.Concrate
     {
         private readonly IBaseRepository<Artist> _baseRepository;
         private readonly MusicAppDbContext _context;
-        public ArtistRepository(IBaseRepository<Artist> baseRepository)
+        public ArtistRepository(IBaseRepository<Artist> baseRepository,MusicAppDbContext context)
         {
             _baseRepository = baseRepository;
+            _context = context;
         }
-        public Task<int> CountAll()
+        public async Task<int> CountAll()
         {
-            throw new NotImplementedException();
+            return await _baseRepository.CountAll();
         }
 
-        public Task<int> CountWhere(Expression<Func<Artist, bool>> predicate)
+        public async Task<int> CountWhere(Expression<Func<Artist, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.CountWhere(filter);
         }
 
         public Task<int> Delete(Artist entityToDelete)
@@ -36,19 +38,20 @@ namespace MusicApp.DataAccess.Concrate
             throw new NotImplementedException();
         }
 
-        public Task<Artist> FindOne(Expression<Func<Artist, bool>> filter)
+        public  async Task<Artist> FindOne(Expression<Func<Artist, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.FindOne(filter);
         }
 
-        public Task<IEnumerable<Artist>> GetAll()
+        public async Task<IEnumerable<Artist>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _baseRepository.GetAll();
         }
 
-        public Task<Artist> GetByID(int id)
+        public async Task<Artist> GetByID(int id)
         {
-            throw new NotImplementedException();
+
+            return await _context.Artist.Include(file => file.File).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Artist> Insert(Artist artist)

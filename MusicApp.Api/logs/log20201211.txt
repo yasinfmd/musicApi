@@ -309,3 +309,33 @@ System.Object -> MusicApp.Dto.ArtistDto
 11-12-2020 15:01:39.964 +03:00 [INF] Files Manager Insert Run
 11-12-2020 15:01:39.977 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
 11-12-2020 15:01:40.173 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 17:00:53.411 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 17:00:53.902 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : File , ErrorValue: Artist Dosyası Boş Olamaz
+11-12-2020 17:01:07.361 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 17:01:07.386 +03:00 [INF] Files Manager Insert Run
+11-12-2020 17:01:07.403 +03:00 [INF] Files Manager Insert Files Uploaded Name : BRMO0929.JPG
+11-12-2020 17:01:07.615 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 17:01:07.645 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : EfemKoc23  Id : 12 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+11-12-2020 18:17:07.105 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+11-12-2020 18:17:20.433 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : The method or operation is not implemented. - 
+System.NotImplementedException: The method or operation is not implemented.
+   at MusicApp.DataAccess.Concrate.ArtistRepository.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 51
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 33
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42
+11-12-2020 18:18:43.028 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+11-12-2020 19:40:58.280 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+11-12-2020 19:42:44.926 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+11-12-2020 21:32:25.371 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+11-12-2020 21:32:39.665 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ArtistDto
+System.Object -> MusicApp.Dto.ArtistDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ArtistDto
+System.Object -> MusicApp.Dto.ArtistDto
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 35
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42
