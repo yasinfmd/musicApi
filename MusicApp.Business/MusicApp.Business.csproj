@@ -12,6 +12,7 @@
     <ProjectReference Include="..\MusicApp.DataAccess\MusicApp.DataAccess.csproj" />
     <ProjectReference Include="..\MusicApp.Dto\MusicApp.Dto.csproj" />
     <ProjectReference Include="..\MusicApp.Entity\MusicApp.Entity.csproj" />
+    <ProjectReference Include="..\MusicApp.Logger\MusicApp.Logger.csproj" />
   </ItemGroup>
 
 </Project>

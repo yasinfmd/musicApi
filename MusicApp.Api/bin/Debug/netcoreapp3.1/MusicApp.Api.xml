@@ -4,6 +4,17 @@
         <name>MusicApp.Api</name>
     </assembly>
     <members>
+        <member name="M:MusicApp.Api.Controllers.MusicTypesController.update(System.Int32,MusicApp.Entity.MusicTypes)">
+            <summary>
+             Update MusicTypes ById
+            </summary>
+            <response code="200">Returns deleted message</response>
+            <response code="400">If the item is null or if there is a  item name </response>   
+            <response code="500">If there is a server side error</response>   
+            <remarks>
+            </remarks>
+            <returns> </returns>
+        </member>
         <member name="M:MusicApp.Api.Controllers.MusicTypesController.delete(System.Int32)">
             <summary>
              Delete MusicTypes ById
@@ -30,7 +41,7 @@
                  }
             
              </remarks>
-             <returns>Data </returns>
+             <returns> </returns>
         </member>
         <member name="M:MusicApp.Api.Controllers.MusicTypesController.show(System.Int32)">
             <summary>

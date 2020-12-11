@@ -1,0 +1,311 @@
+11-12-2020 00:51:28.793 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Info , ErrorValue: Aritst Açıklaması 100 ile 300 Karakter Arasında Olmalıdır
+11-12-2020 00:51:28.915 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Aritst Adı 3 ile 30 Karakter Arasında Olmalıdır
+11-12-2020 09:56:31.568 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 09:56:59.611 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 09:57:09.974 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Expression`1
+System.Object -> System.Linq.Expressions.Expression`1[[System.Func`2[[MusicApp.Entity.Artist, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Expression`1
+System.Object -> System.Linq.Expressions.Expression`1[[System.Func`2[[MusicApp.Entity.Artist, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+   at lambda_method(Closure , Object , Expression`1 , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 27
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 35
+11-12-2020 09:59:17.871 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 36
+11-12-2020 10:00:59.963 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 36
+11-12-2020 10:02:11.786 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 36
+11-12-2020 10:02:35.043 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Type Map configuration:
+ArtistImageModel -> Artist
+MusicApp.Entity.ParameterModels.ArtistImageModel -> MusicApp.Entity.Artist
+
+Destination Member:
+File
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IFormFile -> Files
+Microsoft.AspNetCore.Http.IFormFile -> MusicApp.Entity.Files
+   at lambda_method(Closure , IFormFile , Files , ResolutionContext )
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 36
+11-12-2020 10:06:57.045 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 10:07:02.400 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : The method or operation is not implemented. - 
+System.NotImplementedException: The method or operation is not implemented.
+   at MusicApp.DataAccess.Concrate.ArtistRepository.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 61
+   at MusicApp.Business.Concrate.ArtistManager.isExists(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 28
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 37
+11-12-2020 10:08:23.794 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 10:09:32.854 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 11:50:01.839 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 11:50:11.147 +03:00 [INF] Files Manager Insert Run
+11-12-2020 11:50:11.175 +03:00 [INF] Files Manager Insert Files Uploaded Name : BXJP5133.JPG
+11-12-2020 11:50:11.386 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 12:21:03.207 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 12:21:07.790 +03:00 [INF] Files Manager Insert Run
+11-12-2020 12:21:07.807 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 12:21:08.008 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 12:27:11.930 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 12:27:15.056 +03:00 [INF] Files Manager Insert Run
+11-12-2020 12:27:15.078 +03:00 [INF] Files Manager Insert Files Uploaded Name : IBOS3441.JPG
+11-12-2020 12:27:15.287 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 14:35:24.613 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 14:35:27.598 +03:00 [INF] Files Manager Insert Run
+11-12-2020 14:35:27.610 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 14:35:27.831 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 14:35:27.960 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Object , FilesDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Insert(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 46
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 48
+11-12-2020 14:39:46.714 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 14:39:49.760 +03:00 [INF] Files Manager Insert Run
+11-12-2020 14:39:49.775 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 14:39:49.985 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 14:39:50.101 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Object , FilesDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Insert(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 46
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 48
+11-12-2020 14:42:21.609 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 14:42:26.812 +03:00 [INF] Files Manager Insert Run
+11-12-2020 14:42:26.828 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 14:42:27.043 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 14:42:42.231 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Object , FilesDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Insert(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 46
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 48
+11-12-2020 14:44:31.771 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 14:44:34.314 +03:00 [INF] Files Manager Insert Run
+11-12-2020 14:44:34.335 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 14:44:34.579 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 14:45:22.667 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FilesDto
+System.Object -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Object , FilesDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Insert(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 46
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 48
+11-12-2020 14:48:37.109 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 14:48:42.042 +03:00 [INF] Files Manager Insert Run
+11-12-2020 14:48:42.058 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 14:48:42.269 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 14:48:42.383 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ArtistDto
+System.Object -> MusicApp.Dto.ArtistDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ArtistDto
+System.Object -> MusicApp.Dto.ArtistDto
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Insert(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 47
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 48
+11-12-2020 14:56:48.806 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 14:56:49.269 +03:00 [INF] Files Manager Insert Run
+11-12-2020 14:56:49.283 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 14:56:49.475 +03:00 [INF] Files Manager Insert Files DB
+11-12-2020 14:57:16.662 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ArtistDto
+System.Object -> MusicApp.Dto.ArtistDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ArtistDto
+System.Object -> MusicApp.Dto.ArtistDto
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Insert(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 47
+   at MusicApp.Api.Controllers.ArtistController.store(ArtistImageModel artistImageModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 48
+11-12-2020 15:01:39.497 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+11-12-2020 15:01:39.964 +03:00 [INF] Files Manager Insert Run
+11-12-2020 15:01:39.977 +03:00 [INF] Files Manager Insert Files Uploaded Name : CSBK2636.JPG
+11-12-2020 15:01:40.173 +03:00 [INF] Files Manager Insert Files DB

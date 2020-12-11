@@ -15,7 +15,7 @@ namespace MusicApp.Entity
         public virtual ICollection<Albums>? Albums { get; set; }
 
         public int? FileId { get; set; }
-        public virtual Files? File { get; set; }
+        public  Files? File { get; set; }
 
     }
 }

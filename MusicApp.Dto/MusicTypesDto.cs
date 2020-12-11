@@ -1,12 +1,12 @@
-﻿using System;
+﻿using MusicApp.BaseEntity.Concrate;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MusicApp.Dto
 {
-    public class MusicTypesDto
+    public class MusicTypesDto:Base
     {
-        public int Id { get; set; }
 
         public string Name { get; set; }
     }

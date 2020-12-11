@@ -16,3 +16,5 @@ C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\M
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.DataAccess.pdb
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Dto.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Dto.pdb
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Logger.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Logger.pdb

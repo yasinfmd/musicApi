@@ -194,6 +194,9 @@
               },
               "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj": {
                 "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj"
+              },
+              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj": {
+                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj"
               }
             }
           }
@@ -419,6 +422,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

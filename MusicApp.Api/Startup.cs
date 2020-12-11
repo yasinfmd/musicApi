@@ -21,6 +21,8 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Reflection;
 using System.IO;
+using Microsoft.Extensions.FileProviders;
+using System.Net;
 
 namespace MusicApp
 {
@@ -53,6 +55,11 @@ namespace MusicApp
             services.AddScoped<ILogService, LogManager>();
             services.AddScoped<IMusicTypesRepository, MusicTypesRepository>();
             services.AddScoped<IMusicTypesService, MusicTypesManager>();
+            services.AddScoped<IFilesRepository, FilesRepository>();
+            services.AddScoped<IFilesService, FilesManager>();
+            services.AddScoped<IArtistRepository, ArtistRepository>();
+            services.AddScoped<IArtistService, ArtistManager>();
+
             services.AddAutoMapper(typeof(AutoMapping));
 
 
@@ -86,7 +93,6 @@ namespace MusicApp
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -108,20 +114,20 @@ namespace MusicApp
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "MusicApp API V1");
                 c.RoutePrefix = string.Empty;
             });
+            //var b = Dns.GetHostEntry();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-
-                //endpoints.Map("/",  context =>
-                //{
-                   
-                //    //send static file index.html
-                //   // await context.Response.WriteAsync("Hello World");
-                //});
             });
+            app.UseStaticFiles(
+                new StaticFileOptions{
+                FileProvider=new PhysicalFileProvider(Path.Combine(env.ContentRootPath,"Uploads")),
+                RequestPath="/Uploads"
+                }
+                );
             app.Map("/musicApp", spaApp =>
             {
                 spaApp.UseSpa(spa =>
