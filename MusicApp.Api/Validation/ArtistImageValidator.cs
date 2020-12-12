@@ -1,4 +1,6 @@
 ﻿using FluentValidation;
+using MusicApp.DataAccess.Abstract;
+using MusicApp.Entity;
 using MusicApp.Entity.ParameterModels;
 using System;
 using System.Collections.Generic;
@@ -9,11 +11,17 @@ namespace MusicApp.Api.Validation
 {
     public class ArtistImageValidator : AbstractValidator<ArtistImageModel>
     {
-        public ArtistImageValidator()
+        private readonly IBaseRepository<Artist> _baseRepository;
+
+        public ArtistImageValidator(IBaseRepository<Artist> baseRepository)
         {
+            _baseRepository = baseRepository;
+            CustomArtistValidation customArtistValidation = new CustomArtistValidation(_baseRepository);
             RuleFor(artistImageModel => artistImageModel.Name).NotNull().WithMessage("Artist Adı Boş Olamaz")
                .Length(3, 30).WithMessage("Artist  Adı 3 ile 30 Karakter Arasında Olmalıdır")
-               .NotEmpty().WithMessage("Artist Adı Boş Olamaz");
+               .NotEmpty().WithMessage("Artist Adı Boş Olamaz")
+               .Must(customArtistValidation.UniqueName)
+               .WithMessage("Ad Alanı Tekil Olmak Zorunda");
 
             RuleFor(artistImageModel => artistImageModel.Gender).NotNull().WithMessage("Artist Açıklaması Boş Olamaz");
             RuleFor(artistImageModel => artistImageModel.File).NotNull().WithMessage("Artist Dosyası Boş Olamaz");

@@ -49,12 +49,8 @@ namespace MusicApp.Api.Controllers
                 else
                 {
                     var deleted = await _artistService.Delete(artist.Result);
-
+                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Deleted Artist: {artistId}");
                     return Ok(deleted);
-                    //var musicType = await _musicTypesService.GetByID(musicTypeId);
-                    //_logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded MusicTypes : {musicType}");
-
-                 //   return Ok(deleted);
                 }
             }
             catch (Exception exception)

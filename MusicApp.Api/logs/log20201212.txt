@@ -27,3 +27,17 @@ System.NotImplementedException: The method or operation is not implemented.
    at MusicApp.Business.Concrate.ArtistManager.Delete(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 34
    at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 51
 12-12-2020 12:31:04.058 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 13:40:39.485 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+12-12-2020 13:40:40.082 +03:00 [INF] Files Manager Insert Run
+12-12-2020 13:40:40.112 +03:00 [INF] Files Manager Insert Files Uploaded Name : 85142-5fbcfea359de1.jpg
+12-12-2020 13:40:40.354 +03:00 [INF] Files Manager Insert Files DB
+12-12-2020 13:40:40.391 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : yasin  Id : 13 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+12-12-2020 13:40:55.394 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+12-12-2020 13:40:55.414 +03:00 [INF] Files Manager Insert Run
+12-12-2020 13:40:55.431 +03:00 [INF] Files Manager Insert Files Uploaded Name : a.png
+12-12-2020 13:40:55.449 +03:00 [INF] Files Manager Insert Files DB
+12-12-2020 13:40:55.464 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Efem  Id : 14 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+12-12-2020 13:44:53.523 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 13:44:53.643 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Deleted Artist: 14
+12-12-2020 21:12:17.114 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+12-12-2020 21:12:17.432 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda

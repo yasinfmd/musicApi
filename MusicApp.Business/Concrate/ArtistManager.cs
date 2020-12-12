@@ -26,6 +26,15 @@ namespace MusicApp.Business.Concrate
             _mapper = mapper;
             _filesService = filesService;
         }
+        public async Task<BaseResponse<IEnumerable<ArtistDto>>> GetAll()
+        {
+            BaseResponse<IEnumerable<ArtistDto>> baseResponse = new BaseResponse<IEnumerable<ArtistDto>>();
+            var allArtistList = await _artistRepository.GetAll();
+            //  baseResponse.Result = _mapper.Map<IEnumerable<MusicTypesDto>>(allMusicTypesList);
+            //return baseResponse;
+            throw new NotImplementedException();
+
+        }
 
         public async Task<BaseResponse<string>> Delete(Artist artist)
         {
