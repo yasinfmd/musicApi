@@ -20,5 +20,6 @@ namespace MusicApp.Business.Abstract
         Task<BaseResponse<string>> Delete(Artist artist);
 
 
+
     }
 }

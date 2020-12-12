@@ -27,14 +27,21 @@ namespace MusicApp.Business.Concrate
             _filesRepository = filesRepository;
         }
 
-        public Task<BaseResponse<string>> Delete(FilesDto files)
+        public async Task<int> Delete(Files files)
         {
             string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
-           // if (File.Exists(Path.Combine(pathBuild)))
-            //{
+            if (files !=null)
+            {
+                string[] fileName = files.Path.Split("Uploads/");
+                pathBuild = Path.Combine(pathBuild, fileName[fileName.Length - 1]);
+                if (File.Exists(Path.Combine(pathBuild)))
+                {
+                    File.Delete(pathBuild);
+                }
+                return await _filesRepository.Delete(files);
+            }
+            return 1;
 
-//            }
-            throw new NotImplementedException();
         }
 
         public async Task<Files> Insert(Files files)

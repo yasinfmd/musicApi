@@ -1,0 +1,29 @@
+12-12-2020 11:58:49.487 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:01:05.072 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:02:46.293 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:03:49.939 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:07:02.398 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:07:06.444 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : The method or operation is not implemented. - 
+System.NotImplementedException: The method or operation is not implemented.
+   at MusicApp.Business.Concrate.ArtistManager.Delete(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 33
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 51
+12-12-2020 12:27:17.950 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:27:39.734 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:28:41.634 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:28:46.845 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Value cannot be null. (Parameter 'entity') - 
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Remove[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.Delete(T entity) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 33
+   at MusicApp.DataAccess.Concrate.FilesRepository.Delete(Files files) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\FilesRepository.cs:line 32
+   at MusicApp.Business.Concrate.FilesManager.Delete(Files files) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\FilesManager.cs:line 43
+   at MusicApp.Business.Concrate.ArtistManager.Delete(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 33
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 51
+12-12-2020 12:29:30.636 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+12-12-2020 12:29:35.483 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : The method or operation is not implemented. - 
+System.NotImplementedException: The method or operation is not implemented.
+   at MusicApp.DataAccess.Concrate.ArtistRepository.Delete(Artist entityToDelete) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 33
+   at MusicApp.Business.Concrate.ArtistManager.Delete(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 34
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 51
+12-12-2020 12:31:04.058 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)

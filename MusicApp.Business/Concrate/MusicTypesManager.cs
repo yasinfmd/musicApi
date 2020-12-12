@@ -30,9 +30,12 @@ namespace MusicApp.Business.Concrate
             return baseResponse;
         }
 
-        public Task<int> CountWhere(Expression<Func<MusicTypes, bool>> predicate)
+        public async Task<BaseResponse<string>> CountWhere(Expression<Func<MusicTypes, bool>> filter)
         {
-            throw new NotImplementedException();
+            BaseResponse<string> baseResponse = new BaseResponse<string>();
+            int count = await _musicTypesRepository.CountWhere(filter);
+            baseResponse.Result = count.ToString();
+            return baseResponse;
         }
 
         public async Task<BaseResponse<string>> Delete(MusicTypes musicTypes)

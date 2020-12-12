@@ -39,8 +39,8 @@ namespace MusicApp.Api.Controllers
             try
             {
                 _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
-                var isExists = await _artistService.GetByID(artistId);
-                if (isExists==null)
+                var artist = await _artistService.GetByID(artistId);
+                if (artist == null)
                 {
                      
                     _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {artistId}");
@@ -48,10 +48,11 @@ namespace MusicApp.Api.Controllers
                 }
                 else
                 {
-                    return Ok();
+                    var deleted = await _artistService.Delete(artist.Result);
+
+                    return Ok(deleted);
                     //var musicType = await _musicTypesService.GetByID(musicTypeId);
                     //_logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded MusicTypes : {musicType}");
-                    //var deleted = await _musicTypesService.Delete(musicType.Result);
 
                  //   return Ok(deleted);
                 }

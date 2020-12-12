@@ -20,16 +20,20 @@ namespace MusicApp.Business.Concrate
         private readonly IFilesService _filesService;
 
 
-        public ArtistManager(IArtistRepository artistRepository,IMapper mapper,IFilesService filesService)
+        public ArtistManager(IArtistRepository artistRepository, IMapper mapper, IFilesService filesService)
         {
             _artistRepository = artistRepository;
             _mapper = mapper;
             _filesService = filesService;
         }
 
-        public Task<BaseResponse<string>> Delete(Artist artist)
+        public async Task<BaseResponse<string>> Delete(Artist artist)
         {
-            throw new NotImplementedException();
+            BaseResponse<string> baseResponse = new BaseResponse<string>();
+            await _filesService.Delete(artist.File);
+            var isDeleted = await _artistRepository.Delete(artist);
+            baseResponse.Result = isDeleted > 0 ? "Success Delete" : null;
+            return baseResponse;
         }
 
         public async Task<BaseResponse<Artist>> GetByID(int id)
@@ -56,7 +60,7 @@ namespace MusicApp.Business.Concrate
                 Name = artistImageModel.Name
             };
             var result = await _artistRepository.Insert(artist);
-            var fileDto = new FilesDto { Id=file.Id,Path=file.Path};
+            var fileDto = new FilesDto { Id = file.Id, Path = file.Path };
             var artistDto = new ArtistDto { File = fileDto, Gender = result.Gender, Id = result.Id, Info = result.Info, Name = result.Name };
             baseResponse.Result = artistDto;
             return baseResponse;
@@ -64,8 +68,8 @@ namespace MusicApp.Business.Concrate
 
         public async Task<bool> isExists(ArtistImageModel artistImageModel)
         {
-           // Artist artist = new Artist { Id = artistImageModel.Id, Gender = artistImageModel.Gender, Info = artistImageModel.Info, Name = artistImageModel.Name };
-            return await _artistRepository.isExists(x=>x.Name.ToLower()== artistImageModel.Name.ToLower());
+            // Artist artist = new Artist { Id = artistImageModel.Id, Gender = artistImageModel.Gender, Info = artistImageModel.Info, Name = artistImageModel.Name };
+            return await _artistRepository.isExists(x => x.Name.ToLower() == artistImageModel.Name.ToLower());
         }
 
     }

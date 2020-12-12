@@ -30,6 +30,7 @@ namespace MusicApp.Business.Abstract
         Task<MusicTypes> FindOne(Expression<Func<MusicTypes, bool>> filter);
 
         Task<BaseResponse<string>> CountAll();
-        Task<int> CountWhere(Expression<Func<MusicTypes, bool>> predicate);
+
+        Task<BaseResponse<string>> CountWhere(Expression<Func<MusicTypes, bool>> filter);
     }
 }

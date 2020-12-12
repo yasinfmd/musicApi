@@ -17,39 +17,39 @@ namespace MusicApp.DataAccess.Concrate
         {
             _baseRepository = baseRepository;
         }
-        public Task<int> CountAll()
+        public async Task<int> CountAll()
         {
-            throw new NotImplementedException();
+            return await _baseRepository.CountAll();
         }
 
-        public Task<int> CountWhere(Expression<Func<Files, bool>> predicate)
+        public  async Task<int> CountWhere(Expression<Func<Files, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.CountWhere(filter);
         }
 
-        public Task<int> Delete(Files entityToDelete)
+        public async Task<int> Delete(Files files)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Delete(files);
         }
 
-        public Task<List<Files>> Find(Expression<Func<Files, bool>> filter)
+        public async Task<List<Files>> Find(Expression<Func<Files, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Find(filter);
         }
 
-        public Task<Files> FindOne(Expression<Func<Files, bool>> filter)
+        public async Task<Files> FindOne(Expression<Func<Files, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.FindOne(filter);
         }
 
-        public Task<IEnumerable<Files>> GetAll()
+        public async Task<IEnumerable<Files>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _baseRepository.GetAll();
         }
 
-        public Task<Files> GetByID(int id)
+        public async Task<Files> GetByID(int id)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.GetByID(id);
         }
 
         public async Task<Files> Insert(Files files)
@@ -57,9 +57,9 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.Insert(files);
         }
 
-        public Task<bool> isExists(Expression<Func<Files, bool>> filter)
+        public async Task<bool> isExists(Expression<Func<Files, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.isExists(filter);
         }
 
         public Task<Files> Update(Files entityToUpdate)

@@ -28,9 +28,10 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.CountWhere(filter);
         }
 
-        public Task<int> Delete(Artist entityToDelete)
+        public async Task<int> Delete(Artist artist)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Delete(artist);
+
         }
 
         public Task<List<Artist>> Find(Expression<Func<Artist, bool>> filter)
