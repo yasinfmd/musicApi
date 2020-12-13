@@ -21,7 +21,7 @@ namespace MusicApp.Api.Validation
         {
         var artist = _baseRepository.FindOne(x => x.Name.ToLower() == name.ToLower());
 
-            if (artist == null) return true;
+            if (artist.Result == null) return true;
             return false;
         }
     }

@@ -6,3 +6,72 @@
 13-12-2020 11:56:15.000 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
 13-12-2020 11:57:48.034 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
 13-12-2020 11:57:59.844 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+13-12-2020 17:19:24.348 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+13-12-2020 17:19:30.238 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+13-12-2020 18:24:45.151 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+13-12-2020 18:24:45.724 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Entity.Artist
+13-12-2020 20:11:19.278 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+13-12-2020 20:11:19.883 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+13-12-2020 20:11:50.617 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 20:12:12.155 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Delete(ArtistDto artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 57
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 51
+13-12-2020 21:31:58.382 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+13-12-2020 21:31:58.436 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+13-12-2020 21:43:10.490 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+13-12-2020 21:43:11.019 +03:00 [WRN] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Not Found Id : 13
+13-12-2020 21:54:46.881 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+13-12-2020 21:54:47.352 +03:00 [WRN] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Not Found Id : 13
+13-12-2020 21:57:06.514 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+13-12-2020 21:57:06.566 +03:00 [INF] Files Manager Insert Run
+13-12-2020 21:57:06.601 +03:00 [INF] Files Manager Insert Files Uploaded Name : a.png
+13-12-2020 21:57:06.807 +03:00 [INF] Files Manager Insert Files DB
+13-12-2020 21:57:06.841 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : yasin  Id : 15 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+13-12-2020 21:58:23.269 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+13-12-2020 21:58:23.290 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+13-12-2020 21:58:48.649 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+13-12-2020 21:58:48.725 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+13-12-2020 22:00:08.341 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:00:08.411 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Deleted Artist: 15
+13-12-2020 22:00:11.810 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:01:35.995 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:01:42.728 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42
+13-12-2020 22:02:27.411 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:04:21.831 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:05:13.658 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42
+13-12-2020 22:09:05.527 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:09:13.836 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42
+13-12-2020 22:09:46.561 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:10:48.516 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId)
+13-12-2020 22:11:51.517 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:12:01.976 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42
+13-12-2020 22:12:56.675 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+13-12-2020 22:13:01.255 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42

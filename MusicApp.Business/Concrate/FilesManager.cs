@@ -27,7 +27,7 @@ namespace MusicApp.Business.Concrate
             _filesRepository = filesRepository;
         }
 
-        public async Task<int> Delete(Files files)
+        public async Task<int> Delete(FilesDto files)
         {
             string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
             if (files != null)
@@ -38,7 +38,7 @@ namespace MusicApp.Business.Concrate
                 {
                     File.Delete(pathBuild);
                 }
-                return await _filesRepository.Delete(files);
+                return await _filesRepository.DeleteById(files.Id);
             }
             return 1;
 

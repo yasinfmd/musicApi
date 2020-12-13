@@ -13,7 +13,7 @@ namespace MusicApp.Business.Abstract
         Task<Files> Insert(Files files);
         Task<BaseResponse<Files>> GetByID(int id);
 
-        Task<int> Delete(Files files);
+        Task<int> Delete(FilesDto files);
 
     }
 }

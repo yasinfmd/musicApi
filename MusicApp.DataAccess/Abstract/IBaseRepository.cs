@@ -9,7 +9,7 @@ namespace MusicApp.DataAccess.Abstract
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {
-
+        Task<int> DeleteById(int id);
         Task<int> Delete(TEntity entityToDelete);
         Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> filter);
 

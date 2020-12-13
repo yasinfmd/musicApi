@@ -34,6 +34,11 @@ namespace MusicApp.DataAccess.Concrate
 
         }
 
+        public async Task<int> DeleteById(int id)
+        {
+            return await _baseRepository.DeleteById(id);
+        }
+
         public Task<List<Artist>> Find(Expression<Func<Artist, bool>> filter)
         {
             throw new NotImplementedException();

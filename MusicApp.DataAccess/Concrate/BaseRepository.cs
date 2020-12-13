@@ -34,6 +34,13 @@ namespace MusicApp.DataAccess.Concrate
             return await context.SaveChangesAsync();
         }
 
+        public async Task<int> DeleteById(int id)
+        {
+            var item= await dbSet.FindAsync(id);
+            dbSet.Remove(item);
+            return await context.SaveChangesAsync();
+        }
+
         public async Task<List<T>> Find(Expression<Func<T, bool>> filter)
         {
             return await dbSet.Where(filter).ToListAsync();

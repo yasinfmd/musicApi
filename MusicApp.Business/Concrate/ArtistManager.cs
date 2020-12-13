@@ -50,20 +50,29 @@ namespace MusicApp.Business.Concrate
 
         }
 
-        public async Task<BaseResponse<string>> Delete(Artist artist)
+        public async Task<BaseResponse<string>> Delete(ArtistDto artist)
         {
             BaseResponse<string> baseResponse = new BaseResponse<string>();
             await _filesService.Delete(artist.File);
-            var isDeleted = await _artistRepository.Delete(artist);
+            var isDeleted = await _artistRepository.DeleteById(artist.Id);
             baseResponse.Result = isDeleted > 0 ? "Success Delete" : null;
             return baseResponse;
         }
 
-        public async Task<BaseResponse<Artist>> GetByID(int id)
+        public async Task<BaseResponse<ArtistDto>> GetByID(int id)
         {
-            BaseResponse<Artist> baseResponse = new BaseResponse<Artist>();
+            BaseResponse<ArtistDto> baseResponse = new BaseResponse<ArtistDto>();
             var artist = await _artistRepository.GetByID(id);
-            baseResponse.Result = artist;
+            var fileDto = new FilesDto { Id = artist.File.Id, Path = artist.File.Path };
+            var artistDto = new ArtistDto
+            {
+                File = fileDto,
+                Gender = artist.Gender,
+                Id = artist.Id,
+                Info = artist.Info,
+                Name = artist.Name
+            };
+            baseResponse.Result = artistDto;
             return baseResponse;
         }
 
@@ -89,11 +98,9 @@ namespace MusicApp.Business.Concrate
             return baseResponse;
         }
 
-        public async Task<bool> isExists(ArtistImageModel artistImageModel)
+        public async Task<bool> isExists(Expression<Func<Artist, bool>> filter)
         {
-            // Artist artist = new Artist { Id = artistImageModel.Id, Gender = artistImageModel.Gender, Info = artistImageModel.Info, Name = artistImageModel.Name };
-            return await _artistRepository.isExists(x => x.Name.ToLower() == artistImageModel.Name.ToLower());
+            return await _artistRepository.isExists(filter);
         }
-
     }
 }

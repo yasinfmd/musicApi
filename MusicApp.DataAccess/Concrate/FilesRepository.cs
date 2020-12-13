@@ -32,6 +32,11 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.Delete(files);
         }
 
+        public async Task<int> DeleteById(int id)
+        {
+            return await _baseRepository.DeleteById(id);
+        }
+
         public async Task<List<Files>> Find(Expression<Func<Files, bool>> filter)
         {
             return await _baseRepository.Find(filter);

@@ -12,12 +12,13 @@ namespace MusicApp.Business.Abstract
 {
     public interface IArtistService
     {
-        Task<bool> isExists(ArtistImageModel artistImageModel);
+        Task<bool> isExists(Expression<Func<Artist, bool>> filter);
+
 
         Task<BaseResponse<ArtistDto>> Insert(ArtistImageModel artist);
 
-        Task<BaseResponse<Artist>> GetByID(int id);
-        Task<BaseResponse<string>> Delete(Artist artist);
+        Task<BaseResponse<ArtistDto>> GetByID(int id);
+        Task<BaseResponse<string>> Delete(ArtistDto artist);
 
         Task<BaseResponse<IList<ArtistDto>>> GetAll();
 

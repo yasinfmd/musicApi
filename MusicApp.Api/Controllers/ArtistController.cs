@@ -40,7 +40,7 @@ namespace MusicApp.Api.Controllers
             {
                 _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
                 var artist = await _artistService.GetByID(artistId);
-                if (artist == null)
+                if (artist.Result == null)
                 {
                      
                     _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {artistId}");
@@ -60,6 +60,35 @@ namespace MusicApp.Api.Controllers
 
         }
 
+        [HttpGet]
+        [Route("[action]/{artistId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> show(int artistId)
+        {
+            try
+            {
+                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                var isExists = await _artistService.isExists(x => x.Id == artistId);
+                if (!isExists)
+                {
+                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {artistId}");
+                    return NotFound();
+                }
+                else
+                {
+                    var artist = await _artistService.GetByID(artistId);
+                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded Artist : {artist.Result}");
+                    return Ok(artist.Result);
+                }
+
+            }
+            catch (Exception exception)
+            {
+                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
 
         [HttpGet]
         [Route("[action]")]
@@ -90,20 +119,11 @@ namespace MusicApp.Api.Controllers
             try
             {
                 _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
-                var isExists = await _artistService.isExists(artistImageModel);
                 if (ModelState.IsValid)
                 {
-                    if (isExists == true)
-                    {
-                        _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Record Not Unique  Name: {artistImageModel.Name}");
-                    }
-                    else
-                    {
                         var result = await _artistService.Insert(artistImageModel);
                         _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistCreated Name : {result.Result.Name}  Id : {result.Result.Id} Info : {result.Result.Info} and Gender : {result.Result.Gender}");
-
                         return Ok(result);
-                    }
                 }
                 return BadRequest();
             }
@@ -116,7 +136,7 @@ namespace MusicApp.Api.Controllers
         private ObjectResult InternalError(Exception exception, string message)
         {
             _logger.LogError(exception, message);
-            return StatusCode(500, new ErrorModel(exception.GetHashCode().ToString(), exception.InnerException.Message));
+            return StatusCode(500, new ErrorModel(exception.GetHashCode().ToString(), exception.Message));
         }
     }
 }
