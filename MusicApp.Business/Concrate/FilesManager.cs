@@ -21,7 +21,7 @@ namespace MusicApp.Business.Concrate
         private readonly ILogService _logger;
 
 
-        public FilesManager(IFilesRepository filesRepository,ILogService logService)
+        public FilesManager(IFilesRepository filesRepository, ILogService logService)
         {
             _logger = logService;
             _filesRepository = filesRepository;
@@ -30,7 +30,7 @@ namespace MusicApp.Business.Concrate
         public async Task<int> Delete(Files files)
         {
             string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
-            if (files !=null)
+            if (files != null)
             {
                 string[] fileName = files.Path.Split("Uploads/");
                 pathBuild = Path.Combine(pathBuild, fileName[fileName.Length - 1]);
@@ -42,6 +42,14 @@ namespace MusicApp.Business.Concrate
             }
             return 1;
 
+        }
+
+        public async Task<BaseResponse<Files>> GetByID(int id)
+        {
+            BaseResponse<Files> baseResponse = new BaseResponse<Files>();
+            var file = await _filesRepository.GetByID(id);
+            baseResponse.Result = file;
+            return baseResponse;
         }
 
         public async Task<Files> Insert(Files files)
@@ -69,19 +77,19 @@ namespace MusicApp.Business.Concrate
 
                 files.Name = files.ImageFile.FileName;
                 files.Size = Convert.ToInt32(files.ImageFile.Length);
-                files.Path = "http://localhost:5000/Uploads/"+fileName;
+                files.Path = "http://localhost:5000/Uploads/" + fileName;
                 var newfiles = await _filesRepository.Insert(files);
                 _logger.LogInfo($"Files Manager Insert Files DB");
                 return newfiles;
             }
             catch (Exception exception)
             {
-                _logger.LogError(exception, exception.Message+ "-"+exception.InnerException);
+                _logger.LogError(exception, exception.Message + "-" + exception.InnerException);
 
                 throw;
             }
 
-            
+
         }
     }
 }

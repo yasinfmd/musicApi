@@ -19,7 +19,7 @@ namespace MusicApp.Business.Abstract
         Task<BaseResponse<Artist>> GetByID(int id);
         Task<BaseResponse<string>> Delete(Artist artist);
 
-        Task<BaseResponse<IEnumerable<ArtistDto>>> GetAll();
+        Task<BaseResponse<IList<ArtistDto>>> GetAll();
 
 
 

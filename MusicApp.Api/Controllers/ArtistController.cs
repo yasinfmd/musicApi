@@ -60,6 +60,26 @@ namespace MusicApp.Api.Controllers
 
         }
 
+
+        [HttpGet]
+        [Route("[action]")]
+        [ProducesResponseType(typeof(BaseResponse<IList<ArtistDto>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> index()
+        {
+            try
+            {
+                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                var allArtistList = await _artistService.GetAll();
+                _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Total Artist : {allArtistList.Result.Count()}");
+                return Ok(allArtistList);
+            }
+            catch (Exception exception)
+            {
+                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
+
         [HttpPost]
         [Route("[action]")]
         [ProducesResponseType(typeof(BaseResponse<ArtistDto>), StatusCodes.Status200OK)]

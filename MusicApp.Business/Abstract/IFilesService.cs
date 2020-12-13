@@ -11,6 +11,8 @@ namespace MusicApp.Business.Abstract
     public interface IFilesService
     {
         Task<Files> Insert(Files files);
+        Task<BaseResponse<Files>> GetByID(int id);
+
         Task<int> Delete(Files files);
 
     }
