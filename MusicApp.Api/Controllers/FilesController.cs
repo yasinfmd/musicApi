@@ -17,7 +17,7 @@ namespace MusicApp.Api.Controllers
     [ApiController]
 
 
-    public class FilesController : ControllerBase
+    public class FilesController : MusicAppBaseController
     {
         private readonly IFilesService _filesService;
         private readonly ILogService _logger;

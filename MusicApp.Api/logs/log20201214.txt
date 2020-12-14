@@ -1,0 +1,6 @@
+14-12-2020 11:53:18.893 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+14-12-2020 11:55:04.878 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+14-12-2020 11:55:27.929 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42

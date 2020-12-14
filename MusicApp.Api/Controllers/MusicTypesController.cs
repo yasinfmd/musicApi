@@ -16,13 +16,13 @@ namespace MusicApp.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MusicTypesController : Controller
+    public class MusicTypesController : MusicAppBaseController
     {
         private readonly IMusicTypesService _musicTypesService;
         private readonly ILogService _logger;
         private readonly IMapper _mapper;
 
-        public MusicTypesController(IMusicTypesService musicTypesService, ILogService logService,IMapper mapper)
+        public MusicTypesController(IMusicTypesService musicTypesService, ILogService logService,IMapper mapper):base(logService)
         {
             _musicTypesService = musicTypesService;
             _logger = logService;
@@ -73,7 +73,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
 
         }
@@ -114,7 +114,7 @@ namespace MusicApp.Api.Controllers
             }
             catch(Exception exception)
             {
-                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
 
         }
@@ -155,7 +155,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
 
@@ -193,7 +193,7 @@ namespace MusicApp.Api.Controllers
             }
             catch(Exception exception)
             {
-                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
 
             }
         }
@@ -219,14 +219,10 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return InternalError(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
 
-        private ObjectResult InternalError(Exception exception, string message)
-        {
-            _logger.LogError(exception, message);
-            return StatusCode(500, new ErrorModel(exception.GetHashCode().ToString(),exception.InnerException.Message));
-        }
+    
     }
 }
