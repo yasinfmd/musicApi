@@ -1,0 +1,17 @@
+15-12-2020 08:57:24.267 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 08:57:25.170 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Rock and Id : 26
+15-12-2020 08:57:48.669 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 08:57:48.694 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : RockRoll and Id : 27
+15-12-2020 09:01:55.818 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:01:56.558 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : RockRoll2 and Id : 28
+15-12-2020 09:03:39.026 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:03:39.707 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Pop and Id : 29
+15-12-2020 09:13:24.132 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:13:24.197 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Pop and Id : 30
+15-12-2020 09:14:37.455 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:14:37.479 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Rock and Id : 31
+15-12-2020 09:15:17.723 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:15:17.741 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Rock2 and Id : 32
+15-12-2020 09:15:20.829 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:15:31.958 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:15:31.985 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Arabesk and Id : 33

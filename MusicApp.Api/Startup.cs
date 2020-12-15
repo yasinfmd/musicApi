@@ -23,6 +23,7 @@ using System.Reflection;
 using System.IO;
 using Microsoft.Extensions.FileProviders;
 using System.Net;
+using MusicApp.Api.Hubs;
 
 namespace MusicApp
 {
@@ -38,7 +39,7 @@ namespace MusicApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-        
+
 
 
             services.AddControllers(options =>
@@ -63,34 +64,38 @@ namespace MusicApp
             services.AddAutoMapper(typeof(AutoMapping));
 
 
-            services.AddCors(options=>
+            services.AddCors(options =>
             {
                 options.AddPolicy(name: "CorsPolicy",
                                   builder =>
                                   {
-                                      builder.AllowAnyOrigin()
-                                      .AllowAnyHeader()
-                                      .WithMethods("POST", "PUT", "DELETE", "GET");
-                               
+                                      builder
+                                         .WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
                                   });
             });
             services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password="));
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MusicApp Api", Version = "1.0.0", Description = "Custom MusicApp Api",
-                    Contact = new OpenApiContact() { Email = "ysndlklc1234@gmail.com",Name="Yasin Efem Dalkýlýç", Url = new Uri("https://github.com/yasinfmd/"), } }) ;
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "MusicApp Api",
+                    Version = "1.0.0",
+                    Description = "Custom MusicApp Api",
+                    Contact = new OpenApiContact() { Email = "ysndlklc1234@gmail.com", Name = "Yasin Efem Dalkýlýç", Url = new Uri("https://github.com/yasinfmd/"), }
+                });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
 
             });
-    
+
 
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "static"; 
+                configuration.RootPath = "static";
             });
+            services.AddSignalR();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -100,7 +105,7 @@ namespace MusicApp
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+                app.UseHttpsRedirection();
 
             app.UseRouting();
 
@@ -117,15 +122,19 @@ namespace MusicApp
             //var b = Dns.GetHostEntry();
 
             app.UseAuthorization();
-
+           // app.UseSignalR(x => x.MapHub<ChatHub>("/chat2"));
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/chat");
+                endpoints.MapHub<MusicTypesHub>("/mt");
             });
+
             app.UseStaticFiles(
-                new StaticFileOptions{
-                FileProvider=new PhysicalFileProvider(Path.Combine(env.ContentRootPath,"Uploads")),
-                RequestPath="/Uploads"
+                new StaticFileOptions
+                {
+                    FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Uploads")),
+                    RequestPath = "/Uploads"
                 }
                 );
             app.Map("/musicApp", spaApp =>

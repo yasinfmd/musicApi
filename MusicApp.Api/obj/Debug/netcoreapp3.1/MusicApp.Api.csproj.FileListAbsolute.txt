@@ -97,3 +97,13 @@ C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicA
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Scrutor.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll

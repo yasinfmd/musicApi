@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
+using MusicApp.Api.Hubs;
 using MusicApp.Business.Abstract;
 using MusicApp.Dto;
 using MusicApp.Entity;
@@ -21,12 +23,15 @@ namespace MusicApp.Api.Controllers
         private readonly IMusicTypesService _musicTypesService;
         private readonly ILogService _logger;
         private readonly IMapper _mapper;
+        private readonly IHubContext<MusicTypesHub> _musicTypesHub;
 
-        public MusicTypesController(IMusicTypesService musicTypesService, ILogService logService,IMapper mapper):base(logService)
+
+        public MusicTypesController(IMusicTypesService musicTypesService, ILogService logService,IMapper mapper,IHubContext<MusicTypesHub> musicTypesHub):base(logService)
         {
             _musicTypesService = musicTypesService;
             _logger = logService;
             _mapper = mapper;
+            _musicTypesHub = musicTypesHub;
         }
         /// <summary>
         ///  Update MusicTypes ById
@@ -149,6 +154,7 @@ namespace MusicApp.Api.Controllers
                 {
                     var newMusicTypes = await _musicTypesService.Insert(musicTypes);
                     _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} MusicTypesCreated Name : {newMusicTypes.Result.Name} and Id : {newMusicTypes.Result.Id}");
+                    await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
                     return Created("Created", newMusicTypes);
                 }
                 return BadRequest();
