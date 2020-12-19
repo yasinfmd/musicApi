@@ -21,6 +21,7 @@ namespace MusicApp.DataAccess.Concrate
         }
         public async Task<int> CountAll()
         {
+
             return await _baseRepository.CountAll();
         }
 
@@ -59,6 +60,11 @@ namespace MusicApp.DataAccess.Concrate
         {
             return await _baseRepository.GetByID(id);
            
+        }
+
+        public async Task<IList<MusicTypes>> GetLast(Expression<Func<MusicTypes, bool>> filter, int takeCount)
+        {
+            return await _baseRepository.GetLast(filter, takeCount);
         }
 
         public async Task<MusicTypes> Insert(MusicTypes musicTypes)

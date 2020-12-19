@@ -57,6 +57,11 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.GetByID(id);
         }
 
+        public Task<IList<Files>> GetLast(Expression<Func<Files, bool>> filter, int takeCount)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Files> Insert(Files files)
         {
             return await _baseRepository.Insert(files);

@@ -11,6 +11,7 @@ namespace MusicApp.DataAccess.Abstract
     {
         Task<int> DeleteById(int id);
         Task<int> Delete(TEntity entityToDelete);
+        Task<IList<TEntity>> GetLast(Expression<Func<TEntity, bool>> filter, int takeCount);
         Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> filter);
 
         Task<bool> isExists(Expression<Func<TEntity, bool>> filter);

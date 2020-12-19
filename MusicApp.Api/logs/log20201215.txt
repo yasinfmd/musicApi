@@ -15,3 +15,7 @@
 15-12-2020 09:15:20.829 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
 15-12-2020 09:15:31.958 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
 15-12-2020 09:15:31.985 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Arabesk and Id : 33
+15-12-2020 09:59:55.463 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 09:59:56.166 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Arabesk and Id : 34
+15-12-2020 10:00:54.458 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+15-12-2020 10:00:54.486 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Pop and Id : 35

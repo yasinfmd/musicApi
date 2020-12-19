@@ -61,6 +61,11 @@ namespace MusicApp.DataAccess.Concrate
             return await dbSet.FindAsync(id);
         }
 
+        public async Task<IList<T>> GetLast(Expression<Func<T, bool>> filter,int takeCount=10)
+        {
+            return  await dbSet.OrderByDescending(filter).Take(takeCount).ToListAsync();
+        }
+
         public async Task<T> Insert(T entity)
         {
             await dbSet.AddAsync(entity);

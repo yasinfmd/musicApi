@@ -12,7 +12,8 @@ namespace MusicApp.DataAccess.Concrate
     public class ArtistRepository : IArtistRepository
     {
         private readonly IBaseRepository<Artist> _baseRepository;
-        private readonly MusicAppDbContext _context;
+        private MusicAppDbContext _context;
+
         public ArtistRepository(IBaseRepository<Artist> baseRepository,MusicAppDbContext context)
         {
             _baseRepository = baseRepository;
@@ -56,8 +57,12 @@ namespace MusicApp.DataAccess.Concrate
 
         public async Task<Artist> GetByID(int id)
         {
-
             return await _context.Artist.Include(file => file.File).FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public Task<IList<Artist>> GetLast(Expression<Func<Artist, bool>> filter, int takeCount)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<Artist> Insert(Artist artist)
