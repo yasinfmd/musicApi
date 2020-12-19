@@ -26,6 +26,7 @@ namespace MusicApp.Business.Abstract
         Task<BaseResponse<MusicTypesDto>> Insert(MusicTypes entity);
         Task<BaseResponse<MusicTypesDto>> Update(MusicTypes musicTypes);
 
+        Task<BaseResponse<IEnumerable<MusicTypesDto>>> GetLatest(Expression<Func<MusicTypes, int>> filter, int takeCount);
 
         Task<MusicTypes> FindOne(Expression<Func<MusicTypes, bool>> filter);
 

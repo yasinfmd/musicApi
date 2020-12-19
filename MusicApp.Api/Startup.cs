@@ -127,7 +127,9 @@ namespace MusicApp
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<ChatHub>("/chat");
-                endpoints.MapHub<MusicTypesHub>("/mt");
+                endpoints.MapHub<MusicTypesHub>("/mth");
+                endpoints.MapHub<ArtistHub>("/ah");
+
             });
 
             app.UseStaticFiles(

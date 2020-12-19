@@ -33,6 +33,32 @@ namespace MusicApp.Api.Controllers
             _mapper = mapper;
             _musicTypesHub = musicTypesHub;
         }
+
+
+
+
+        [HttpGet]
+        [Route("[action]")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> getLatest([FromQuery(Name = "takeCount")] int takeCount)
+        {
+            try
+            {
+                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                var lastMusicTypes = await _musicTypesService.GetLatest(type => type.Id, takeCount);
+                _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} takeCount : {takeCount} Total Last MusicTYpe : {lastMusicTypes.Result.Count()}");
+                return Ok(lastMusicTypes);
+
+            }
+            catch(Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+
+            }
+       
+        }
+
         /// <summary>
         ///  Update MusicTypes ById
         /// </summary>
@@ -78,7 +104,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
 
         }
@@ -119,7 +145,7 @@ namespace MusicApp.Api.Controllers
             }
             catch(Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
 
         }
@@ -161,7 +187,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
 
@@ -199,7 +225,7 @@ namespace MusicApp.Api.Controllers
             }
             catch(Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
 
             }
         }
@@ -225,7 +251,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
 

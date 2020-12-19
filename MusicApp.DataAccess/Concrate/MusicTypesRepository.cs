@@ -62,7 +62,7 @@ namespace MusicApp.DataAccess.Concrate
            
         }
 
-        public async Task<IList<MusicTypes>> GetLast(Expression<Func<MusicTypes, bool>> filter, int takeCount)
+        public async Task<IList<MusicTypes>> GetLast(Expression<Func<MusicTypes, int>> filter, int takeCount)
         {
             return await _baseRepository.GetLast(filter, takeCount);
         }

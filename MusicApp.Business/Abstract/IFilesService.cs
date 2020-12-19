@@ -13,6 +13,9 @@ namespace MusicApp.Business.Abstract
         Task<Files> Insert(Files files);
         Task<BaseResponse<Files>> GetByID(int id);
 
+        bool DeleteFile(string path);
+
+
         Task<int> Delete(FilesDto files);
 
     }

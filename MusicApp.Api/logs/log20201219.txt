@@ -1,0 +1,36 @@
+19-12-2020 15:45:55.349 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.getLatest (MusicApp.Api)
+19-12-2020 15:47:38.321 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.getLatest (MusicApp.Api)
+19-12-2020 15:47:40.620 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.getLatest (MusicApp.Api) takeCount : 2 Total Last MusicTYpe : 2
+19-12-2020 17:21:22.349 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+19-12-2020 17:21:22.398 +03:00 [INF] Files Manager Insert Run
+19-12-2020 17:21:22.418 +03:00 [INF] Files Manager Insert Files Uploaded Name : ss.jpeg
+19-12-2020 17:21:22.640 +03:00 [INF] Files Manager Insert Files DB
+19-12-2020 17:21:22.671 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : ali  Id : 16 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+19-12-2020 17:21:49.806 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+19-12-2020 17:21:49.823 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+19-12-2020 17:24:12.763 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+19-12-2020 17:24:12.772 +03:00 [INF] Files Manager Insert Run
+19-12-2020 17:24:12.790 +03:00 [INF] Files Manager Insert Files Uploaded Name : LWUD5457.JPG
+19-12-2020 17:24:12.804 +03:00 [INF] Files Manager Insert Files DB
+19-12-2020 17:24:12.815 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin Efem Dalkılıç  Id : 17 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+19-12-2020 17:30:00.633 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+19-12-2020 17:30:00.679 +03:00 [INF] Files Manager Insert Run
+19-12-2020 17:30:00.703 +03:00 [INF] Files Manager Insert Files Uploaded Name : BNKK2093.JPG
+19-12-2020 17:30:00.910 +03:00 [INF] Files Manager Insert Files DB
+19-12-2020 17:30:00.942 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : mahmut  Id : 18 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+19-12-2020 17:30:23.071 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+19-12-2020 17:30:23.181 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Deleted Artist: 18
+19-12-2020 17:44:22.345 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+19-12-2020 17:44:29.787 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Exception Message : Object reference not set to an instance of an object. - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MusicApp.Business.Concrate.ArtistManager.GetByID(Int32 id) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 66
+   at MusicApp.Api.Controllers.ArtistController.delete(Int32 artistId) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 42
+19-12-2020 17:44:42.207 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+19-12-2020 17:47:37.074 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+19-12-2020 17:47:37.139 +03:00 [INF] Files Manager Insert Run
+19-12-2020 17:47:37.173 +03:00 [INF] Files Manager Insert Files Uploaded Name : BNKK2093.JPG
+19-12-2020 17:47:37.405 +03:00 [INF] Files Manager Insert Files DB
+19-12-2020 17:47:37.452 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : mahmut  Id : 19 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+19-12-2020 17:48:51.166 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+19-12-2020 17:48:51.224 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Artist Adı Boş Olamaz
+19-12-2020 17:48:51.234 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda

@@ -102,5 +102,6 @@ namespace MusicApp.Business.Concrate
         {
             return await _artistRepository.isExists(filter);
         }
+
     }
 }

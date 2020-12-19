@@ -79,6 +79,17 @@ namespace MusicApp.Business.Concrate
             return await _musicTypesRepository.GetByID(id);
         }
 
+        public async Task<BaseResponse<IEnumerable<MusicTypesDto>>> GetLatest(Expression<Func<MusicTypes,int>> filter, int takeCount)
+        {
+    
+            BaseResponse<IEnumerable<MusicTypesDto>> baseResponse = new BaseResponse<IEnumerable<MusicTypesDto>>();
+            var latestMusicTypeList = await _musicTypesRepository.GetLast(type => type.Id,takeCount<1?10:takeCount);
+            baseResponse.Result = _mapper.Map<IEnumerable<MusicTypesDto>>(latestMusicTypeList);
+            return baseResponse;
+
+
+        }
+
         public async Task<BaseResponse<MusicTypesDto>> Insert(MusicTypes musicTypes)
         {
             BaseResponse<MusicTypesDto> baseResponse = new BaseResponse<MusicTypesDto>();

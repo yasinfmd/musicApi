@@ -22,6 +22,7 @@ namespace MusicApp.Business.Abstract
 
         Task<BaseResponse<IList<ArtistDto>>> GetAll();
 
+        Task<BaseResponse<FilesDto>> UpdateArtistProfileImage(Files files);
 
 
     }

@@ -57,7 +57,9 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.GetByID(id);
         }
 
-        public Task<IList<Files>> GetLast(Expression<Func<Files, bool>> filter, int takeCount)
+    
+
+        public Task<IList<Files>> GetLast(Expression<Func<Files, int>> filter, int takeCount = 10)
         {
             throw new NotImplementedException();
         }

@@ -60,7 +60,8 @@ namespace MusicApp.DataAccess.Concrate
             return await _context.Artist.Include(file => file.File).FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public Task<IList<Artist>> GetLast(Expression<Func<Artist, bool>> filter, int takeCount)
+
+        public Task<IList<Artist>> GetLast(Expression<Func<Artist, int>> filter, int takeCount = 10)
         {
             throw new NotImplementedException();
         }

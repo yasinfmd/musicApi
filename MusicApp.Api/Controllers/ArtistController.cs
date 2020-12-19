@@ -122,7 +122,9 @@ namespace MusicApp.Api.Controllers
                 if (ModelState.IsValid)
                 {
                         var result = await _artistService.Insert(artistImageModel);
-                        _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistCreated Name : {result.Result.Name}  Id : {result.Result.Id} Info : {result.Result.Info} and Gender : {result.Result.Gender}");
+                    //await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
+                    
+                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistCreated Name : {result.Result.Name}  Id : {result.Result.Id} Info : {result.Result.Info} and Gender : {result.Result.Gender}");
                         return Ok(result);
                 }
                 return BadRequest();
