@@ -24,6 +24,7 @@ using System.IO;
 using Microsoft.Extensions.FileProviders;
 using System.Net;
 using MusicApp.Api.Hubs;
+using Microsoft.AspNetCore.Identity;
 
 namespace MusicApp
 {
@@ -60,6 +61,15 @@ namespace MusicApp
             services.AddScoped<IFilesService, FilesManager>();
             services.AddScoped<IArtistRepository, ArtistRepository>();
             services.AddScoped<IArtistService, ArtistManager>();
+            services.AddScoped<IAlbumService, AlbumManager>();
+            services.AddScoped<IAlbumRepository, AlbumRepository>();
+            //            services.AddControllerWithViews()
+            //    .AddNewtonsoftJson(options =>
+            //    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            //);
+            services.AddControllers().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 
             services.AddAutoMapper(typeof(AutoMapping));
 
@@ -74,6 +84,14 @@ namespace MusicApp
                                   });
             });
             services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password="));
+
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                //options.Password.RequireDigit = true;
+                //options.Password.RequiredLength = 8;
+                //options.Password.RequireLowercase = true;
+            }).AddEntityFrameworkStores<MusicAppDbContext>().AddDefaultTokenProviders();
+
 
             services.AddSwaggerGen(c =>
             {
@@ -105,7 +123,7 @@ namespace MusicApp
                 app.UseDeveloperExceptionPage();
             }
 
-                app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
@@ -122,13 +140,12 @@ namespace MusicApp
             //var b = Dns.GetHostEntry();
 
             app.UseAuthorization();
-           // app.UseSignalR(x => x.MapHub<ChatHub>("/chat2"));
+            // app.UseSignalR(x => x.MapHub<ChatHub>("/chat2"));
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<ChatHub>("/chat");
-                endpoints.MapHub<MusicTypesHub>("/mth");
-                endpoints.MapHub<ArtistHub>("/ah");
+                endpoints.MapHub<MusicTypesHub>("/mthub");
+                endpoints.MapHub<ArtistHub>("/ahub");
 
             });
 

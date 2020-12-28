@@ -1,11 +1,28 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MusicApp.Entity;
 using MySQL.Data.EntityFrameworkCore;
 namespace MusicApp.DataAccess
 {
-    public class MusicAppDbContext : DbContext
+    public class MusicAppDbContext : IdentityDbContext
     {
+   
+
+
+
+        public DbSet<AlbumsFiles> AlbumsFiles { get; set; }
+        // public MusicAppDbContext(DbContextOptions options)
+        //: base(options)
+        // {
+
+        //}
+        public MusicAppDbContext(DbContextOptions<MusicAppDbContext> options)
+             : base(options)
+         {
+
+         }
         public DbSet<MusicTypes> MusicTypes { get; set; }
         public DbSet<Files> Files { get; set; }
 
@@ -14,21 +31,43 @@ namespace MusicApp.DataAccess
         public DbSet<Albums> Albums { get; set; }
         public DbSet<Artist> Artist { get; set; }
 
-
-
-        public DbSet<AlbumsFiles> AlbumsFiles { get; set; }
-        public MusicAppDbContext(DbContextOptions<MusicAppDbContext> options)
-            : base(options)
-        {
-
-        }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password=");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<IdentityUser>()
+            .Property(u => u.Id)
+            .HasMaxLength(36);
+
+
+            //modelBuilder.Entity<IdentityUser>(entity => entity.Property(m => m.Id).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityRole>(entity => entity.Property(m => m.Id).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityUserLogin<string>>(entity => entity.Property(m => m.LoginProvider).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityUserLogin<string>>(entity => entity.Property(m => m.ProviderKey).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityUserRole<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityUserRole<string>>(entity => entity.Property(m => m.RoleId).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityUserToken<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityUserToken<string>>(entity => entity.Property(m => m.LoginProvider).HasMaxLength(127));
+            //modelBuilder.Entity<IdentityUserToken<string>>(entity => entity.Property(m => m.Name).HasMaxLength(127));
+
+            modelBuilder.Entity<IdentityUser>(entity => entity.Property(m => m.NormalizedEmail).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUser>(entity => entity.Property(m => m.NormalizedUserName).HasMaxLength(200));
+            modelBuilder.Entity<IdentityRole>(entity => entity.Property(m => m.NormalizedName).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUserLogin<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUserRole<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUserRole<string>>(entity => entity.Property(m => m.RoleId).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUserToken<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUserClaim<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(200));
+            modelBuilder.Entity<IdentityRoleClaim<string>>(entity => entity.Property(m => m.RoleId).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUserLogin<string>>(entity => entity.Property(m => m.LoginProvider).HasMaxLength(200));
+            modelBuilder.Entity<IdentityUserLogin<string>>(entity => entity.Property(m => m.ProviderKey).HasMaxLength(200));
+
+
+
 
             modelBuilder.Entity<Music>()
           .HasOne(m => m.Album)

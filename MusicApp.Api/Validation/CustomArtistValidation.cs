@@ -19,7 +19,7 @@ namespace MusicApp.Api.Validation
         }
         public bool UniqueName(string name)
         {
-            if (string.IsNullOrEmpty(name))
+            if (!string.IsNullOrEmpty(name))
             {
                 var artist = _baseRepository.FindOne(x => x.Name.ToLower() == name.ToLower());
                 if (artist.Result == null) return true;

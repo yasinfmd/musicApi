@@ -17,12 +17,18 @@ namespace MusicApp.Business.Abstract
 
         Task<BaseResponse<ArtistDto>> Insert(ArtistImageModel artist);
 
+        Task<BaseResponse<ArtistDto>> Update(Artist artist);
+
+
         Task<BaseResponse<ArtistDto>> GetByID(int id);
+
+        Task<BaseResponse<Artist>> GetArtist(int id);
+
         Task<BaseResponse<string>> Delete(ArtistDto artist);
 
         Task<BaseResponse<IList<ArtistDto>>> GetAll();
 
-        Task<BaseResponse<FilesDto>> UpdateArtistProfileImage(Files files);
+        Task<BaseResponse<FilesDto>> UpdateArtistProfileImage(UpdateProfilePhoto artistPhoto);
 
 
     }

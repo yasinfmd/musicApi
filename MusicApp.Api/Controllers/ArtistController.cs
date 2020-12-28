@@ -22,12 +22,58 @@ namespace MusicApp.Api.Controllers
         private readonly ILogService _logger;
         private readonly IMapper _mapper;
         private readonly IFilesService _filesService;
-        public ArtistController(IArtistService artistService, ILogService logger, IMapper mapper, IFilesService filesService):base(logger)
+        public ArtistController(IArtistService artistService, ILogService logger, IMapper mapper, IFilesService filesService) : base(logger)
         {
             _logger = logger;
             _artistService = artistService;
             _mapper = mapper;
             _filesService = filesService;
+        }
+        [HttpPost]
+        [Route("[action]")]
+        [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> updateArtistPhoto([FromForm] UpdateProfilePhoto updateProfilePhoto)
+        {
+            try
+            {
+                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                return Ok(await _artistService.UpdateArtistProfileImage(updateProfilePhoto));
+
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+
+            }
+        }
+
+
+        [HttpPut]
+        [Route("[action]/{artistId}")]
+        [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> update(int artistId, ArtistUpdateModel artistUpdateModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var artist = await _artistService.GetArtist(artistId);
+                    artist.Result.Name = artistUpdateModel.Name;
+                    artist.Result.Info = artistUpdateModel.Info;
+                    artist.Result.Gender = artistUpdateModel.Gender;
+                    var updateArtist = await _artistService.Update(artist.Result);
+                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistUpdated Name : {updateArtist.Result.Name} and Id : {updateArtist.Result.Id}");
+                    return Ok(updateArtist);
+                }
+                return BadRequest();
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+
+            }
         }
 
         [HttpDelete]
@@ -42,7 +88,7 @@ namespace MusicApp.Api.Controllers
                 var artist = await _artistService.GetByID(artistId);
                 if (artist.Result == null)
                 {
-                     
+
                     _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {artistId}");
                     return NotFound();
                 }
@@ -55,7 +101,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
 
         }
@@ -86,7 +132,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
 
@@ -105,7 +151,7 @@ namespace MusicApp.Api.Controllers
             }
             catch (Exception exception)
             {
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
 
@@ -121,18 +167,17 @@ namespace MusicApp.Api.Controllers
                 _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
                 if (ModelState.IsValid)
                 {
-                        var result = await _artistService.Insert(artistImageModel);
+                    var result = await _artistService.Insert(artistImageModel);
                     //await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
-                    
+
                     _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistCreated Name : {result.Result.Name}  Id : {result.Result.Id} Info : {result.Result.Info} and Gender : {result.Result.Gender}");
-                        return Ok(result);
+                    return Ok(result);
                 }
                 return BadRequest();
             }
             catch (Exception exception)
             {
-               // base.ErrorInternal(exception, exception.Message);
-                return base.ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
     }

@@ -34,15 +34,38 @@ namespace MusicApp.Business.Concrate
             {
                 string[] fileName = files.Path.Split("Uploads/");
                 pathBuild = Path.Combine(pathBuild, fileName[fileName.Length - 1]);
-                if (File.Exists(Path.Combine(pathBuild)))
-                {
-                    File.Delete(pathBuild);
-                }
+                DeleteFile(pathBuild);
+                //if (File.Exists(Path.Combine(pathBuild)))
+                // {
+                //   File.Delete(pathBuild);
+                // }
                 return await _filesRepository.DeleteById(files.Id);
             }
             return 1;
 
         }
+
+        public bool DeleteFile(string path)
+        {
+            try
+            {
+                if (File.Exists(Path.Combine(path)))
+                {
+                    File.Delete(path);
+                    return true;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch (Exception exception)
+            {
+                return false;
+            }
+
+        }
+
 
         public async Task<BaseResponse<Files>> GetByID(int id)
         {
@@ -52,28 +75,51 @@ namespace MusicApp.Business.Concrate
             return baseResponse;
         }
 
+        public async Task<string> UploadFileFromStorage(Files files)
+        {
+            string fileName = Path.GetFileNameWithoutExtension(files.ImageFile.Name);
+            string extension = Path.GetExtension(files.ImageFile.FileName);
+            fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
+            string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+            if (!Directory.Exists(pathBuild))
+            {
+                _logger.LogInfo($"Files Manager Insert Directory Not Exist Location : {pathBuild} created directory");
+                Directory.CreateDirectory(pathBuild);
+            }
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
+
+            using (var FileStream = new FileStream(path, FileMode.Create))
+            {
+                await files.ImageFile.CopyToAsync(FileStream);
+            }
+            _logger.LogInfo($"Files Manager Insert Files Uploaded Name : {files.ImageFile.FileName}");
+
+            return fileName;
+        }
         public async Task<Files> Insert(Files files)
         {
             try
             {
                 _logger.LogInfo("Files Manager Insert Run");
                 BaseResponse<Files> baseResponse = new BaseResponse<Files>();
-                string fileName = Path.GetFileNameWithoutExtension(files.ImageFile.Name);
-                string extension = Path.GetExtension(files.ImageFile.FileName);
-                fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
-                string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+                //    string fileName = Path.GetFileNameWithoutExtension(files.ImageFile.Name);
+                //   string extension = Path.GetExtension(files.ImageFile.FileName);
+                //  fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
+                // string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
 
-                if (!Directory.Exists(pathBuild))
-                {
-                    _logger.LogInfo($"Files Manager Insert Directory Not Exist Location : {pathBuild} created directory");
-                    Directory.CreateDirectory(pathBuild);
-                }
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
-                using (var FileStream = new FileStream(path, FileMode.Create))
-                {
-                    await files.ImageFile.CopyToAsync(FileStream);
-                }
-                _logger.LogInfo($"Files Manager Insert Files Uploaded Name : {files.ImageFile.FileName}");
+                //                if (!Directory.Exists(pathBuild))
+                //              {
+                //                _logger.LogInfo($"Files Manager Insert Directory Not Exist Location : {pathBuild} created directory");
+                //              Directory.CreateDirectory(pathBuild);
+                //        }
+                //      string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
+                //    using (var FileStream = new FileStream(path, FileMode.Create))
+                //  {
+                //    await files.ImageFile.CopyToAsync(FileStream);
+                //}
+                //_logger.LogInfo($"Files Manager Insert Files Uploaded Name : {files.ImageFile.FileName}");
+
+                var fileName = await UploadFileFromStorage(files);
 
                 files.Name = files.ImageFile.FileName;
                 files.Size = Convert.ToInt32(files.ImageFile.Length);
@@ -90,6 +136,14 @@ namespace MusicApp.Business.Concrate
             }
 
 
+        }
+
+        public  async Task<BaseResponse<FilesDto>> Update(Files files)
+        {
+            BaseResponse<FilesDto> baseResponse = new BaseResponse<FilesDto>();
+            var updatedFile = await _filesRepository.Update(files);
+            baseResponse.Result = new FilesDto { Id = updatedFile.Id, Path = updatedFile.Path };
+            return baseResponse;
         }
     }
 }

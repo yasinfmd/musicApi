@@ -34,3 +34,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 19-12-2020 17:48:51.166 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
 19-12-2020 17:48:51.224 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Artist Adı Boş Olamaz
 19-12-2020 17:48:51.234 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+19-12-2020 21:13:00.736 +03:00 [ERR] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api) Exception Message : StandardOut has not been redirected or the process hasn't started yet. - 
+System.InvalidOperationException: StandardOut has not been redirected or the process hasn't started yet.
+   at System.Diagnostics.Process.get_StandardOutput()
+   at MusicApp.Api.Controllers.MusicTypesController.index() in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\MusicTypesController.cs:line 258

@@ -107,3 +107,11 @@ C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Micros
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

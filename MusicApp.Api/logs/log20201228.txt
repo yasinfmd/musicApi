@@ -1,0 +1,298 @@
+28-12-2020 10:19:52.991 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api)
+28-12-2020 10:19:53.525 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.index (MusicApp.Api) Total MusicTypesCount : 0
+28-12-2020 10:20:29.059 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+28-12-2020 10:20:29.346 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Rock2 and Id : 1
+28-12-2020 10:20:38.119 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+28-12-2020 10:21:32.546 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:21:32.559 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:21:59.829 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:21:59.843 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : File , ErrorValue: Artist Dosyası Boş Olamaz
+28-12-2020 10:21:59.855 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:22:09.782 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:22:09.794 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:22:31.032 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:22:31.042 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:22:32.743 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:22:32.753 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:22:33.569 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:22:33.584 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:22:34.200 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:22:34.210 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:22:34.792 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:22:34.806 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:23:05.544 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:23:10.531 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:26:29.418 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:26:33.293 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Ad Alanı Tekil Olmak Zorunda
+28-12-2020 10:27:37.768 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:27:37.814 +03:00 [INF] Files Manager Insert Run
+28-12-2020 10:27:37.836 +03:00 [INF] Files Manager Insert Files Uploaded Name : 1_HSisLuifMO6KbLfPOKtLow.jpeg
+28-12-2020 10:27:38.048 +03:00 [INF] Files Manager Insert Files DB
+28-12-2020 10:27:38.086 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin  Id : 1 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+28-12-2020 10:31:50.275 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.png
+28-12-2020 10:36:43.197 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.jpg
+28-12-2020 10:36:52.739 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.updateArtistPhoto (MusicApp.Api) Exception Message : Index was outside the bounds of the array. - 
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at MusicApp.Business.Concrate.ArtistManager.UpdateArtistProfileImage(UpdateProfilePhoto artistPhoto) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 121
+   at MusicApp.Api.Controllers.ArtistController.updateArtistPhoto(UpdateProfilePhoto updateProfilePhoto) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 40
+28-12-2020 10:38:38.215 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:38:38.258 +03:00 [INF] Files Manager Insert Run
+28-12-2020 10:38:38.277 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.png
+28-12-2020 10:38:38.504 +03:00 [INF] Files Manager Insert Files DB
+28-12-2020 10:38:38.546 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin  Id : 2 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+28-12-2020 10:39:41.565 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.jpg
+28-12-2020 10:42:21.853 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:42:21.897 +03:00 [INF] Files Manager Insert Run
+28-12-2020 10:42:21.914 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.png
+28-12-2020 10:42:22.119 +03:00 [INF] Files Manager Insert Files DB
+28-12-2020 10:42:22.158 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin  Id : 3 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+28-12-2020 10:43:00.264 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.jpg
+28-12-2020 10:44:07.219 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.jpg
+28-12-2020 10:45:22.794 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.jpg
+28-12-2020 10:51:27.984 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.png
+28-12-2020 10:54:47.779 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 10:54:47.826 +03:00 [INF] Files Manager Insert Run
+28-12-2020 10:54:47.849 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.png
+28-12-2020 10:54:48.071 +03:00 [INF] Files Manager Insert Files DB
+28-12-2020 10:54:48.116 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin  Id : 4 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+28-12-2020 10:55:20.687 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.jpg
+28-12-2020 10:57:25.624 +03:00 [INF] Files Manager Insert Files Uploaded Name : 1_HSisLuifMO6KbLfPOKtLow.jpeg
+28-12-2020 11:06:31.510 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 11:06:31.555 +03:00 [INF] Files Manager Insert Run
+28-12-2020 11:06:31.579 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.png
+28-12-2020 11:06:31.796 +03:00 [INF] Files Manager Insert Files DB
+28-12-2020 11:06:31.831 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin  Id : 5 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+28-12-2020 11:07:20.937 +03:00 [INF] Files Manager Insert Files Uploaded Name : 1_HSisLuifMO6KbLfPOKtLow.jpeg
+28-12-2020 11:12:01.328 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.jpg
+28-12-2020 11:19:55.085 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api)
+28-12-2020 11:19:55.802 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.delete (MusicApp.Api) Deleted Artist: 5
+28-12-2020 11:59:22.945 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+28-12-2020 11:59:22.990 +03:00 [INF] Files Manager Insert Run
+28-12-2020 11:59:23.009 +03:00 [INF] Files Manager Insert Files Uploaded Name : indir.png
+28-12-2020 11:59:23.231 +03:00 [INF] Files Manager Insert Files DB
+28-12-2020 11:59:23.272 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin  Id : 6 Info : Veriasdasdasdasdasdasldkasldaksdşlasdlaskdlaskdlaskdlaksdlaskldaslkdaskdlaskdlkaskdaskdlasdklasldkasdlkasldkaskdkasldaslkdaskldkaslkdasldlkasldkaslkdklaskdaslkdklqwoeqkweqwoeoqwıeoıqweoıqwoıeoıqweıqwoıeqıweıoqweıqwoıeoqwıeoıwqoıeoıqwoeqwqwe and Gender : 1
+28-12-2020 12:05:44.058 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Illegal mix of collations (latin1_bin,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=' - 
+MySql.Data.MySqlClient.MySqlException (0x80004005): Illegal mix of collations (latin1_bin,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at MySql.Data.EntityFrameworkCore.Storage.Internal.MySQLExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 78
+   at MusicApp.DataAccess.Concrate.ArtistRepository.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 76
+   at MusicApp.Business.Concrate.ArtistManager.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 104
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 60
+28-12-2020 12:09:28.925 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Illegal mix of collations (latin1_bin,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=' - 
+MySql.Data.MySqlClient.MySqlException (0x80004005): Illegal mix of collations (latin1_bin,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at MySql.Data.EntityFrameworkCore.Storage.Internal.MySQLExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 78
+   at MusicApp.DataAccess.Concrate.ArtistRepository.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 76
+   at MusicApp.Business.Concrate.ArtistManager.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 104
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 60
+28-12-2020 12:12:58.109 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Illegal mix of collations (latin1_bin,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=' - 
+MySql.Data.MySqlClient.MySqlException (0x80004005): Illegal mix of collations (latin1_bin,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at MySql.Data.EntityFrameworkCore.Storage.Internal.MySQLExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 78
+   at MusicApp.DataAccess.Concrate.ArtistRepository.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 76
+   at MusicApp.Business.Concrate.ArtistManager.isExists(Expression`1 filter) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 104
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 60
+28-12-2020 12:25:02.330 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : The instance of entity type 'Artist' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values. - 
+System.InvalidOperationException: The instance of entity type 'Artist' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.set_State(EntityState value)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.Update(T entity) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 84
+   at MusicApp.DataAccess.Concrate.ArtistRepository.Update(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 81
+   at MusicApp.Business.Concrate.ArtistManager.Update(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 134
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 77
+28-12-2020 12:31:51.666 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : The instance of entity type 'Artist' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values. - 
+System.InvalidOperationException: The instance of entity type 'Artist' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.set_State(EntityState value)
+   at MusicApp.DataAccess.Concrate.BaseRepository`1.Update(T entity) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\BaseRepository.cs:line 84
+   at MusicApp.DataAccess.Concrate.ArtistRepository.Update(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.DataAccess\Concrate\ArtistRepository.cs:line 81
+   at MusicApp.Business.Concrate.ArtistManager.Update(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 134
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 77
+28-12-2020 13:17:50.558 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 76
+28-12-2020 13:19:59.750 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 76
+28-12-2020 13:22:00.657 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Artist
+System.Object -> MusicApp.Entity.Artist
+   at lambda_method(Closure , Object , Artist , ResolutionContext )
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 76
+28-12-2020 13:36:58.511 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+File
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Int32 -> FilesDto
+System.Int32 -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Int32 , FilesDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+File
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Int32 -> FilesDto
+System.Int32 -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Int32 , FilesDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Update(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 136
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 76
+28-12-2020 13:37:39.739 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+File
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Int32 -> FilesDto
+System.Int32 -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Int32 , FilesDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+File
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Int32 -> FilesDto
+System.Int32 -> MusicApp.Dto.FilesDto
+   at lambda_method(Closure , Int32 , FilesDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.Update(Artist artist) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Business\Concrate\ArtistManager.cs:line 136
+   at MusicApp.Api.Controllers.ArtistController.update(Int32 artistId, ArtistUpdateModel artistUpdateModel) in C:\Users\Yasin\source\repos\MusicApp\MusicApp.Api\Controllers\ArtistController.cs:line 76
+28-12-2020 13:41:14.588 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.update (MusicApp.Api) ArtistUpdated Name : Yasin Efem Dalkılıç and Id : 6
+28-12-2020 14:57:39.311 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+28-12-2020 14:59:45.088 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+28-12-2020 15:05:56.522 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+28-12-2020 15:19:18.332 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+28-12-2020 15:24:19.158 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)

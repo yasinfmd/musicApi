@@ -74,9 +74,9 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.isExists(filter);
         }
 
-        public Task<Files> Update(Files entityToUpdate)
+        public async Task<Files> Update(Files files)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Update(files);
         }
     }
 }

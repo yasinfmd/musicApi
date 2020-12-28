@@ -7,6 +7,7 @@ using MusicApp.Entity.ParameterModels;
 using MusicApp.Entity.ResponseModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
@@ -103,5 +104,46 @@ namespace MusicApp.Business.Concrate
             return await _artistRepository.isExists(filter);
         }
 
+        public async Task<BaseResponse<FilesDto>> UpdateArtistProfileImage(UpdateProfilePhoto artistPhoto)
+        {
+            BaseResponse<FilesDto> baseResponse = new BaseResponse<FilesDto>();
+            var artist = await GetByID(artistPhoto.Id);
+            if (artist.Result != null)
+            {
+                var file = await _filesService.GetByID(artist.Result.File.Id);
+                if (file.Result != null)
+                {
+                    string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+                    string[] fileName = artist.Result.File.Path.Split("Uploads/");
+                    pathBuild = Path.Combine(pathBuild, fileName[fileName.Length - 1]);
+                    var deletedFileFromStorage = _filesService.DeleteFile(pathBuild);
+                    var newFile = await _filesService.UploadFileFromStorage(new Files { ImageFile = artistPhoto.File });
+                    file.Result.Path = "http://localhost:5000/" + "Uploads/"+newFile;
+                    file.Result.Name = artistPhoto.File.FileName;
+                    file.Result.Size = Convert.ToInt32(artistPhoto.File.Length);
+                    var updatedFile = await _filesService.Update(file.Result);
+                    baseResponse.Result = updatedFile.Result;
+                }
+            }
+            return baseResponse;
+        }
+
+        public async Task<BaseResponse<ArtistDto>> Update(Artist artist)
+        {
+            BaseResponse<ArtistDto> baseResponse = new BaseResponse<ArtistDto>();
+            var updatedArtist = await _artistRepository.Update(artist);
+            baseResponse.Result = new ArtistDto { Name = updatedArtist.Name, Gender = artist.Gender, Id = artist.Id, Info = artist.Info };
+            return baseResponse;
+
+            
+        }
+
+        public async Task<BaseResponse<Artist>> GetArtist(int id)
+        {
+            BaseResponse<Artist> baseResponse = new BaseResponse<Artist>();
+            var artist = await _artistRepository.GetByID(id);
+            baseResponse.Result = artist;
+            return baseResponse;
+        }
     }
 }

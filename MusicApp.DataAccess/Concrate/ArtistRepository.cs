@@ -76,9 +76,9 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.isExists(filter);
         }
 
-        public Task<Artist> Update(Artist entityToUpdate)
+        public async Task<Artist> Update(Artist artist)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Update(artist);
         }
     }
 }
