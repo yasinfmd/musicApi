@@ -13,5 +13,7 @@ namespace MusicApp.Dto
         public string Year { get; set; }
         public ArtistDto Artist { get; set; }
         public List<AlbumFilesDto> Images { get; set; }
+
+        public List<MusicDto> Musics { get; set; }
     }
 }

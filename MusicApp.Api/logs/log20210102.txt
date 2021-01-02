@@ -71,3 +71,7 @@
 02-01-2021 18:33:39.186 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
 02-01-2021 18:33:39.519 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
 02-01-2021 18:33:39.540 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+02-01-2021 18:47:31.875 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:52:23.109 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:59:38.758 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 19:01:37.079 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
