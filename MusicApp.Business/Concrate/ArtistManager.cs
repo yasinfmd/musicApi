@@ -27,26 +27,13 @@ namespace MusicApp.Business.Concrate
             _mapper = mapper;
             _filesService = filesService;
         }
-        public async Task<BaseResponse<IList<ArtistDto>>> GetAll()
+        public async Task<BaseResponse<IEnumerable<ArtistDto>>> GetAll()
         {
-            List<ArtistDto> artistList = new List<ArtistDto>();
-            BaseResponse<IList<ArtistDto>> baseResponse = new BaseResponse<IList<ArtistDto>>();
+          
+            BaseResponse<IEnumerable<ArtistDto>> baseResponse = new BaseResponse<IEnumerable<ArtistDto>>();
             var allArtistList = await _artistRepository.GetAll();
-            foreach (var artist in allArtistList)
-            {
-                var file = await _filesService.GetByID((int)artist.FileId);
-                var fileDto = new FilesDto { Id = artist.File.Id, Path = file.Result.Path };
-                var artistDto = new ArtistDto
-                {
-                    File = fileDto,
-                    Gender = artist.Gender,
-                    Id = artist.Id,
-                    Info = artist.Info,
-                    Name = artist.Name
-                };
-                artistList.Add(artistDto);
-            }
-            baseResponse.Result = artistList;
+            var mappedResult = _mapper.Map<IEnumerable<ArtistDto>>(allArtistList);
+            baseResponse.Result = mappedResult;
             return baseResponse;
 
         }
@@ -64,16 +51,8 @@ namespace MusicApp.Business.Concrate
         {
             BaseResponse<ArtistDto> baseResponse = new BaseResponse<ArtistDto>();
             var artist = await _artistRepository.GetByID(id);
-            var fileDto = new FilesDto { Id = artist.File.Id, Path = artist.File.Path };
-            var artistDto = new ArtistDto
-            {
-                File = fileDto,
-                Gender = artist.Gender,
-                Id = artist.Id,
-                Info = artist.Info,
-                Name = artist.Name
-            };
-            baseResponse.Result = artistDto;
+            var mappedArtist = _mapper.Map<ArtistDto>(artist);
+            baseResponse.Result = mappedArtist;
             return baseResponse;
         }
 

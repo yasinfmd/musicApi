@@ -52,7 +52,8 @@ namespace MusicApp.DataAccess.Concrate
 
         public async Task<IEnumerable<Artist>> GetAll()
         {
-            return await _baseRepository.GetAll();
+            return await _context.Artist.Include(file => file.File).ToListAsync();
+           // return await _baseRepository.GetAll();
         }
 
         public async Task<Artist> GetByID(int id)

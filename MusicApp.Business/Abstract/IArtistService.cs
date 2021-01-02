@@ -26,7 +26,7 @@ namespace MusicApp.Business.Abstract
 
         Task<BaseResponse<string>> Delete(ArtistDto artist);
 
-        Task<BaseResponse<IList<ArtistDto>>> GetAll();
+        Task<BaseResponse<IEnumerable<ArtistDto>>> GetAll();
 
         Task<BaseResponse<FilesDto>> UpdateArtistProfileImage(UpdateProfilePhoto artistPhoto);
 

@@ -1,0 +1,73 @@
+02-01-2021 13:00:04.264 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:17:33.636 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:21:02.092 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:23:34.832 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:24:02.289 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:26:26.889 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:44:09.623 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:51:52.378 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:54:36.492 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 13:57:06.927 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 14:10:01.300 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 14:12:10.260 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 14:17:03.364 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 14:32:15.241 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 14:35:10.158 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 15:00:47.650 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 15:45:04.838 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 15:46:19.136 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 15:50:44.702 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 15:57:35.084 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 15:59:52.279 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 16:01:17.813 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 16:13:35.664 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 16:18:46.424 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 16:19:03.848 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 16:22:16.667 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 16:23:57.649 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:04:02.145 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:05:07.814 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:06:17.808 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:09:20.080 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:12:50.599 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:19:39.848 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+02-01-2021 18:21:00.779 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:21:01.357 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:22:11.194 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:22:46.758 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:24:11.386 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:38.925 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:39.500 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:42.263 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:42.282 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:43.020 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:43.033 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:43.599 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:43.621 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:44.148 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:44.165 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:44.638 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:44.651 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:45.075 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:45.090 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:45.585 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:45.603 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:45.969 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:45.984 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:46.618 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:46.639 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:25:47.277 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api)
+02-01-2021 18:25:47.294 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.index (MusicApp.Api) Total Artist : 1
+02-01-2021 18:32:10.874 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+02-01-2021 18:33:31.115 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+02-01-2021 18:33:34.964 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+02-01-2021 18:33:37.600 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+02-01-2021 18:33:37.622 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+02-01-2021 18:33:38.189 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+02-01-2021 18:33:38.203 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+02-01-2021 18:33:38.631 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+02-01-2021 18:33:38.646 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+02-01-2021 18:33:39.157 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+02-01-2021 18:33:39.186 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
+02-01-2021 18:33:39.519 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api)
+02-01-2021 18:33:39.540 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.show (MusicApp.Api) Finded Artist : MusicApp.Dto.ArtistDto
