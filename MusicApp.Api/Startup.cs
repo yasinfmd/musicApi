@@ -81,6 +81,10 @@ namespace MusicApp
                                   {
                                       builder
                                          .WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+                                      builder
+                                        .WithOrigins("http://localhost:3001").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+                                      builder
+                                      .WithOrigins("http://localhost:8080").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
                                   });
             });
             services.AddDbContext<MusicAppDbContext>(opt => opt.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password="));
@@ -146,6 +150,7 @@ namespace MusicApp
                 endpoints.MapControllers();
                 endpoints.MapHub<MusicTypesHub>("/mthub");
                 endpoints.MapHub<ArtistHub>("/ahub");
+                endpoints.MapHub<WebRtcHub>("/vhub");
 
             });
 

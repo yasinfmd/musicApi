@@ -1,0 +1,33 @@
+10-01-2021 11:32:20.116 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+10-01-2021 11:36:46.293 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+10-01-2021 11:36:46.960 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api) Total Albums : 2
+10-01-2021 11:36:48.168 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+10-01-2021 11:36:48.198 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api) Total Albums : 2
+10-01-2021 11:51:45.921 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.delete (MusicApp.Api)
+10-01-2021 11:51:46.484 +03:00 [WRN] MusicApp.Api.Controllers.AlbumController.delete (MusicApp.Api) Not Found Id : 4
+10-01-2021 11:51:51.153 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.delete (MusicApp.Api)
+10-01-2021 11:51:55.965 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.delete (MusicApp.Api)
+10-01-2021 11:51:55.989 +03:00 [WRN] MusicApp.Api.Controllers.AlbumController.delete (MusicApp.Api) Not Found Id : 3
+10-01-2021 13:05:02.052 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 13:05:02.099 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Error Key : Desc , ErrorValue: Albüm Açıklaması 100 ile 300 Karakter Arasında Olmalıdır
+10-01-2021 13:05:30.008 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 13:05:57.319 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 13:26:09.661 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 13:55:23.885 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:19:42.986 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:20:14.958 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) ArtistCreated Name : MahooAl2  Id : 4 Info : and Gender :
+10-01-2021 14:22:12.810 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:24:01.989 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:24:03.022 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) ArtistCreated Name : MahooAl232  Id : 6 Info : and Gender :
+10-01-2021 14:24:34.614 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api)
+10-01-2021 14:24:34.699 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.index (MusicApp.Api) Total Albums : 6
+10-01-2021 14:34:16.497 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:34:17.300 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) ArtistCreated Name : MahooAl232  Id : 7 Info : and Gender :
+10-01-2021 14:36:43.978 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:36:44.822 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) ArtistCreated Name : MahooAl232  Id : 8 Info : and Gender :
+10-01-2021 14:37:04.148 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:37:04.221 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) ArtistCreated Name : MahooAl2323  Id : 9 Info : and Gender :
+10-01-2021 14:37:40.910 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:37:41.730 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) ArtistCreated Name : MahooAl232355  Id : 10 Info : and Gender :
+10-01-2021 14:39:38.581 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+10-01-2021 14:39:39.587 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) ArtistCreated Name : MahooAl2323556  Id : 11 Info : and Gender :

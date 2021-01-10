@@ -22,34 +22,34 @@ namespace MusicApp.DataAccess.Concrate
 
 
 
-        public Task<int> CountAll()
+        public async Task<int> CountAll()
         {
-            throw new NotImplementedException();
+            return await _baseRepository.CountAll();
         }
 
-        public Task<int> CountWhere(Expression<Func<Albums, bool>> predicate)
+        public async Task<int> CountWhere(Expression<Func<Albums, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.CountWhere(predicate);
         }
 
-        public Task<int> Delete(Albums entityToDelete)
+        public async Task<int> Delete(Albums entityToDelete)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Delete(entityToDelete);
         }
 
-        public Task<int> DeleteById(int id)
+        public async Task<int> DeleteById(int id)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.DeleteById(id);
         }
 
-        public Task<List<Albums>> Find(Expression<Func<Albums, bool>> filter)
+        public async Task<List<Albums>> Find(Expression<Func<Albums, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Find(filter);
         }
 
-        public Task<Albums> FindOne(Expression<Func<Albums, bool>> filter)
+        public async Task<Albums> FindOne(Expression<Func<Albums, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.FindOne(filter);
         }
 
         public async Task<IEnumerable<Albums>> GetAll()
@@ -58,9 +58,9 @@ namespace MusicApp.DataAccess.Concrate
         
         }
 
-        public Task<Albums> GetByID(int id)
+        public async Task<Albums> GetByID(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Albums.Include(x => x.Musics).ThenInclude(x => x.MusicTypes).Include(x => x.Artist).ThenInclude(x=>x.File).Include(y => y.AlbumsFiles).ThenInclude(y=>y.File).FirstOrDefaultAsync(x=>x.Id==id);
         }
 
         public Task<IList<Albums>> GetLast(Expression<Func<Albums, int>> filter, int takeCount = 10)
@@ -68,14 +68,14 @@ namespace MusicApp.DataAccess.Concrate
             throw new NotImplementedException();
         }
 
-        public Task<Albums> Insert(Albums entity)
+        public async Task<Albums> Insert(Albums entity)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.Insert(entity);
         }
 
-        public Task<bool> isExists(Expression<Func<Albums, bool>> filter)
+        public async Task<bool> isExists(Expression<Func<Albums, bool>> filter)
         {
-            throw new NotImplementedException();
+            return await _baseRepository.isExists(filter);
         }
 
         public Task<Albums> Update(Albums entityToUpdate)

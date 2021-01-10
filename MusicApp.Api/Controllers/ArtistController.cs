@@ -20,14 +20,10 @@ namespace MusicApp.Api.Controllers
     {
         private readonly IArtistService _artistService;
         private readonly ILogService _logger;
-        private readonly IMapper _mapper;
-        private readonly IFilesService _filesService;
-        public ArtistController(IArtistService artistService, ILogService logger, IMapper mapper, IFilesService filesService) : base(logger)
+        public ArtistController(IArtistService artistService, ILogService logger) : base(logger)
         {
             _logger = logger;
             _artistService = artistService;
-            _mapper = mapper;
-            _filesService = filesService;
         }
         [HttpPost]
         [Route("[action]")]

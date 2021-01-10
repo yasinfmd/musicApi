@@ -44,16 +44,6 @@ namespace MusicApp.DataAccess
             .HasMaxLength(36);
 
 
-            //modelBuilder.Entity<IdentityUser>(entity => entity.Property(m => m.Id).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityRole>(entity => entity.Property(m => m.Id).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityUserLogin<string>>(entity => entity.Property(m => m.LoginProvider).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityUserLogin<string>>(entity => entity.Property(m => m.ProviderKey).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityUserRole<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityUserRole<string>>(entity => entity.Property(m => m.RoleId).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityUserToken<string>>(entity => entity.Property(m => m.UserId).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityUserToken<string>>(entity => entity.Property(m => m.LoginProvider).HasMaxLength(127));
-            //modelBuilder.Entity<IdentityUserToken<string>>(entity => entity.Property(m => m.Name).HasMaxLength(127));
-
             modelBuilder.Entity<IdentityUser>(entity => entity.Property(m => m.NormalizedEmail).HasMaxLength(200));
             modelBuilder.Entity<IdentityUser>(entity => entity.Property(m => m.NormalizedUserName).HasMaxLength(200));
             modelBuilder.Entity<IdentityRole>(entity => entity.Property(m => m.NormalizedName).HasMaxLength(200));
@@ -89,6 +79,11 @@ namespace MusicApp.DataAccess
               .HasForeignKey(a => a.ArtistId)
            .IsRequired()
            .OnDelete(DeleteBehavior.Cascade); ;
+
+       //     modelBuilder.Entity<BookAuthor>()
+       //.HasOne(pt => pt.Book)
+       //.WithMany(p => p.AuthorsLink)
+       //.HasForeignKey(pt => pt.BookId);
 
             modelBuilder.Entity<AlbumsFiles>()
               .HasKey(af => new { af.AlbumId, af.FileId });
