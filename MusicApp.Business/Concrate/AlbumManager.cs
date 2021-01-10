@@ -19,6 +19,7 @@ namespace MusicApp.Business.Concrate
         private readonly IAlbumRepository _albumRepository;
         private readonly IMapper _mapper;
         private readonly IFilesService _filesService;
+
         public AlbumManager(IAlbumRepository albumRepository, IMapper mapper,IFilesService filesService)
         {
             _albumRepository = albumRepository;
@@ -27,18 +28,30 @@ namespace MusicApp.Business.Concrate
         }
 
         //bak
-        public Task<BaseResponse<string>> Delete(AlbumDto album)
+        public async Task<BaseResponse<string>> Delete(AlbumDto album)
         {
+            BaseResponse<string> baseResponse = new BaseResponse<string>();
+
             var files = album.Images;
             if (files.Count>0)
             {
-
+                string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+                foreach (var item in files)
+                {
+                    string[] fileName =item.Path.Split("Uploads/");
+                    pathBuild = Path.Combine(pathBuild, fileName[fileName.Length - 1]);
+                    var deletedFileFromStorage = _filesService.DeleteFile(pathBuild);
+                    var deletedFile = await _filesService.Delete(new FilesDto { Id=item.Id,Path=item.Path});
+                }
+                var result = await _albumRepository.DeleteById(album.Id);
+                baseResponse.Result = result > 0 ? "Success Delete" : null;
             }
             else
             {
-
+                var result = await _albumRepository.DeleteById(album.Id);
+                baseResponse.Result = result > 0 ? "Success Delete" : null;
             }
-            throw new NotImplementedException();
+            return baseResponse;
         }
 
         public async Task<BaseResponse<IEnumerable<AlbumDto>>> GetAll()

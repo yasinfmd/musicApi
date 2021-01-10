@@ -18,6 +18,7 @@ namespace MusicApp.Api.Extentions
 				x.RegisterValidatorsFromAssemblyContaining<UpdatePhotoValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<ArtistImageValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<ArtistUpdateValidator>();
+				x.RegisterValidatorsFromAssemblyContaining<AlbumImageValidator>();
 
 				x.ImplicitlyValidateChildProperties = true;
 			});

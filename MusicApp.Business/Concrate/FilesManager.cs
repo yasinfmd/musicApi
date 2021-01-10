@@ -17,7 +17,6 @@ namespace MusicApp.Business.Concrate
 
     {
         private readonly IFilesRepository _filesRepository;
-        private readonly IMapper _mapper;
         private readonly ILogService _logger;
 
 
@@ -102,25 +101,7 @@ namespace MusicApp.Business.Concrate
             {
                 _logger.LogInfo("Files Manager Insert Run");
                 BaseResponse<Files> baseResponse = new BaseResponse<Files>();
-                //    string fileName = Path.GetFileNameWithoutExtension(files.ImageFile.Name);
-                //   string extension = Path.GetExtension(files.ImageFile.FileName);
-                //  fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
-                // string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
-
-                //                if (!Directory.Exists(pathBuild))
-                //              {
-                //                _logger.LogInfo($"Files Manager Insert Directory Not Exist Location : {pathBuild} created directory");
-                //              Directory.CreateDirectory(pathBuild);
-                //        }
-                //      string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
-                //    using (var FileStream = new FileStream(path, FileMode.Create))
-                //  {
-                //    await files.ImageFile.CopyToAsync(FileStream);
-                //}
-                //_logger.LogInfo($"Files Manager Insert Files Uploaded Name : {files.ImageFile.FileName}");
-
                 var fileName = await UploadFileFromStorage(files);
-
                 files.Name = files.ImageFile.FileName;
                 files.Size = Convert.ToInt32(files.ImageFile.Length);
                 files.Path = "http://localhost:5000/Uploads/" + fileName;

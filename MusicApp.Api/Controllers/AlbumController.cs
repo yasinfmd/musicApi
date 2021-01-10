@@ -44,7 +44,7 @@ namespace MusicApp.Api.Controllers
                     var result = await _albumService.Insert(albumImagesModel);
                     //await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
 
-                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistCreated Name : {result.Result.Name}  Id : {result.Result.Id} Info : and Gender :");
+                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Created Name : {result.Result.Name}  Id : {result.Result.Id}");
                     return Ok(result);
                 }
                 return BadRequest();
@@ -75,8 +75,8 @@ namespace MusicApp.Api.Controllers
                 {
 
                     var deleted = await _albumService.Delete(album.Result);
-                   // _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Deleted Artist: {artistId}");
-                    return Ok();
+                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Deleted Album: {albumId}");
+                    return Ok(deleted);
                 }
             }
             catch (Exception exception)

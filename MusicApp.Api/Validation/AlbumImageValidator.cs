@@ -20,6 +20,7 @@ namespace MusicApp.Api.Validation
             CustomAlbumValidator customArtistValidation = new CustomAlbumValidator(_baseRepository);
             RuleFor(x => x.Name).NotNull().WithMessage("Albüm Adı Boş Olamaz")
                .Length(1, 40).WithMessage("Albüm  Adı 1 ile 30 Karakter Arasında Olmalıdır")
+               .Must(customArtistValidation.UniqueName).WithMessage("Albüm Adı Var")
                .NotEmpty().WithMessage("Albüm Adı Boş Olamaz");
             RuleFor(x => x.ArtistId).NotNull().WithMessage("Artist  Boş Olamaz");
             RuleFor(x => x.Year).NotNull().WithMessage("Albüm Yılı  Boş Olamaz");

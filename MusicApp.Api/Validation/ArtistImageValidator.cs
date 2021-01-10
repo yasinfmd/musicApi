@@ -18,6 +18,7 @@ namespace MusicApp.Api.Validation
             _baseRepository = baseRepository;
             CustomArtistValidation customArtistValidation = new CustomArtistValidation(_baseRepository);
             RuleFor(artistImageModel => artistImageModel.Name).NotNull().WithMessage("Artist Adı Boş Olamaz")
+                .Must(customArtistValidation.UniqueName).WithMessage("Artist Adı Kullanıldı")
                .Length(3, 30).WithMessage("Artist  Adı 3 ile 30 Karakter Arasında Olmalıdır")
                .NotEmpty().WithMessage("Artist Adı Boş Olamaz");
 
