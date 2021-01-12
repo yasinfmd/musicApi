@@ -20,6 +20,7 @@ namespace MusicApp.Business.Abstract
 
         Task<int> Delete(FilesDto files);
 
+
         Task<string> UploadFileFromStorage(Files files);
 
     }

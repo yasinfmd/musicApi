@@ -17,6 +17,10 @@ namespace MusicApp.Business.Abstract
         Task<bool> isExists(Expression<Func<Albums, bool>> filter);
         Task<BaseResponse<AlbumDto>> GetByID(int id);
 
+        Task<BaseResponse<string>> DeleteAlbumPhotos(DeleteAlbumPhotosModel deleteAlbumPhotosModel);
+
+        //bak
+        Task<BaseResponse<List<AlbumFilesDto>>> AddAlbumPhotos(AlbumArtistPhotosModel albumArtistPhotosModel);
         Task<BaseResponse<AlbumDto>> Insert(AlbumImagesModel album);
 
     }

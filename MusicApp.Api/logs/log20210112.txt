@@ -1,0 +1,13 @@
+12-01-2021 13:35:15.342 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+12-01-2021 13:35:15.848 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Album Created Name : Xyz12  Id : 16
+12-01-2021 14:07:45.081 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+12-01-2021 14:07:45.590 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Album Created Name : Xyz1223  Id : 17
+12-01-2021 14:10:01.696 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.deleteAlbumPhotos (MusicApp.Api)
+12-01-2021 14:12:20.624 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.deleteAlbumPhotos (MusicApp.Api)
+12-01-2021 14:25:48.356 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.deleteAlbumPhotos (MusicApp.Api)
+12-01-2021 16:43:50.757 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.addAlbumPhotos (MusicApp.Api)
+12-01-2021 16:52:28.600 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.addAlbumPhotos (MusicApp.Api)
+12-01-2021 16:59:18.930 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.addAlbumPhotos (MusicApp.Api)
+12-01-2021 17:18:33.147 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.addAlbumPhotos (MusicApp.Api)
+12-01-2021 17:29:25.298 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.addAlbumPhotos (MusicApp.Api)
+12-01-2021 17:32:24.972 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.addAlbumPhotos (MusicApp.Api)

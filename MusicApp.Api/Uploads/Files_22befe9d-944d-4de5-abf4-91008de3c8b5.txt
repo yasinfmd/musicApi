@@ -1,0 +1,48 @@
+env url yazılacak
+servisler oms oldugu için
+omsrequest
+methodları 
+ve url 
+yazıyosunuz
+xrlylere ihtiyacın olabilir bak
+
+
+request dto olusturulur
+
+response dto
+
+sayfamı componentmi bak
+
+
+servis bilgileri ve döküman
+
+portera trading overall
+request response
+
+servis
+overall request
+
+--exception criteria  
+dxcomponentler
+
+
+porföy durumu
+
+
+kıymetler başlıgını kaldırabilirz
+
+collapse onlarınki
+
+staklarını gösteriyor dünden 10 tane vardı 5 tane daha varsa aktifler etki eder 
+garanlar 	
+
+grup ve toplam 
+gruba ve toplama göre oranı
+
+rebelance 
+hisse senedenin gruğtaki oranı artırıyor 
+27 den 28 e yolluyor oms gönderiyoruz toplu emir ekranı açıyoruz 
+
+toplu emir ekranı oluşacak 
+5sn de 10 sn de refreshler var
+

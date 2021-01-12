@@ -5,9 +5,8 @@ using System.Text;
 
 namespace MusicApp.Dto
 {
-   public class AlbumFilesDto
+   public class AlbumFilesDto:Base
     {
         public string Path { get; set; }
-        public int Id { get; set; }
     }
 }

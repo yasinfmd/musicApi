@@ -11,6 +11,10 @@ namespace MusicApp.Dto
     {
         public AutoMapping()
         {
+            CreateMap<AlbumFilesModel, FilesDto>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.Path, opt => opt.MapFrom(src => src.Path))
+                .ReverseMap();
             CreateMap<MusicTypes, MusicTypesDto>()
          .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
          .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))

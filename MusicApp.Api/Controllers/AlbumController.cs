@@ -27,6 +27,52 @@ namespace MusicApp.Api.Controllers
             _albumService = albumService;
             _logger = log;
         }
+        //AlbumArtistPhotosModel
+        [HttpPost]
+        [Route("[action]")]
+        //[ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> addAlbumPhotos([FromForm]AlbumArtistPhotosModel albumArtistPhotosModel)
+        {
+            try
+            {
+                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                if (ModelState.IsValid)
+                {
+                    var result = await _albumService.AddAlbumPhotos(albumArtistPhotosModel);
+                    return Ok(result);
+                }
+                return BadRequest();
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> deleteAlbumPhotos(DeleteAlbumPhotosModel deleteAlbumPhotosModel)
+        {
+            try
+            {
+                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                if (ModelState.IsValid)
+                {
+                    var result = await _albumService.DeleteAlbumPhotos(deleteAlbumPhotosModel);
+                    //await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
+
+                  //  _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Created Name : {result.Result.Name}  Id : {result.Result.Id}");
+                    return Ok(result);
+                }
+                return BadRequest();
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
 
 
         [HttpPost]

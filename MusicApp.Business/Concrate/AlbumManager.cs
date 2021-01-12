@@ -27,6 +27,37 @@ namespace MusicApp.Business.Concrate
             _filesService = filesService;
         }
 
+        public  async Task<BaseResponse<List<AlbumFilesDto>>> AddAlbumPhotos(AlbumArtistPhotosModel albumArtistPhotosModel)
+        {
+            BaseResponse<List<AlbumFilesDto>> baseResponse = new BaseResponse<List<AlbumFilesDto>>();
+            var album =await _albumRepository.FindOne(x => x.Id == albumArtistPhotosModel.AlbumId);
+            List<AlbumsFiles> albumsFiles = new List<AlbumsFiles>();
+            foreach (var item in albumArtistPhotosModel.Files)
+            {
+                Files f = new Files();
+                string fileName = Path.GetFileNameWithoutExtension(item.Name);
+                string extension = Path.GetExtension(item.FileName);
+                fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
+                string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
+                using (var FileStream = new FileStream(path, FileMode.Create))
+                {
+                    await item.CopyToAsync(FileStream);
+                }
+                f.Name = item.FileName;
+                f.Size = Convert.ToInt32(item.Length);
+                f.Path = "http://localhost:5000/Uploads/" + fileName;
+                albumsFiles.Add(new AlbumsFiles { Album = album, File = f });
+            }
+            album.AlbumsFiles = albumsFiles;
+            var updatedAlbum = await _albumRepository.Update(album);
+            var albumFileDto = _mapper.Map<List<AlbumFilesDto>>(updatedAlbum.AlbumsFiles);
+            baseResponse.Result = albumFileDto;
+            return baseResponse;
+            // album
+           // throw new NotImplementedException();
+        }
+
         //bak
         public async Task<BaseResponse<string>> Delete(AlbumDto album)
         {
@@ -53,6 +84,19 @@ namespace MusicApp.Business.Concrate
             }
             return baseResponse;
         }
+
+        public async Task<BaseResponse<string>> DeleteAlbumPhotos(DeleteAlbumPhotosModel deleteAlbumPhotosModel)
+        {
+            BaseResponse<string> baseResponse = new BaseResponse<string>();
+            foreach (var item in deleteAlbumPhotosModel.images)
+            {
+                var filesDto = _mapper.Map<FilesDto>(item);
+                await _filesService.Delete(filesDto);
+            }
+            baseResponse.Result = "Success Delete";
+            return baseResponse;
+        }
+
 
         public async Task<BaseResponse<IEnumerable<AlbumDto>>> GetAll()
         {
