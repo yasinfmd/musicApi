@@ -24,6 +24,8 @@ namespace MusicApp.Dto
             //.ForMember(dest=>dest.AlbumsFiles,opt=>opt.MapFrom(src=>src.Images)) 
             CreateMap<AlbumDto, Albums>().ForMember(dest => dest.Artist, act => act.MapFrom(src => src.Artist)).ForMember(dest=>dest.Musics,act=>act.MapFrom(src=>src.Musics))
                 .ForMember(dest => dest.AlbumsFiles, opt => opt.MapFrom(src => src.Images)).ReverseMap();
+
+            CreateMap<AlbumUpdateDto, Albums>().ForMember(dest => dest.Artist, act => act.MapFrom(src => src.Artist)).ReverseMap();
             CreateMap<ArtistDto, Artist>().ForMember(dest => dest.File, opt => opt.MapFrom(src => src.File)).ReverseMap();
             CreateMap<FilesDto, Files>().ForMember(dest => dest.Path, opt => opt.MapFrom(src => src.Path)).ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id)).ReverseMap();
 

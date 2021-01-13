@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MusicApp.Business.Abstract;
 using MusicApp.Dto;
+using MusicApp.Entity;
 using MusicApp.Entity.ParameterModels;
 using MusicApp.Entity.ResponseModels;
 using MusicApp.Logger.Abstract;
@@ -30,7 +31,8 @@ namespace MusicApp.Api.Controllers
         //AlbumArtistPhotosModel
         [HttpPost]
         [Route("[action]")]
-        //[ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(BaseResponse<List<AlbumFilesDto>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> addAlbumPhotos([FromForm]AlbumArtistPhotosModel albumArtistPhotosModel)
         {
             try
@@ -42,6 +44,48 @@ namespace MusicApp.Api.Controllers
                     return Ok(result);
                 }
                 return BadRequest();
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
+        [HttpPut]
+        [Route("[action]/{albumId}")]
+
+        public async Task<IActionResult> update (int albumId,Albums albums)
+        {
+            try
+            {
+                var isExists = await _albumService.isExists(x => x.Id == albumId);
+                if (!isExists)
+                {
+                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {albumId}");
+                    return NotFound();
+                }
+                else
+                {
+                    if (ModelState.IsValid)
+                    {
+                        var album = await _albumService.GetAlbumById(albumId);
+                        album.Result.Desc = albums.Desc;
+                        album.Result.Name = albums.Name;
+                        album.Result.Year = albums.Year;
+                        album.Result.ArtistId = albums.ArtistId;
+                        var updatedAlbum = await _albumService.Update(album.Result);
+
+                        return Ok(updatedAlbum);
+                    }
+                    else
+                    {
+                        return BadRequest();
+                    }
+              
+
+                    //var album = await _artistService.GetByID(artistId);
+                    //_logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded Artist : {artist.Result}");
+                    //return Ok(artist.Result);
+                }
             }
             catch (Exception exception)
             {

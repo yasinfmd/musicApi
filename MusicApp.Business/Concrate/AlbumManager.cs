@@ -97,6 +97,13 @@ namespace MusicApp.Business.Concrate
             return baseResponse;
         }
 
+        public async Task<BaseResponse<Albums>> GetAlbumById(int id)
+        {
+            BaseResponse<Albums> baseResponse = new BaseResponse<Albums>();
+            var result = await _albumRepository.GetByID(id);
+            baseResponse.Result = result;
+            return baseResponse;
+        }
 
         public async Task<BaseResponse<IEnumerable<AlbumDto>>> GetAll()
         {
@@ -157,6 +164,15 @@ namespace MusicApp.Business.Concrate
         public async Task<bool> isExists(Expression<Func<Albums, bool>> filter)
         {
             return await _albumRepository.isExists(filter);
+        }
+
+        public async Task<BaseResponse<AlbumUpdateDto>> Update(Albums album)
+        {
+            BaseResponse<AlbumUpdateDto> baseResponse = new BaseResponse<AlbumUpdateDto>();
+            var updated = await _albumRepository.Update(album);
+            var mappedAlbum = _mapper.Map<AlbumUpdateDto>(updated);
+            baseResponse.Result = mappedAlbum;
+            return baseResponse;
         }
     }
 }

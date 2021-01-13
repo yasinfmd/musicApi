@@ -111,7 +111,9 @@ namespace MusicApp.Business.Concrate
         {
             BaseResponse<ArtistDto> baseResponse = new BaseResponse<ArtistDto>();
             var updatedArtist = await _artistRepository.Update(artist);
-            baseResponse.Result = new ArtistDto { Name = updatedArtist.Name, Gender = artist.Gender, Id = artist.Id, Info = artist.Info };
+            var mappedArtist = _mapper.Map<ArtistDto>(updatedArtist);
+            baseResponse.Result = mappedArtist;
+                //new ArtistDto { Name = updatedArtist.Name, Gender = artist.Gender, Id = artist.Id, Info = artist.Info };
             return baseResponse;
 
             

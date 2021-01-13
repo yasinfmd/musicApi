@@ -53,17 +53,27 @@ namespace MusicApp.Api.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                var isExists = await _artistService.isExists(x => x.Id == artistId);
+                if (isExists)
                 {
-                    var artist = await _artistService.GetArtist(artistId);
-                    artist.Result.Name = artistUpdateModel.Name;
-                    artist.Result.Info = artistUpdateModel.Info;
-                    artist.Result.Gender = artistUpdateModel.Gender;
-                    var updateArtist = await _artistService.Update(artist.Result);
-                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistUpdated Name : {updateArtist.Result.Name} and Id : {updateArtist.Result.Id}");
-                    return Ok(updateArtist);
+
+                    if (ModelState.IsValid)
+                    {
+                        var artist = await _artistService.GetArtist(artistId);
+                        artist.Result.Name = artistUpdateModel.Name;
+                        artist.Result.Info = artistUpdateModel.Info;
+                        artist.Result.Gender = artistUpdateModel.Gender;
+                        var updateArtist = await _artistService.Update(artist.Result);
+                        _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} ArtistUpdated Name : {updateArtist.Result.Name} and Id : {updateArtist.Result.Id}");
+                        return Ok(updateArtist);
+                    }
+                    return BadRequest();
                 }
-                return BadRequest();
+                else
+                {
+                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {artistId}");
+                    return NotFound();
+                }
             }
             catch (Exception exception)
             {
