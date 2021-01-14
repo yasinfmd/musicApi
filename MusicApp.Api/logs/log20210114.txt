@@ -1,0 +1,27 @@
+14-01-2021 09:25:47.170 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+14-01-2021 09:25:48.176 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Müzik Türü 1 and Id : 1
+14-01-2021 09:25:53.239 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+14-01-2021 09:25:53.268 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) MusicTypesCreated Name : Müzik Türü 2 and Id : 2
+14-01-2021 09:25:54.566 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+14-01-2021 09:29:13.147 +03:00 [INF] MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api)
+14-01-2021 09:29:13.191 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicTypesController.store (MusicApp.Api) Error Key : Name , ErrorValue: Müzik Türü Eklendi
+14-01-2021 09:32:17.951 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+14-01-2021 09:32:18.000 +03:00 [INF] Files Manager Insert Run
+14-01-2021 09:32:18.019 +03:00 [INF] Files Manager Insert Files Uploaded Name : java-script1.jpg
+14-01-2021 09:32:18.217 +03:00 [INF] Files Manager Insert Files DB
+14-01-2021 09:32:18.251 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Yasin Efem Dalkılıç  Id : 1 Info : Merhaba ben yasin efem dalkılıç müzik 1 türünde müzik yapmayı dinlemeyi çok sevdiğim için bu alanda başarılı oldum. and Gender : 1
+14-01-2021 09:32:28.588 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+14-01-2021 09:32:28.600 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Artist Adı Kullanıldı
+14-01-2021 09:32:53.828 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+14-01-2021 09:32:53.838 +03:00 [INF] Files Manager Insert Run
+14-01-2021 09:32:53.852 +03:00 [INF] Files Manager Insert Files Uploaded Name : java-script1.jpg
+14-01-2021 09:32:53.867 +03:00 [INF] Files Manager Insert Files DB
+14-01-2021 09:32:53.878 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) ArtistCreated Name : Mehmeh Ugur  Id : 2 Info : Merhaba ben mehmet ugur  müzik 1 türünde müzik yapmayı dinlemeyi çok sevdiğim için bu alanda başarılı oldum. and Gender : 1
+14-01-2021 09:32:56.187 +03:00 [INF] MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api)
+14-01-2021 09:32:56.200 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.ArtistController.store (MusicApp.Api) Error Key : Name , ErrorValue: Artist Adı Kullanıldı
+14-01-2021 09:43:14.955 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+14-01-2021 09:43:15.165 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Album Created Name : Xyz1223  Id : 1
+14-01-2021 09:44:17.465 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+14-01-2021 09:44:17.526 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Album Created Name : Xyz12  Id : 2
+14-01-2021 09:46:59.000 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+14-01-2021 09:46:59.058 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Album Created Name : Yzb  Id : 3

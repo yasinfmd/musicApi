@@ -177,8 +177,8 @@ namespace MusicApp.Api.Controllers
             try
             {
                 _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
-                var isExists = await _musicTypesService.isExists(x => x.Name.ToLower() == musicTypes.Name.ToLower());
-                if (ModelState.IsValid && isExists==false)
+               // var isExists = await _musicTypesService.isExists(x => x.Name.ToLower() == musicTypes.Name.ToLower());
+                if (ModelState.IsValid)
                 {
                     var newMusicTypes = await _musicTypesService.Insert(musicTypes);
                     _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} MusicTypesCreated Name : {newMusicTypes.Result.Name} and Id : {newMusicTypes.Result.Id}");
