@@ -13,5 +13,7 @@ namespace MusicApp.Dto
 
         public int Gender { get; set; }
         public  FilesDto? File {get;set;}
+
+       
     }
 }

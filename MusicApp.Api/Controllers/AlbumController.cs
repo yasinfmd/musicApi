@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
+using MusicApp.Api.Hubs;
 using MusicApp.Business.Abstract;
 using MusicApp.Dto;
 using MusicApp.Entity;
@@ -22,11 +24,14 @@ namespace MusicApp.Api.Controllers
     {
         private readonly IAlbumService _albumService;
         private readonly ILogService _logger;
-
-        public AlbumController(IAlbumService albumService,ILogService log)
+        private readonly IArtistService _artistService;
+        private readonly IHubContext<ArtistHub> _artistHub;
+        public AlbumController(IAlbumService albumService,ILogService log,IArtistService artistService, IHubContext<ArtistHub> artistHub)
         {
             _albumService = albumService;
             _logger = log;
+            _artistService = artistService;
+            _artistHub = artistHub;
         }
         //AlbumArtistPhotosModel
         [HttpPost]
@@ -50,9 +55,51 @@ namespace MusicApp.Api.Controllers
                 return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
+
+      
+
+        [HttpGet]
+        [Route("[action]/{artistId}")]
+        public async Task<IActionResult> artist(int artistId, [FromQuery(Name = "includeAlbum")] bool includeAlbum)
+        {
+            try
+            {
+
+                var isExists = await _artistService.isExists(x => x.Id == artistId);
+                if (!isExists)
+                {
+                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Artist Id : {artistId}");
+                    return NotFound();
+                }
+                else
+                {
+                    if (artistId>0)
+                    {
+                        if (includeAlbum) {
+                            _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Artist");
+                            return Ok(await _albumService.GetAlbumByArtist(artistId));
+                        }
+                        else
+                        {
+                            _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Artist");
+                            return Ok(await _albumService.GetArtist(artistId));
+                        }
+                    }
+                    else
+                    {
+                        return BadRequest();
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
+
+
         [HttpPut]
         [Route("[action]/{albumId}")]
-
         public async Task<IActionResult> update (int albumId,Albums albums)
         {
             try
@@ -107,7 +154,7 @@ namespace MusicApp.Api.Controllers
                     var result = await _albumService.DeleteAlbumPhotos(deleteAlbumPhotosModel);
                     //await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
 
-                  //  _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Created Name : {result.Result.Name}  Id : {result.Result.Id}");
+                   _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Deleted Photos : {deleteAlbumPhotosModel.images}");
                     return Ok(result);
                 }
                 return BadRequest();
@@ -132,8 +179,7 @@ namespace MusicApp.Api.Controllers
                 if (ModelState.IsValid)
                 {
                     var result = await _albumService.Insert(albumImagesModel);
-                    //await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
-
+                    await _artistHub.Clients.All.SendAsync("newAlbumAdded", new NewAlbumAddedHubModel {AlbumId=result.Result.Id,ArtistId=result.Result.Artist.Id } );
                     _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Created Name : {result.Result.Name}  Id : {result.Result.Id}");
                     return Ok(result);
                 }

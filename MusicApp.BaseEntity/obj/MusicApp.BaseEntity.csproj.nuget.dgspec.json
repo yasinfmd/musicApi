@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {}
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
         "projectName": "MusicApp.BaseEntity",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
-        "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\obj\\",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -30,6 +30,11 @@ namespace MusicApp.Business.Abstract
 
         Task<BaseResponse<FilesDto>> UpdateArtistProfileImage(UpdateProfilePhoto artistPhoto);
 
+        Task<BaseResponse<IEnumerable<ArtistAlbumsDto>>> GetAlbums(int id);
+
+
+        Task<BaseResponse<IEnumerable<ArtistAlbumsDto>>> GetLatest(int id ,int takeCount);
+
 
     }
 }

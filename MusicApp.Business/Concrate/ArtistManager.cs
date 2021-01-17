@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using MusicApp.Business.Abstract;
 using MusicApp.DataAccess.Abstract;
 using MusicApp.Dto;
@@ -19,13 +20,14 @@ namespace MusicApp.Business.Concrate
         private readonly IArtistRepository _artistRepository;
         private readonly IMapper _mapper;
         private readonly IFilesService _filesService;
+        private readonly IConfiguration _configuration;
 
-
-        public ArtistManager(IArtistRepository artistRepository, IMapper mapper, IFilesService filesService)
+        public ArtistManager(IArtistRepository artistRepository, IMapper mapper, IFilesService filesService,IConfiguration configuration)
         {
             _artistRepository = artistRepository;
             _mapper = mapper;
             _filesService = filesService;
+            _configuration = configuration;
         }
         public async Task<BaseResponse<IEnumerable<ArtistDto>>> GetAll()
         {
@@ -58,6 +60,7 @@ namespace MusicApp.Business.Concrate
 
         public async Task<BaseResponse<ArtistDto>> Insert(ArtistImageModel artistImageModel)
         {
+            //TODO
             BaseResponse<ArtistDto> baseResponse = new BaseResponse<ArtistDto>();
             Files files = new Files
             {
@@ -72,7 +75,8 @@ namespace MusicApp.Business.Concrate
                 Name = artistImageModel.Name
             };
             var result = await _artistRepository.Insert(artist);
-            var fileDto = new FilesDto { Id = file.Id, Path = file.Path };
+            var fileDto = _mapper.Map<FilesDto>(file);
+                //new FilesDto { Id = file.Id, Path = file.Path };
             var artistDto = new ArtistDto { File = fileDto, Gender = result.Gender, Id = result.Id, Info = result.Info, Name = result.Name };
             baseResponse.Result = artistDto;
             return baseResponse;
@@ -97,11 +101,12 @@ namespace MusicApp.Business.Concrate
                     pathBuild = Path.Combine(pathBuild, fileName[fileName.Length - 1]);
                     var deletedFileFromStorage = _filesService.DeleteFile(pathBuild);
                     var newFile = await _filesService.UploadFileFromStorage(new Files { ImageFile = artistPhoto.File });
-                    file.Result.Path = "http://localhost:5000/" + "Uploads/"+newFile;
+                    file.Result.Path =_configuration["FilePath"] +newFile;
                     file.Result.Name = artistPhoto.File.FileName;
                     file.Result.Size = Convert.ToInt32(artistPhoto.File.Length);
                     var updatedFile = await _filesService.Update(file.Result);
                     baseResponse.Result = updatedFile.Result;
+                    //"http://localhost:5000/" + "Uploads/"
                 }
             }
             return baseResponse;
@@ -124,6 +129,26 @@ namespace MusicApp.Business.Concrate
             BaseResponse<Artist> baseResponse = new BaseResponse<Artist>();
             var artist = await _artistRepository.GetByID(id);
             baseResponse.Result = artist;
+            return baseResponse;
+        }
+
+        public async Task<BaseResponse<IEnumerable<ArtistAlbumsDto>>> GetAlbums(int id)
+        {
+            BaseResponse<IEnumerable<ArtistAlbumsDto>> baseResponse = new BaseResponse<IEnumerable<ArtistAlbumsDto>>();
+            var artist = await _artistRepository.GetAlbums(id);
+            var result = artist.Albums;
+            var mappedResult = _mapper.Map<IEnumerable<ArtistAlbumsDto>>(result);
+            baseResponse.Result = mappedResult;
+            return baseResponse;
+        }
+
+        public async Task<BaseResponse<IEnumerable<ArtistAlbumsDto>>> GetLatest(int id,int takeCount)
+        {
+            BaseResponse<IEnumerable<ArtistAlbumsDto>> baseResponse = new BaseResponse<IEnumerable<ArtistAlbumsDto>>();
+            var artist = await _artistRepository.GetLatestAlbums(id, takeCount);
+            var result = artist.Albums;
+            var mappedResult = _mapper.Map<IEnumerable<ArtistAlbumsDto>>(result);
+            baseResponse.Result = mappedResult;
             return baseResponse;
         }
     }

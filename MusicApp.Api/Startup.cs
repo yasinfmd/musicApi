@@ -25,6 +25,8 @@ using Microsoft.Extensions.FileProviders;
 using System.Net;
 using MusicApp.Api.Hubs;
 using Microsoft.AspNetCore.Identity;
+using MusicApp.Helper.Abstract;
+using MusicApp.Helper.Concrate;
 
 namespace MusicApp
 {
@@ -63,6 +65,7 @@ namespace MusicApp
             services.AddScoped<IArtistService, ArtistManager>();
             services.AddScoped<IAlbumService, AlbumManager>();
             services.AddScoped<IAlbumRepository, AlbumRepository>();
+            services.AddScoped<IHelper, HelperManager>();
             //            services.AddControllerWithViews()
             //    .AddNewtonsoftJson(options =>
             //    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore

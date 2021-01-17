@@ -11,6 +11,9 @@ namespace MusicApp.Entity
         public int AlbumId { get; set; }
         [Key]
         public int FileId { get; set; }
+
+
+        public bool isCover { get; set; }
         public Albums Album { get; set; }
         public Files File { get; set; }
 

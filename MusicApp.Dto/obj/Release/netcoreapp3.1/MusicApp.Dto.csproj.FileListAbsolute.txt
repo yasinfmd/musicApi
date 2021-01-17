@@ -1,0 +1,14 @@
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\bin\Release\netcoreapp3.1\MusicApp.Dto.deps.json
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\bin\Release\netcoreapp3.1\MusicApp.Dto.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\bin\Release\netcoreapp3.1\MusicApp.Dto.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\bin\Release\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\bin\Release\netcoreapp3.1\MusicApp.Entity.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\bin\Release\netcoreapp3.1\MusicApp.Entity.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\bin\Release\netcoreapp3.1\MusicApp.BaseEntity.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\obj\Release\netcoreapp3.1\MusicApp.Dto.csprojAssemblyReference.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\obj\Release\netcoreapp3.1\MusicApp.Dto.AssemblyInfoInputs.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\obj\Release\netcoreapp3.1\MusicApp.Dto.AssemblyInfo.cs
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\obj\Release\netcoreapp3.1\MusicApp.Dto.csproj.CoreCompileInputs.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\obj\Release\netcoreapp3.1\MusicApp.Dto.csproj.CopyComplete
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\obj\Release\netcoreapp3.1\MusicApp.Dto.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Dto\obj\Release\netcoreapp3.1\MusicApp.Dto.pdb

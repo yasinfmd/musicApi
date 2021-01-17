@@ -13,16 +13,16 @@ namespace MusicApp.DataAccess
 
 
         public DbSet<AlbumsFiles> AlbumsFiles { get; set; }
-        // public MusicAppDbContext(DbContextOptions options)
-        //: base(options)
-        // {
-
-        //}
-        public MusicAppDbContext(DbContextOptions<MusicAppDbContext> options)
-             : base(options)
+         public MusicAppDbContext(DbContextOptions options)
+       : base(options)
          {
 
-         }
+        }
+        //public MusicAppDbContext(DbContextOptions<MusicAppDbContext> options)
+        //     : base(options)
+        // {
+
+        // }
         public DbSet<MusicTypes> MusicTypes { get; set; }
         public DbSet<Files> Files { get; set; }
 

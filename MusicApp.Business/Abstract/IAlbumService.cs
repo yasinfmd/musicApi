@@ -12,6 +12,10 @@ namespace MusicApp.Business.Abstract
 {
     public interface IAlbumService
     {
+
+        Task<BaseResponse<IEnumerable<AlbumDto>>> GetAlbumByArtist(int id);
+
+        Task<BaseResponse<ArtistDto>> GetArtist(int id);
         Task<bool> isExists(Expression<Func<Albums, bool>> filter);
         Task<BaseResponse<string>> Delete(AlbumDto album);
         Task<BaseResponse<IEnumerable<AlbumDto>>> GetAll();

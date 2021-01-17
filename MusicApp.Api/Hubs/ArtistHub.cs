@@ -12,5 +12,6 @@ namespace MusicApp.Api.Hubs
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
+     
     }
 }

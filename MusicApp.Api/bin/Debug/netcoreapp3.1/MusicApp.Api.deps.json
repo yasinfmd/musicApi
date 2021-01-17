@@ -33,6 +33,7 @@
           "MusicApp.Business": "1.0.0",
           "MusicApp.DataAccess": "1.0.0",
           "MusicApp.Dto": "1.0.0",
+          "MusicApp.Helper": "1.0.0",
           "MusicApp.Logger": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Swashbuckle.AspNetCore.Filters": "6.0.1",
@@ -2320,9 +2321,11 @@
       "MusicApp.Business/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
+          "Microsoft.AspNetCore.SignalR.Client": "3.1.5",
           "MusicApp.DataAccess": "1.0.0",
           "MusicApp.Dto": "1.0.0",
           "MusicApp.Entity": "1.0.0",
+          "MusicApp.Helper": "1.0.0",
           "MusicApp.Logger": "1.0.0"
         },
         "runtime": {
@@ -2370,6 +2373,14 @@
         },
         "compile": {
           "MusicApp.Entity.dll": {}
+        }
+      },
+      "MusicApp.Helper/1.0.0": {
+        "runtime": {
+          "MusicApp.Helper.dll": {}
+        },
+        "compile": {
+          "MusicApp.Helper.dll": {}
         }
       },
       "MusicApp.Logger/1.0.0": {
@@ -5174,6 +5185,11 @@
       "sha512": ""
     },
     "MusicApp.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MusicApp.Helper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

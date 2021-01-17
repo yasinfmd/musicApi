@@ -45,6 +45,46 @@ namespace MusicApp.Api.Controllers
         }
 
 
+        [HttpGet]
+        [Route("[action]/{artistId}")]
+        public async Task<IActionResult> albums(int artistId, [FromQuery(Name = "takeCount")] int takeCount)
+        {
+            try
+            {
+                var isExists = await _artistService.isExists(x => x.Id == artistId);
+                if (isExists)
+                {
+                    if (artistId > 0)
+                    {
+                        if (takeCount > 0)
+                        {
+                            return Ok(await _artistService.GetLatest(artistId,takeCount));
+                        }
+                        else
+                        {
+                            var result = await _artistService.GetAlbums(artistId);
+                            return Ok(result);
+                        }
+
+                    }
+                    else
+                    {
+                        return BadRequest();
+                    }
+                }
+                else
+                {
+                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {artistId}");
+                    return NotFound();
+                }
+
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
+
         [HttpPut]
         [Route("[action]/{artistId}")]
         [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]

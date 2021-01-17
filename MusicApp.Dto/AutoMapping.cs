@@ -11,6 +11,9 @@ namespace MusicApp.Dto
     {
         public AutoMapping()
         {
+            CreateMap<ArtistAlbumsDto, Albums>()
+                .ForMember(dest => dest.AlbumsFiles, opt => opt.MapFrom(src => src.Images)).ReverseMap();
+
             CreateMap<AlbumFilesModel, FilesDto>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Path, opt => opt.MapFrom(src => src.Path))
@@ -20,13 +23,16 @@ namespace MusicApp.Dto
          .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
          .ReverseMap();
             CreateMap<MusicDto, Music>().ReverseMap();
-            CreateMap<AlbumFilesDto, AlbumsFiles>().ForPath(dest => dest.File.Id, opt => opt.MapFrom(src => src.Id)).ForPath(dest => dest.File.Path, opt => opt.MapFrom(src => src.Path)).ReverseMap();
+            CreateMap<AlbumFilesDto, AlbumsFiles>().ForPath(dest => dest.File.Id, opt => opt.MapFrom(src => src.Id)).ForPath(dest => dest.File.Path, opt => opt.MapFrom(src => src.Path))
+                .ForPath(dest => dest.isCover, opt => opt.MapFrom(src => src.isCover))
+                .ReverseMap();
             //.ForMember(dest=>dest.AlbumsFiles,opt=>opt.MapFrom(src=>src.Images)) 
             CreateMap<AlbumDto, Albums>().ForMember(dest => dest.Artist, act => act.MapFrom(src => src.Artist)).ForMember(dest=>dest.Musics,act=>act.MapFrom(src=>src.Musics))
                 .ForMember(dest => dest.AlbumsFiles, opt => opt.MapFrom(src => src.Images)).ReverseMap();
 
             CreateMap<AlbumUpdateDto, Albums>().ForMember(dest => dest.Artist, act => act.MapFrom(src => src.Artist)).ReverseMap();
-            CreateMap<ArtistDto, Artist>().ForMember(dest => dest.File, opt => opt.MapFrom(src => src.File)).ReverseMap();
+            CreateMap<ArtistDto, Artist>().ForMember(dest => dest.File, opt => opt.MapFrom(src => src.File))
+                .ReverseMap();
             CreateMap<FilesDto, Files>().ForMember(dest => dest.Path, opt => opt.MapFrom(src => src.Path)).ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id)).ReverseMap();
 
 //            CreateMap<AlbumsFiles, string>().ConvertUsing(new CustomTypeConverter());

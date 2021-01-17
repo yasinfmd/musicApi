@@ -5365,19 +5365,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yasin\\.nuget\\packages\\": {}
+    "C:\\Users\\ysndl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
       "projectName": "MusicApp.Logger",
-      "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj",
-      "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\obj\\",
+      "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
+      "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5439,7 +5439,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

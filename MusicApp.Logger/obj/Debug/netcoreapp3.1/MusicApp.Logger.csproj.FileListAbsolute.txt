@@ -7,3 +7,12 @@ C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\Mus
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.dll
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.pdb
 C:\Users\Yasin\source\repos\MusicApp\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.csprojAssemblyReference.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\bin\Debug\netcoreapp3.1\MusicApp.Logger.deps.json
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\bin\Debug\netcoreapp3.1\MusicApp.Logger.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\bin\Debug\netcoreapp3.1\MusicApp.Logger.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.csprojAssemblyReference.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.AssemblyInfoInputs.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.AssemblyInfo.cs
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.csproj.CoreCompileInputs.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Logger\obj\Debug\netcoreapp3.1\MusicApp.Logger.pdb

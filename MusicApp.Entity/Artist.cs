@@ -12,10 +12,11 @@ namespace MusicApp.Entity
 
         public int Gender { get; set; }
 
-        public virtual ICollection<Albums>? Albums { get; set; }
+        public virtual IEnumerable<Albums>? Albums { get; set; }
 
         public int? FileId { get; set; }
         public  Files? File { get; set; }
+
 
     }
 }

@@ -3,8 +3,8 @@ using MusicApp.DataAccess.Abstract;
 using MusicApp.Entity;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MusicApp.DataAccess.Concrate
@@ -52,9 +52,20 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.FindOne(filter);
         }
 
+        public async Task<IEnumerable<Albums>> GetAlbumByArtistId(int id)
+        {
+            return await _context.Albums.Where(x => x.ArtistId == id).Include(x => x.Musics).ThenInclude(x => x.MusicTypes).Include(x => x.Artist ).ThenInclude(x => x.File).Include(y => y.AlbumsFiles).ThenInclude(y => y.File).ToListAsync();
+        }
+
         public async Task<IEnumerable<Albums>> GetAll()
         {
             return await _context.Albums.Include(x => x.Musics).ThenInclude(x=> x.MusicTypes).Include(x => x.Artist).Include(x => x.AlbumsFiles).ThenInclude(x => x.File).ToListAsync();
+        }
+
+        public async Task<Artist> GetArtist(int id)
+        {
+            var artist= await _context.Albums.Where(x => x.ArtistId == id).Include(x => x.Artist).ThenInclude(x => x.File).FirstOrDefaultAsync();
+            return artist.Artist;
         }
 
         public async Task<Albums> GetByID(int id)

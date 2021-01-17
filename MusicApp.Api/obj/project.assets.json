@@ -2656,9 +2656,11 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper": "10.1.1",
+          "Microsoft.AspNetCore.SignalR.Client": "3.1.5",
           "MusicApp.DataAccess": "1.0.0",
           "MusicApp.Dto": "1.0.0",
           "MusicApp.Entity": "1.0.0",
+          "MusicApp.Helper": "1.0.0",
           "MusicApp.Logger": "1.0.0"
         },
         "compile": {
@@ -2712,6 +2714,16 @@
         },
         "runtime": {
           "bin/placeholder/MusicApp.Entity.dll": {}
+        }
+      },
+      "MusicApp.Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MusicApp.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicApp.Helper.dll": {}
         }
       },
       "MusicApp.Logger/1.0.0": {
@@ -8404,6 +8416,11 @@
       "path": "../MusicApp.Entity/MusicApp.Entity.csproj",
       "msbuildProject": "../MusicApp.Entity/MusicApp.Entity.csproj"
     },
+    "MusicApp.Helper/1.0.0": {
+      "type": "project",
+      "path": "../MusicApp.Helper/MusicApp.Helper.csproj",
+      "msbuildProject": "../MusicApp.Helper/MusicApp.Helper.csproj"
+    },
     "MusicApp.Logger/1.0.0": {
       "type": "project",
       "path": "../MusicApp.Logger/MusicApp.Logger.csproj",
@@ -8421,6 +8438,7 @@
       "MusicApp.Business >= 1.0.0",
       "MusicApp.DataAccess >= 1.0.0",
       "MusicApp.Dto >= 1.0.0",
+      "MusicApp.Helper >= 1.0.0",
       "MusicApp.Logger >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "Swashbuckle.AspNetCore.Filters >= 6.0.1",
@@ -8463,6 +8481,9 @@
             },
             "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
               "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj"
+            },
+            "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj"
             },
             "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj": {
               "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj"

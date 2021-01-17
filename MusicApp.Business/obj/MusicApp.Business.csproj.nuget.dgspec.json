@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Business\\MusicApp.Business.csproj": {}
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
         "projectName": "MusicApp.BaseEntity",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
-        "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\obj\\",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Business\\MusicApp.Business.csproj": {
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Business\\MusicApp.Business.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj",
         "projectName": "MusicApp.Business",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Business\\MusicApp.Business.csproj",
-        "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Business\\obj\\",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,17 +82,20 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj"
               },
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj"
               },
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj"
               },
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj"
+              },
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj"
               }
             }
           }
@@ -110,6 +113,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -127,21 +134,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj": {
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
         "projectName": "MusicApp.DataAccess",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,11 +162,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj"
               },
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj"
               }
             }
           }
@@ -218,21 +225,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj": {
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj",
         "projectName": "MusicApp.Dto",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\MusicApp.Dto.csproj",
-        "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Dto\\obj\\",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -246,8 +253,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj"
               }
             }
           }
@@ -282,21 +289,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj": {
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
         "projectName": "MusicApp.Entity",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\MusicApp.Entity.csproj",
-        "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Entity\\obj\\",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -310,8 +317,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
-                "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj"
+              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj"
               }
             }
           }
@@ -346,21 +353,75 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj": {
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj",
-        "projectName": "MusicApp.Logger",
-        "projectPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\MusicApp.Logger.csproj",
-        "packagesPath": "C:\\Users\\Yasin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yasin\\source\\repos\\MusicApp\\MusicApp.Logger\\obj\\",
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
+        "projectName": "MusicApp.Helper",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
+        "projectName": "MusicApp.Logger",
+        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
+        "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -422,7 +483,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

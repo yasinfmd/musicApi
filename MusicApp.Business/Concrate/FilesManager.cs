@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using MusicApp.Business.Abstract;
 using MusicApp.DataAccess.Abstract;
 using MusicApp.Dto;
@@ -18,11 +19,12 @@ namespace MusicApp.Business.Concrate
     {
         private readonly IFilesRepository _filesRepository;
         private readonly ILogService _logger;
+        private readonly IConfiguration _configuration;
 
-
-        public FilesManager(IFilesRepository filesRepository, ILogService logService)
+        public FilesManager(IFilesRepository filesRepository, ILogService logService,IConfiguration configuration)
         {
             _logger = logService;
+            _configuration = configuration;
             _filesRepository = filesRepository;
         }
 
@@ -104,7 +106,8 @@ namespace MusicApp.Business.Concrate
                 var fileName = await UploadFileFromStorage(files);
                 files.Name = files.ImageFile.FileName;
                 files.Size = Convert.ToInt32(files.ImageFile.Length);
-                files.Path = "http://localhost:5000/Uploads/" + fileName;
+                files.Path = _configuration["FilePath"] + fileName;
+                //"http://localhost:5000/Uploads/"
                 var newfiles = await _filesRepository.Insert(files);
                 _logger.LogInfo($"Files Manager Insert Files DB");
                 return newfiles;

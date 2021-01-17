@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using MusicApp.Business.Abstract;
 using MusicApp.DataAccess.Abstract;
 using MusicApp.Dto;
 using MusicApp.Entity;
 using MusicApp.Entity.ParameterModels;
 using MusicApp.Entity.ResponseModels;
+using MusicApp.Helper.Abstract;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,12 +21,15 @@ namespace MusicApp.Business.Concrate
         private readonly IAlbumRepository _albumRepository;
         private readonly IMapper _mapper;
         private readonly IFilesService _filesService;
-
-        public AlbumManager(IAlbumRepository albumRepository, IMapper mapper,IFilesService filesService)
+        private readonly IConfiguration _configuration;
+        private readonly IHelper _helper;
+        public AlbumManager(IAlbumRepository albumRepository, IMapper mapper,IFilesService filesService,IConfiguration  configuration,IHelper helper)
         {
             _albumRepository = albumRepository;
             _mapper = mapper;
             _filesService = filesService;
+            _configuration = configuration;
+            _helper = helper;
         }
 
         public  async Task<BaseResponse<List<AlbumFilesDto>>> AddAlbumPhotos(AlbumArtistPhotosModel albumArtistPhotosModel)
@@ -35,18 +40,20 @@ namespace MusicApp.Business.Concrate
             foreach (var item in albumArtistPhotosModel.Files)
             {
                 Files f = new Files();
+                string path = _helper.UploadStorage(item.Name, item.FileName);
                 string fileName = Path.GetFileNameWithoutExtension(item.Name);
-                string extension = Path.GetExtension(item.FileName);
-                fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
-                string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
+               // string extension = Path.GetExtension(item.FileName);
+                //fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
+               // string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+               // string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
                 using (var FileStream = new FileStream(path, FileMode.Create))
                 {
                     await item.CopyToAsync(FileStream);
                 }
                 f.Name = item.FileName;
                 f.Size = Convert.ToInt32(item.Length);
-                f.Path = "http://localhost:5000/Uploads/" + fileName;
+                //"http://localhost:5000/Uploads/"
+                f.Path = _configuration["FilePath"] + fileName;
                 albumsFiles.Add(new AlbumsFiles { Album = album, File = f });
             }
             album.AlbumsFiles = albumsFiles;
@@ -97,6 +104,16 @@ namespace MusicApp.Business.Concrate
             return baseResponse;
         }
 
+        public  async Task<BaseResponse<IEnumerable<AlbumDto>>> GetAlbumByArtist(int id)
+        {
+            //albüm çıkartılabilir
+            BaseResponse<IEnumerable<AlbumDto>> baseResponse = new BaseResponse<IEnumerable<AlbumDto>>();
+            var result = await _albumRepository.GetAlbumByArtistId(id);
+            var mappedResult = _mapper.Map<IEnumerable<AlbumDto>>(result);
+            baseResponse.Result = mappedResult;
+            return baseResponse;
+        }
+
         public async Task<BaseResponse<Albums>> GetAlbumById(int id)
         {
             BaseResponse<Albums> baseResponse = new BaseResponse<Albums>();
@@ -110,6 +127,15 @@ namespace MusicApp.Business.Concrate
             BaseResponse<IEnumerable<AlbumDto>> baseResponse = new BaseResponse<IEnumerable<AlbumDto>>();
             var result = await _albumRepository.GetAll();
             var mappedResult = _mapper.Map<IEnumerable<AlbumDto>>(result);
+            baseResponse.Result = mappedResult;
+            return baseResponse;
+        }
+
+        public async Task<BaseResponse<ArtistDto>> GetArtist(int id)
+        {
+            BaseResponse<ArtistDto> baseResponse = new BaseResponse<ArtistDto>();
+            var result = await _albumRepository.GetArtist(id);
+            var mappedResult = _mapper.Map<ArtistDto>(result);
             baseResponse.Result = mappedResult;
             return baseResponse;
         }
@@ -140,17 +166,18 @@ namespace MusicApp.Business.Concrate
                 {
                     Files f = new Files();
                     string fileName = Path.GetFileNameWithoutExtension(item.Name);
-                    string extension = Path.GetExtension(item.FileName);
-                    fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
-                    string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
-                    string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
+                    //string extension = Path.GetExtension(item.FileName);
+                    //fileName = fileName + "_" + Guid.NewGuid().ToString() + extension;
+                    //string pathBuild = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\");
+                    //string path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\", fileName);
+                    string path = _helper.UploadStorage(item.Name, item.FileName);
                     using (var FileStream = new FileStream(path, FileMode.Create))
                     {
                        await item.CopyToAsync(FileStream);
                     }
                     f.Name = item.FileName;
                     f.Size = Convert.ToInt32(item.Length);
-                    f.Path = "http://localhost:5000/Uploads/" + fileName;
+                    f.Path = _configuration["FilePath"] + fileName;
                     albumsFiles.Add(new AlbumsFiles { Album = albums, File = f });
                 }
                 albums.AlbumsFiles = albumsFiles;

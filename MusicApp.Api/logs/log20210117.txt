@@ -1,0 +1,468 @@
+17-01-2021 12:32:02.613 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.artist (MusicApp.Api) Album Artist : MusicApp.Entity.ResponseModels.BaseResponse`1[System.Collections.Generic.IEnumerable`1[MusicApp.Dto.AlbumDto]]
+17-01-2021 13:12:22.050 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetAlbums(Int32 id) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 139
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 58
+17-01-2021 13:13:43.038 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+ - AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ArtistDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetAlbums(Int32 id) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 139
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 58
+17-01-2021 13:18:22.574 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AlbumDto
+System.Object -> MusicApp.Dto.AlbumDto - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AlbumDto
+System.Object -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , Object , AlbumDto , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetAlbums(Int32 id) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 139
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 58
+17-01-2021 13:20:25.418 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Object -> ICollection`1
+System.Object -> System.Collections.Generic.ICollection`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , ICollection`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ICollection`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ICollection`1 , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> ICollection`1
+System.Object -> System.Collections.Generic.ICollection`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , ICollection`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ICollection`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ICollection`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , ICollection`1 , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetAlbums(Int32 id) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 139
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 58
+17-01-2021 13:22:15.533 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ICollection`1 -> AlbumDto
+System.Collections.Generic.ICollection`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , ICollection`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetAlbums(Int32 id) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 139
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 58
+17-01-2021 13:31:12.602 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IEnumerable`1 -> AlbumDto
+System.Collections.Generic.IEnumerable`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , IEnumerable`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IEnumerable`1 -> AlbumDto
+System.Collections.Generic.IEnumerable`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , IEnumerable`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetAlbums(Int32 id) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 140
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 58
+17-01-2021 13:42:57.426 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IEnumerable`1 -> AlbumDto
+System.Collections.Generic.IEnumerable`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , IEnumerable`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.AlbumDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Type Map configuration:
+Albums -> AlbumDto
+MusicApp.Entity.Albums -> MusicApp.Dto.AlbumDto
+
+Destination Member:
+Artist
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Type Map configuration:
+Artist -> ArtistDto
+MusicApp.Entity.Artist -> MusicApp.Dto.ArtistDto
+
+Destination Member:
+Albums
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IEnumerable`1 -> AlbumDto
+System.Collections.Generic.IEnumerable`1[[MusicApp.Entity.Albums, MusicApp.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MusicApp.Dto.AlbumDto
+   at lambda_method(Closure , IEnumerable`1 , AlbumDto , ResolutionContext )
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetAlbums(Int32 id) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 140
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 58
+17-01-2021 14:14:33.680 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.artist (MusicApp.Api) Album Artist : MusicApp.Entity.ResponseModels.BaseResponse`1[System.Collections.Generic.IEnumerable`1[MusicApp.Dto.AlbumDto]]
+17-01-2021 15:01:42.117 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.artist (MusicApp.Api) Album Artist
+17-01-2021 15:01:58.887 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.artist (MusicApp.Api) Album Artist
+17-01-2021 15:35:07.021 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+17-01-2021 15:35:20.109 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Album Created Name : Xyz122311  Id : 4
+17-01-2021 15:36:40.341 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api)
+17-01-2021 15:36:40.430 +03:00 [INF] MusicApp.Api.Controllers.AlbumController.store (MusicApp.Api) Album Created Name : Xyz12231123  Id : 5
+17-01-2021 16:07:00.003 +03:00 [ERR] MusicApp.Api.Controllers.ArtistController.albums (MusicApp.Api) Exception Message : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.ArtistAlbumsDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[MusicApp.Dto.ArtistAlbumsDto, MusicApp.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at MusicApp.Business.Concrate.ArtistManager.GetLatest(Int32 id, Int32 takeCount) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\ArtistManager.cs:line 149
+   at MusicApp.Api.Controllers.ArtistController.albums(Int32 artistId, Int32 takeCount) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\ArtistController.cs:line 61

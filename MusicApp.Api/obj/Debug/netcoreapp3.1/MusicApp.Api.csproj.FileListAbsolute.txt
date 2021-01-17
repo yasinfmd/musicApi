@@ -232,3 +232,5 @@ C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\obj\Debug\netcoreapp3.1\scoped
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\obj\Debug\netcoreapp3.1\MusicApp.Api.RazorTargetAssemblyInfo.cache
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\obj\Debug\netcoreapp3.1\MusicApp.Api.csproj.CopyComplete
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\obj\Debug\netcoreapp3.1\MusicApp.Api.genruntimeconfig.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Helper.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Helper.pdb

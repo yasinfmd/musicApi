@@ -9,9 +9,11 @@
       "MusicApp.Business/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
+          "Microsoft.AspNetCore.SignalR.Client": "3.1.5",
           "MusicApp.DataAccess": "1.0.0",
           "MusicApp.Dto": "1.0.0",
           "MusicApp.Entity": "1.0.0",
+          "MusicApp.Helper": "1.0.0",
           "MusicApp.Logger": "1.0.0"
         },
         "runtime": {
@@ -88,6 +90,18 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Connections.Abstractions/3.1.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "3.1.5",
+          "System.IO.Pipelines": "4.7.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Connections.Abstractions.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.7": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -124,7 +138,7 @@
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "3.1.5",
           "System.Text.Encodings.Web": "4.5.0"
         },
         "runtime": {
@@ -134,14 +148,39 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "Microsoft.AspNetCore.Http.Connections.Client/3.1.5": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.1.7"
+          "Microsoft.AspNetCore.Http.Connections.Common": "3.1.5",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.7",
+          "Microsoft.Extensions.Options": "3.1.7"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18316"
+          "lib/netstandard2.1/Microsoft.AspNetCore.Http.Connections.Client.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Connections.Common/3.1.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Connections.Abstractions": "3.1.5"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Connections.Common.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/3.1.5": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.7",
+          "System.IO.Pipelines": "4.7.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
           }
         }
       },
@@ -154,6 +193,56 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
             "assemblyVersion": "3.1.7.0",
             "fileVersion": "3.100.720.37213"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.SignalR.Client/3.1.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Connections.Client": "3.1.5",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "3.1.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.SignalR.Client.Core/3.1.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.SignalR.Common": "3.1.5",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "3.1.5",
+          "Microsoft.Extensions.DependencyInjection": "3.1.7",
+          "Microsoft.Extensions.Logging": "3.1.7",
+          "System.Threading.Channels": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.AspNetCore.SignalR.Client.Core.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.SignalR.Common/3.1.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Connections.Abstractions": "3.1.5",
+          "Microsoft.Extensions.Options": "3.1.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.SignalR.Common.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/3.1.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.SignalR.Common": "3.1.5"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27105"
           }
         }
       },
@@ -1004,6 +1093,14 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.IO.Pipelines/4.7.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "4.0.2.1",
+            "fileVersion": "4.700.20.12001"
+          }
+        }
+      },
       "System.Linq/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1410,6 +1507,14 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Threading.Channels/4.7.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.20.21406"
+          }
+        }
+      },
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1579,6 +1684,11 @@
           "MusicApp.Entity.dll": {}
         }
       },
+      "MusicApp.Helper/1.0.0": {
+        "runtime": {
+          "MusicApp.Helper.dll": {}
+        }
+      },
       "MusicApp.Logger/1.0.0": {
         "dependencies": {
           "Serilog.Extensions.Logging": "3.0.1",
@@ -1641,6 +1751,13 @@
       "path": "k4os.hash.xxhash/1.0.6",
       "hashPath": "k4os.hash.xxhash.1.0.6.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Connections.Abstractions/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d9QNKLjOIb+O8fW+Xolhw0ZpOP1nzJi822qthXUhZqzb1PpL/xD4tmZfeE6IRXlRmQOAKDKg38mDEDTaMPGy1w==",
+      "path": "microsoft.aspnetcore.connections.abstractions/3.1.5",
+      "hashPath": "microsoft.aspnetcore.connections.abstractions.3.1.5.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.7": {
       "type": "package",
       "serviceable": true,
@@ -1669,12 +1786,26 @@
       "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+    "Microsoft.AspNetCore.Http.Connections.Client/3.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
-      "path": "microsoft.aspnetcore.http.features/2.2.0",
-      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+      "sha512": "sha512-S+5j8AAvO+JqnJlvGwWnJICR6h204IScA1jBF893epnt//NNgXYlU4wcIEtjAXnknuED5JX+rdJgnYcCGY3uHg==",
+      "path": "microsoft.aspnetcore.http.connections.client/3.1.5",
+      "hashPath": "microsoft.aspnetcore.http.connections.client.3.1.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Connections.Common/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6KANnwgdMf2MmSm+p1/PHv0H5jHp3cA9PAs3wLGhuTHPDzqBbNaFDM/cmsipqlAR+PxnToodMi2KMSZecyWbsg==",
+      "path": "microsoft.aspnetcore.http.connections.common/3.1.5",
+      "hashPath": "microsoft.aspnetcore.http.connections.common.3.1.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I+G1L5363H2oCdMxHv2vtbluRgb4e33Gv6zJd8Uj93bBRFbE4MZlb3cB9PvRAYpSB0xbK216/qRtHmQJBzWIcg==",
+      "path": "microsoft.aspnetcore.http.features/3.1.5",
+      "hashPath": "microsoft.aspnetcore.http.features.3.1.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.1.7": {
       "type": "package",
@@ -1682,6 +1813,34 @@
       "sha512": "sha512-cCfc4scygCgSIh0KFeBytnO7IWPxh99irOcrrJnX+p9pk//rp8/XUwRU5kh5OZBwmgB245uqKKuBMckR1lvnFQ==",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/3.1.7",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.3.1.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SignalR.Client/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vdsdYVhFCtLC0C7hQXgeRqBGqBQxMV8s7Le//+ExnDbTXoMNDTusdYyU6Ry2Irg8LQqgzxGC0KS7H2VijVKOtA==",
+      "path": "microsoft.aspnetcore.signalr.client/3.1.5",
+      "hashPath": "microsoft.aspnetcore.signalr.client.3.1.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SignalR.Client.Core/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F/jQUuMj7qx2qi2cq1ODaP5BdKa2qtIuHHH9q9xfzZ7fSNR5oYCqNof9ZQ76RQ1/nSEzHmXEEVkwj/Xk2nKGfA==",
+      "path": "microsoft.aspnetcore.signalr.client.core/3.1.5",
+      "hashPath": "microsoft.aspnetcore.signalr.client.core.3.1.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SignalR.Common/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g3NnXrjphd+xSWL58nYojgqgp83wyKgWAcdzi3gnrgXL00MB4uHjMApGvKdR0TzqV7Ze6cK7Svomzoq7rRdpyg==",
+      "path": "microsoft.aspnetcore.signalr.common/3.1.5",
+      "hashPath": "microsoft.aspnetcore.signalr.common.3.1.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SignalR.Protocols.Json/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/cfAZJCpFhXjUCKHQHX0b74pxvt1eQ44wIOoc69/aztwRn4Zl7pyp1T11uVz0HJzOoBoJTGi/4hyqmzp0w8r3w==",
+      "path": "microsoft.aspnetcore.signalr.protocols.json/3.1.5",
+      "hashPath": "microsoft.aspnetcore.signalr.protocols.json.3.1.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
       "type": "package",
@@ -2264,6 +2423,13 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
+    "System.IO.Pipelines/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TyMTasnXQt7U4k13RQ7tA3CrfWEkvWjR635SFfnKVwwMOgClLE5mdHSkG2D13BLIdNwbPTGVQnhQB8Rk7f53Rg==",
+      "path": "system.io.pipelines/4.7.1",
+      "hashPath": "system.io.pipelines.4.7.1.nupkg.sha512"
+    },
     "System.Linq/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2544,6 +2710,13 @@
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
     },
+    "System.Threading.Channels/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6akRtHK/wab3246t4p5v3HQrtQk8LboOt5T4dtpNgsp3zvDeM4/Gx8V12t0h+c/W9/enUrilk8n6EQqdQorZAA==",
+      "path": "system.threading.channels/4.7.1",
+      "hashPath": "system.threading.channels.4.7.1.nupkg.sha512"
+    },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2637,6 +2810,11 @@
       "sha512": ""
     },
     "MusicApp.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MusicApp.Helper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
