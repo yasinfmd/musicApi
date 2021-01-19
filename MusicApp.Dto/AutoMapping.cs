@@ -18,11 +18,17 @@ namespace MusicApp.Dto
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Path, opt => opt.MapFrom(src => src.Path))
                 .ReverseMap();
-            CreateMap<MusicTypes, MusicTypesDto>()
-         .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
-         .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
-         .ReverseMap();
-            CreateMap<MusicDto, Music>().ReverseMap();
+            CreateMap<MusicTypes, MusicTypesDto>().ReverseMap();
+
+            CreateMap<MusicAlbumDto, Albums>()
+                  .ForMember(dest => dest.AlbumsFiles, opt => opt.MapFrom(src => src.Images))
+                .ReverseMap();
+
+            CreateMap<MusicDto, Music>().ReverseMap()
+                .ForMember(dest => dest.Minute, opt => opt.MapFrom(src => src.Minute + ":" + src.Second))
+                         .ForMember(dest => dest.MusicTypes, opt => opt.MapFrom(src => src.MusicTypes))
+
+                ;
             CreateMap<AlbumFilesDto, AlbumsFiles>().ForPath(dest => dest.File.Id, opt => opt.MapFrom(src => src.Id)).ForPath(dest => dest.File.Path, opt => opt.MapFrom(src => src.Path))
                 .ForPath(dest => dest.isCover, opt => opt.MapFrom(src => src.isCover))
                 .ReverseMap();

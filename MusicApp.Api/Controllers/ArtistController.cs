@@ -62,10 +62,8 @@ namespace MusicApp.Api.Controllers
                         }
                         else
                         {
-                            var result = await _artistService.GetAlbums(artistId);
-                            return Ok(result);
+                            return Ok(await _artistService.GetAlbums(artistId));
                         }
-
                     }
                     else
                     {

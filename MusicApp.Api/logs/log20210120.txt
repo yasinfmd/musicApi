@@ -1,0 +1,6 @@
+20-01-2021 00:11:43.272 +03:00 [INF] MusicApp.Api.Controllers.MusicController.store (MusicApp.Api)
+20-01-2021 00:11:43.320 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicController.store (MusicApp.Api) Error Key :  , ErrorValue: Bu Albüme Ait Böyle Bir Şarkı Var
+20-01-2021 00:11:43.330 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicController.store (MusicApp.Api) Error Key : Minute , ErrorValue: Max 2 karakter olabilir
+20-01-2021 00:11:43.338 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicController.store (MusicApp.Api) Error Key : Second , ErrorValue: Max 2 karakter olabilir
+20-01-2021 00:14:18.320 +03:00 [INF] MusicApp.Api.Controllers.MusicController.store (MusicApp.Api)
+20-01-2021 00:14:18.366 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicController.store (MusicApp.Api) Error Key :  , ErrorValue: Bu Albüme Ait Böyle Bir Şarkı Var

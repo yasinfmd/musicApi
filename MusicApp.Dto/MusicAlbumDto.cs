@@ -5,12 +5,11 @@ using System.Text;
 
 namespace MusicApp.Dto
 {
-    public class MusicDto : Base
+    public class MusicAlbumDto:Base
     {
+        public string Desc { get; set; }
         public string Name { get; set; }
-        public string Minute { get; set; }
-        public MusicTypesDto? MusicTypes { get; set; }
-
-        public MusicAlbumDto? Album { get; set; }
+        public string Year { get; set; }
+        public List<AlbumFilesDto> Images { get; set; }
     }
 }

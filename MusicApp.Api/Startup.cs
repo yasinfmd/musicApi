@@ -65,6 +65,10 @@ namespace MusicApp
             services.AddScoped<IArtistService, ArtistManager>();
             services.AddScoped<IAlbumService, AlbumManager>();
             services.AddScoped<IAlbumRepository, AlbumRepository>();
+            services.AddScoped<IMusicService, MusicManager>();
+            services.AddScoped<IMusicRepository, MusicRepository>();
+ 
+
             services.AddScoped<IHelper, HelperManager>();
             //            services.AddControllerWithViews()
             //    .AddNewtonsoftJson(options =>

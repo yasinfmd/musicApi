@@ -24,15 +24,13 @@ namespace MusicApp.Api.Controllers
     {
         private readonly IMusicTypesService _musicTypesService;
         private readonly ILogService _logger;
-        private readonly IMapper _mapper;
         private readonly IHubContext<MusicTypesHub> _musicTypesHub;
 
 
-        public MusicTypesController(IMusicTypesService musicTypesService, ILogService logService,IMapper mapper,IHubContext<MusicTypesHub> musicTypesHub):base(logService)
+        public MusicTypesController(IMusicTypesService musicTypesService, ILogService logService,IHubContext<MusicTypesHub> musicTypesHub):base(logService)
         {
             _musicTypesService = musicTypesService;
             _logger = logService;
-            _mapper = mapper;
             _musicTypesHub = musicTypesHub;
         }
 
@@ -76,7 +74,6 @@ namespace MusicApp.Api.Controllers
         [ProducesResponseType(typeof(BaseResponse<MusicTypesDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(List<ValidationErrorExceptionModel>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
-
         public async Task<IActionResult> update(int musicTypeId,[FromBody] MusicTypes musicTypes)
         {
             try

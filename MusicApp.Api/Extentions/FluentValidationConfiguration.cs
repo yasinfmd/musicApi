@@ -21,6 +21,7 @@ namespace MusicApp.Api.Extentions
 				x.RegisterValidatorsFromAssemblyContaining<AlbumImageValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<DeleteAlbumPhotosValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<AlbumValidator>();
+				x.RegisterValidatorsFromAssemblyContaining<MusicValidator>();
 
 
 				x.ImplicitlyValidateChildProperties = true;
