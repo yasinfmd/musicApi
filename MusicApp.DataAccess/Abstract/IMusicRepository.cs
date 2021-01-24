@@ -11,5 +11,7 @@ namespace MusicApp.DataAccess.Abstract
     public interface IMusicRepository : IBaseRepository<Music>
     {
         Task<IEnumerable<Music>> GetAll(bool includeMusicTypes,bool includeAlbums,bool isCoverPhoto=true);
+
+        Task<Music> GetByID(int id ,bool includeMusicTypes, bool includeAlbums, bool isCoverPhoto = true);
     }
 }

@@ -42,10 +42,11 @@ namespace MusicApp.Api.Controllers
         {
             try
             {
-                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                InfoLog(ControllerContext.ActionDescriptor.DisplayName);
                 if (ModelState.IsValid)
                 {
                     var result = await _albumService.AddAlbumPhotos(albumArtistPhotosModel);
+                    InfoLog($"Resim Eklendi {result}");
                     return Ok(result);
                 }
                 return BadRequest();
@@ -68,20 +69,19 @@ namespace MusicApp.Api.Controllers
                 var isExists = await _artistService.isExists(x => x.Id == artistId);
                 if (!isExists)
                 {
-                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Artist Id : {artistId}");
-                    return NotFound();
+                    return CustomNotFound(artistId);
                 }
                 else
                 {
                     if (artistId>0)
                     {
                         if (includeAlbum) {
-                            _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Artist");
+                            InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Album Artist");
                             return Ok(await _albumService.GetAlbumByArtist(artistId));
                         }
                         else
                         {
-                            _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Artist");
+                            InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Album Artist");
                             return Ok(await _albumService.GetArtist(artistId));
                         }
                     }
@@ -107,8 +107,7 @@ namespace MusicApp.Api.Controllers
                 var isExists = await _albumService.isExists(x => x.Id == albumId);
                 if (!isExists)
                 {
-                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {albumId}");
-                    return NotFound();
+                    return CustomNotFound(albumId);
                 }
                 else
                 {
@@ -120,18 +119,13 @@ namespace MusicApp.Api.Controllers
                         album.Result.Year = albums.Year;
                         album.Result.ArtistId = albums.ArtistId;
                         var updatedAlbum = await _albumService.Update(album.Result);
-
+                        InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Update Album");
                         return Ok(updatedAlbum);
                     }
                     else
                     {
                         return BadRequest();
                     }
-              
-
-                    //var album = await _artistService.GetByID(artistId);
-                    //_logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded Artist : {artist.Result}");
-                    //return Ok(artist.Result);
                 }
             }
             catch (Exception exception)
@@ -153,8 +147,7 @@ namespace MusicApp.Api.Controllers
                 {
                     var result = await _albumService.DeleteAlbumPhotos(deleteAlbumPhotosModel);
                     //await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
-
-                   _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Deleted Photos : {deleteAlbumPhotosModel.images}");
+                    InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Album Deleted Photos : {deleteAlbumPhotosModel.images}");
                     return Ok(result);
                 }
                 return BadRequest();
@@ -180,7 +173,7 @@ namespace MusicApp.Api.Controllers
                 {
                     var result = await _albumService.Insert(albumImagesModel);
                     await _artistHub.Clients.All.SendAsync("newAlbumAdded", new NewAlbumAddedHubModel {AlbumId=result.Result.Id,ArtistId=result.Result.Artist.Id } );
-                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Album Created Name : {result.Result.Name}  Id : {result.Result.Id}");
+                    InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Album Created Name : {result.Result.Name}  Id : {result.Result.Id}");
                     return Ok(result);
                 }
                 return BadRequest();
@@ -203,15 +196,13 @@ namespace MusicApp.Api.Controllers
                 var album = await _albumService.GetByID(albumId);
                 if (album.Result == null)
                 {
-
-                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {albumId}");
-                    return NotFound();
+                    return CustomNotFound(albumId);
                 }
                 else
                 {
 
                     var deleted = await _albumService.Delete(album.Result);
-                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Deleted Album: {albumId}");
+                    InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Deleted Album: {albumId}");
                     return Ok(deleted);
                 }
             }
@@ -231,9 +222,9 @@ namespace MusicApp.Api.Controllers
         {
             try
             {
-                _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
+                InfoLog(ControllerContext.ActionDescriptor.DisplayName);
                 var allAlbums = await _albumService.GetAll();
-              _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Total Albums : {allAlbums.Result.Count()}");
+                InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Total Albums : {allAlbums.Result.Count()}");
                 return Ok(allAlbums);
             }
             catch (Exception exception)

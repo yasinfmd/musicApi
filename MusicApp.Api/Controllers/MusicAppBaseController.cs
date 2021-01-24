@@ -19,6 +19,23 @@ namespace MusicApp.Api.Controllers
             _logger = log;
         }
 
+        protected void InfoLog(string log)
+        {
+            _logger.LogWarning(log);
+        }
+
+        protected void NotFoundLog(int id)
+        {
+            _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {id}");
+        }
+
+        protected ObjectResult CustomNotFound(int id,string? message="Kayıt Bulunamadı")
+        {
+            NotFoundLog(id);
+            return StatusCode(404, new NotFoundModel {Id=id,controller=ControllerContext.ActionDescriptor.ControllerName,method=ControllerContext.ActionDescriptor.ActionName,message=message });
+        }
+
+
         protected ObjectResult ErrorInternal(Exception exception, string message)
         {
             _logger.LogError(exception, message);

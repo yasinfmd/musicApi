@@ -47,7 +47,7 @@ namespace MusicApp.Api.Controllers
             {
                 _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
                 var lastMusicTypes = await _musicTypesService.GetLatest(type => type.Id, takeCount);
-                _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} takeCount : {takeCount} Total Last MusicTYpe : {lastMusicTypes.Result.Count()}");
+                InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} takeCount : {takeCount} Total Last MusicTYpe : {lastMusicTypes.Result.Count()}");
                 return Ok(lastMusicTypes);
 
             }
@@ -82,8 +82,7 @@ namespace MusicApp.Api.Controllers
                 var isExists = await _musicTypesService.isExists(x => x.Id == musicTypeId);
                 if (!isExists)
                 {
-                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {musicTypeId}");
-                    return NotFound();
+                    return CustomNotFound(musicTypeId);
                 }
                 else
                 {
@@ -94,7 +93,8 @@ namespace MusicApp.Api.Controllers
 
                         musicType.Result.Name = musicTypes.Name;
                         var updateMusicTypes = await _musicTypesService.Update(musicType.Result);
-                        _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} MusicTypesCreated Name : {updateMusicTypes.Result.Name} and Id : {updateMusicTypes.Result.Id}");
+                        InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} MusicTypes Updated Name : {updateMusicTypes.Result.Name} and Id : {updateMusicTypes.Result.Id}");
+            
                         return Ok(updateMusicTypes);
                     }
                     return BadRequest();
@@ -130,13 +130,12 @@ namespace MusicApp.Api.Controllers
                 var isExists = await _musicTypesService.isExists(x => x.Id == musicTypeId);
                 if (!isExists)
                 {
-                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {musicTypeId}");
-                    return NotFound();
+                    return CustomNotFound(musicTypeId);
                 }
                 else
                 {
                     var musicType = await _musicTypesService.GetByID(musicTypeId);
-                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded MusicTypes : {musicType}");
+                    InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Finded MusicTypes : {musicType}");
                     var deleted = await _musicTypesService.Delete(musicType.Result);
             
                     return Ok(deleted);
@@ -178,7 +177,7 @@ namespace MusicApp.Api.Controllers
                 if (ModelState.IsValid)
                 {
                     var newMusicTypes = await _musicTypesService.Insert(musicTypes);
-                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} MusicTypesCreated Name : {newMusicTypes.Result.Name} and Id : {newMusicTypes.Result.Id}");
+                    InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} MusicTypesCreated Name : {newMusicTypes.Result.Name} and Id : {newMusicTypes.Result.Id}");
                     await _musicTypesHub.Clients.All.SendAsync("newMusicTypeAdded",newMusicTypes);
                     return Created("Created", newMusicTypes);
                 }
@@ -211,13 +210,12 @@ namespace MusicApp.Api.Controllers
                 var isExists = await _musicTypesService.isExists(x=>x.Id== musicTypeId);
                 if (!isExists)
                 {
-                    _logger.LogWarning($"{ControllerContext.ActionDescriptor.DisplayName} Not Found Id : {musicTypeId}");
-                    return NotFound();
+                    return CustomNotFound(musicTypeId);
                 }
                 else
                 {
                     var musicType = await _musicTypesService.GetByID(musicTypeId);
-                    _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Finded MusicTypes : {musicType.Result}");
+                    InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Finded MusicTypes : {musicType.Result}");
                     return Ok(musicType.Result);
                 }
 
@@ -245,7 +243,7 @@ namespace MusicApp.Api.Controllers
             {
                 _logger.LogInfo(ControllerContext.ActionDescriptor.DisplayName);
                 var allMusicTypesList = await _musicTypesService.GetAll();
-                _logger.LogInfo($"{ControllerContext.ActionDescriptor.DisplayName} Total MusicTypesCount : {allMusicTypesList.Result.Count()}");
+                InfoLog($"{ControllerContext.ActionDescriptor.DisplayName} Total MusicTypesCount : {allMusicTypesList.Result.Count()}");
                 return Ok(allMusicTypesList);
             }
             catch (Exception exception)

@@ -234,3 +234,10 @@ C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\obj\Debug\netcoreapp3.1\MusicA
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\obj\Debug\netcoreapp3.1\MusicApp.Api.genruntimeconfig.cache
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Helper.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Helper.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

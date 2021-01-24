@@ -4,3 +4,31 @@
 20-01-2021 00:11:43.338 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicController.store (MusicApp.Api) Error Key : Second , ErrorValue: Max 2 karakter olabilir
 20-01-2021 00:14:18.320 +03:00 [INF] MusicApp.Api.Controllers.MusicController.store (MusicApp.Api)
 20-01-2021 00:14:18.366 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.MusicController.store (MusicApp.Api) Error Key :  , ErrorValue: Bu Albüme Ait Böyle Bir Şarkı Var
+20-01-2021 09:14:21.462 +03:00 [INF] MusicApp.Api.Controllers.MusicController.store (MusicApp.Api)
+20-01-2021 09:17:26.268 +03:00 [INF] MusicApp.Api.Controllers.MusicController.store (MusicApp.Api)
+20-01-2021 09:17:32.288 +03:00 [INF] MusicApp.Api.Controllers.MusicController.store (MusicApp.Api) Music Name : Şarkı112 and Id : 7
+20-01-2021 09:41:15.038 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:41:15.668 +03:00 [ERR] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Exception Message : The method or operation is not implemented. - 
+System.NotImplementedException: The method or operation is not implemented.
+   at MusicApp.Business.Concrate.MusicManager.GetByID(Int32 id, Boolean includeMusicTypes, Boolean includeAlbums, Boolean isCoverPhoto) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\Concrate\MusicManager.cs:line 48
+   at MusicApp.Api.Controllers.MusicController.show(Int32 musicId, Boolean includeMusicTypes, Boolean includeAlbums, Boolean isCoverPhoto) in C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\Controllers\MusicController.cs:line 75
+20-01-2021 09:43:13.200 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:13.753 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:26.219 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:26.234 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:27.509 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:27.524 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:28.295 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:28.310 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:29.041 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:29.061 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:29.744 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:29.764 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:30.365 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:30.378 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:55.079 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:55.100 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:43:55.846 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:43:55.861 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+20-01-2021 09:45:26.171 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+20-01-2021 09:45:34.250 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto

@@ -1,0 +1,46 @@
+24-01-2021 10:35:54.575 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:35:55.187 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Finded MusicTypes : MusicApp.Entity.ResponseModels.BaseResponse`1[MusicApp.Dto.MusicDto]
+24-01-2021 10:36:09.176 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:36:09.194 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 10:36:26.058 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:36:26.071 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 10:36:26.871 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:36:26.887 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 10:36:27.419 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:36:27.433 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 10:36:27.972 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:36:27.989 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 10:36:28.520 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:36:28.533 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 10:37:13.055 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:37:13.513 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 10:46:28.196 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 10:46:28.647 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 11:23:47.184 +03:00 [INF] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api)
+24-01-2021 11:23:47.633 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.delete (MusicApp.Api) Not Found Id : 7
+24-01-2021 11:24:01.694 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+24-01-2021 11:24:01.708 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Not Found Id : 7
+24-01-2021 12:36:40.874 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.update (MusicApp.Api)
+24-01-2021 12:37:28.872 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.update (MusicApp.Api)
+24-01-2021 12:40:42.256 +03:00 [INF] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api)
+24-01-2021 12:40:42.840 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api) Total Music Count : 5
+24-01-2021 12:44:20.392 +03:00 [INF] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api)
+24-01-2021 12:44:20.952 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api) Total Music Count : 5
+24-01-2021 12:54:20.781 +03:00 [INF] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api)
+24-01-2021 12:54:21.343 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api) Total Music Count : 5
+24-01-2021 12:54:23.382 +03:00 [INF] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api)
+24-01-2021 12:54:23.396 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api) Total Music Count : 5
+24-01-2021 12:54:24.687 +03:00 [INF] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api)
+24-01-2021 12:54:24.701 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api) Total Music Count : 5
+24-01-2021 13:22:35.213 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+24-01-2021 13:22:35.800 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+24-01-2021 13:36:31.921 +03:00 [INF] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api)
+24-01-2021 13:36:31.969 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.show (MusicApp.Api) Finded Music : MusicApp.Dto.MusicDto
+24-01-2021 16:31:40.872 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.UserController.register (MusicApp.Api) Error Key : Email , ErrorValue: Lütfen Geçerli Bir Email Adresi Giriniz
+24-01-2021 16:31:40.917 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.UserController.register (MusicApp.Api) Error Key : Password , ErrorValue: Minimumu 8 Karakter Olmalıdır
+24-01-2021 16:31:53.750 +03:00 [WRN] ModelState IsInvalid MusicApp.Api.Controllers.UserController.register (MusicApp.Api) Error Key : Password , ErrorValue: Minimumu 8 Karakter Olmalıdır
+24-01-2021 16:32:03.466 +03:00 [WRN] MusicApp.Api.Controllers.UserController.register (MusicApp.Api)
+24-01-2021 16:38:51.821 +03:00 [WRN] MusicApp.Api.Controllers.UserController.register (MusicApp.Api)
+24-01-2021 16:41:57.188 +03:00 [WRN] MusicApp.Api.Controllers.UserController.register (MusicApp.Api)
+24-01-2021 16:44:44.198 +03:00 [WRN] MusicApp.Api.Controllers.UserController.register (MusicApp.Api)
+24-01-2021 17:45:30.169 +03:00 [WRN] MusicApp.Api.Controllers.UserController.register (MusicApp.Api)

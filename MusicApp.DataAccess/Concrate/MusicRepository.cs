@@ -122,6 +122,40 @@ namespace MusicApp.DataAccess.Concrate
             return await _baseRepository.GetByID(id);
         }
 
+        public async Task<Music> GetByID(int id, bool includeMusicTypes, bool includeAlbums, bool isCoverPhoto = true)
+        {
+            if (includeAlbums == true && includeAlbums == true)
+            {
+                //bakılacak
+                if (isCoverPhoto)
+                {
+                    //Where(af=>af.isCover == false)
+
+                    //var result = await _context.Musics.Include(x => x.MusicTypes).Include(x => x.Album).Include(x=>x.Album.AlbumsFiles).ThenInclude(af => af.AlbumsFiles).ThenInclude(z => z.File).ToListAsync();
+
+                    var result = await _context.Musics.Include(x => x.MusicTypes).Include(x => x.Album).ThenInclude(t => t.AlbumsFiles).ThenInclude(z => z.File).FirstOrDefaultAsync(x=>x.Id == id);
+                    result.Album.AlbumsFiles = result.Album.AlbumsFiles.Where(x => x.isCover == true).ToList();
+                    return result;
+                }
+                else
+                {
+                    return await _context.Musics.Include(x => x.MusicTypes).Include(x => x.Album).ThenInclude(y => y.AlbumsFiles).ThenInclude(z => z.File).FirstOrDefaultAsync(x=>x.Id == id);
+                }
+            }
+            else if (includeAlbums == true)
+            {
+                return await _context.Musics.Include(x => x.Album).ThenInclude(y => y.AlbumsFiles).ThenInclude(z => z.File).FirstOrDefaultAsync(x => x.Id == id);
+            }
+            else if (includeMusicTypes == true)
+            {
+                return await _context.Musics.Include(x=>x.MusicTypes).FirstOrDefaultAsync(x => x.Id == id);
+            }
+            else
+            {
+                return await _context.Musics.FirstOrDefaultAsync(x => x.Id == id);
+            }
+        }
+
         public async Task<IList<Music>> GetLast(Expression<Func<Music, int>> filter, int takeCount = 10)
         {
             return await _baseRepository.GetLast(filter, takeCount);

@@ -27,6 +27,10 @@ using MusicApp.Api.Hubs;
 using Microsoft.AspNetCore.Identity;
 using MusicApp.Helper.Abstract;
 using MusicApp.Helper.Concrate;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using MusicApp.Api.Localize;
 
 namespace MusicApp
 {
@@ -39,7 +43,7 @@ namespace MusicApp
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+ 
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -67,13 +71,11 @@ namespace MusicApp
             services.AddScoped<IAlbumRepository, AlbumRepository>();
             services.AddScoped<IMusicService, MusicManager>();
             services.AddScoped<IMusicRepository, MusicRepository>();
+            services.AddScoped<IUserService, UserServiceManager>();
  
 
             services.AddScoped<IHelper, HelperManager>();
-            //            services.AddControllerWithViews()
-            //    .AddNewtonsoftJson(options =>
-            //    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            //);
+
             services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
@@ -98,10 +100,35 @@ namespace MusicApp
 
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
-                //options.Password.RequireDigit = true;
-                //options.Password.RequiredLength = 8;
-                //options.Password.RequireLowercase = true;
-            }).AddEntityFrameworkStores<MusicAppDbContext>().AddDefaultTokenProviders();
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequiredUniqueChars = 1;
+
+                options.SignIn.RequireConfirmedEmail = true;
+
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.AllowedForNewUsers = true;
+            }).AddEntityFrameworkStores<MusicAppDbContext>().AddDefaultTokenProviders().AddErrorDescriber<MultilanguageIdentityErrorDescriber>();
+
+            services.AddAuthentication(auth =>
+            {
+                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["SecretKey"])),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    RequireExpirationTime = true,
+                };
+            });
 
 
             services.AddSwaggerGen(c =>
@@ -140,6 +167,8 @@ namespace MusicApp
 
             app.UseCors("CorsPolicy");
 
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseSwagger();
 
@@ -157,7 +186,6 @@ namespace MusicApp
                 endpoints.MapControllers();
                 endpoints.MapHub<MusicTypesHub>("/mthub");
                 endpoints.MapHub<ArtistHub>("/ahub");
-                endpoints.MapHub<WebRtcHub>("/vhub");
 
             });
 
