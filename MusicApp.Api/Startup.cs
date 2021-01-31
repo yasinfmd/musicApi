@@ -72,6 +72,7 @@ namespace MusicApp
             services.AddScoped<IMusicService, MusicManager>();
             services.AddScoped<IMusicRepository, MusicRepository>();
             services.AddScoped<IUserService, UserServiceManager>();
+            services.AddScoped<IMailService, SendGridMailService>();
  
 
             services.AddScoped<IHelper, HelperManager>();
@@ -160,7 +161,6 @@ namespace MusicApp
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseHttpsRedirection();
 
             app.UseRouting();

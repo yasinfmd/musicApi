@@ -212,7 +212,6 @@ C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
-C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.Business.dll
@@ -241,3 +240,13 @@ C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Micros
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Devart.Data.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\Devart.Data.MySql.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Api\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll

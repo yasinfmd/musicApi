@@ -9,5 +9,7 @@ namespace MusicApp.Business.Abstract
     public interface IUserService
     {
         Task<BaseResponse<string>> Register(UserRegisterModel userRegisterModel);
+
+        Task<BaseResponse<string>> ConfirmEmail(string userId,string token);
     }
 }

@@ -17,7 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicApp.Business", "MusicA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicApp.Dto", "MusicApp.Dto\MusicApp.Dto.csproj", "{42568F1F-BDD1-447F-9818-5E99CA0AA226}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicApp.Helper", "MusicApp.Helper\MusicApp.Helper.csproj", "{55D71FFF-F985-4FA0-824D-5BB2EC458691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicApp.Helper", "MusicApp.Helper\MusicApp.Helper.csproj", "{55D71FFF-F985-4FA0-824D-5BB2EC458691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicApp.RabbitMQ", "MusicApp.RabbitMQ\MusicApp.RabbitMQ.csproj", "{5C60A9C6-A710-468E-916C-72C00ECFF3A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQEmailSender", "RabbitMQEmailSender\RabbitMQEmailSender.csproj", "{F3F3DC67-D4E0-4F04-8525-B0FDECC932D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTest", "RabbitMQTest\RabbitMQTest.csproj", "{2FA1A3B7-E9D5-4BAB-AAC0-63013B4F6BC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{55D71FFF-F985-4FA0-824D-5BB2EC458691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55D71FFF-F985-4FA0-824D-5BB2EC458691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55D71FFF-F985-4FA0-824D-5BB2EC458691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C60A9C6-A710-468E-916C-72C00ECFF3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C60A9C6-A710-468E-916C-72C00ECFF3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C60A9C6-A710-468E-916C-72C00ECFF3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C60A9C6-A710-468E-916C-72C00ECFF3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F3DC67-D4E0-4F04-8525-B0FDECC932D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F3DC67-D4E0-4F04-8525-B0FDECC932D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F3DC67-D4E0-4F04-8525-B0FDECC932D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F3DC67-D4E0-4F04-8525-B0FDECC932D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA1A3B7-E9D5-4BAB-AAC0-63013B4F6BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA1A3B7-E9D5-4BAB-AAC0-63013B4F6BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA1A3B7-E9D5-4BAB-AAC0-63013B4F6BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA1A3B7-E9D5-4BAB-AAC0-63013B4F6BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

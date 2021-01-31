@@ -1,0 +1,9 @@
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.deps.json
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\obj\Debug\netcoreapp3.1\MusicApp.RabbitMQ.csprojAssemblyReference.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\obj\Debug\netcoreapp3.1\MusicApp.RabbitMQ.AssemblyInfoInputs.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\obj\Debug\netcoreapp3.1\MusicApp.RabbitMQ.AssemblyInfo.cs
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\obj\Debug\netcoreapp3.1\MusicApp.RabbitMQ.csproj.CoreCompileInputs.cache
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\obj\Debug\netcoreapp3.1\MusicApp.RabbitMQ.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.RabbitMQ\obj\Debug\netcoreapp3.1\MusicApp.RabbitMQ.pdb

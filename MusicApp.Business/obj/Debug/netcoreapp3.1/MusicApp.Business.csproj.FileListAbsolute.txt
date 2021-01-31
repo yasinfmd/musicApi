@@ -40,3 +40,5 @@ C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\obj\Debug\netcoreapp3.1\M
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\obj\Debug\netcoreapp3.1\MusicApp.Business.pdb
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Helper.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.Helper.pdb
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.dll
+C:\Users\ysndl\source\repos\musicApi\MusicApp.Business\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.pdb

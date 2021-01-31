@@ -1,0 +1,17 @@
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\RabbitMQTest.exe
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\RabbitMQTest.deps.json
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\RabbitMQTest.runtimeconfig.json
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\RabbitMQTest.runtimeconfig.dev.json
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\RabbitMQTest.dll
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\RabbitMQTest.pdb
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.dll
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\bin\Debug\netcoreapp3.1\MusicApp.RabbitMQ.pdb
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\obj\Debug\netcoreapp3.1\RabbitMQTest.AssemblyInfoInputs.cache
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\obj\Debug\netcoreapp3.1\RabbitMQTest.AssemblyInfo.cs
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\obj\Debug\netcoreapp3.1\RabbitMQTest.csproj.CoreCompileInputs.cache
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\obj\Debug\netcoreapp3.1\RabbitMQTest.csproj.CopyComplete
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\obj\Debug\netcoreapp3.1\RabbitMQTest.dll
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\obj\Debug\netcoreapp3.1\RabbitMQTest.pdb
+C:\Users\ysndl\source\repos\musicApi\RabbitMQTest\obj\Debug\netcoreapp3.1\RabbitMQTest.genruntimeconfig.cache

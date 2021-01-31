@@ -37,6 +37,7 @@
     <ProjectReference Include="..\MusicApp.Dto\MusicApp.Dto.csproj" />
     <ProjectReference Include="..\MusicApp.Helper\MusicApp.Helper.csproj" />
     <ProjectReference Include="..\MusicApp.Logger\MusicApp.Logger.csproj" />
+    <ProjectReference Include="..\MusicApp.RabbitMQ\MusicApp.RabbitMQ.csproj" />
   </ItemGroup>
 
 

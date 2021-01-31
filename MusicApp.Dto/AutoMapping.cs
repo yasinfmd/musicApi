@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MusicApp.Dto
 {
-    public class AutoMapping : Profile
+    public class AutoMapping :Profile
     {
         public AutoMapping()
         {

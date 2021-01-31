@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MusicApp.Business.Abstract;
 using MusicApp.Entity.ResponseModels;
 using MusicApp.Logger.Abstract;
+using MusicApp.RabbitMQ;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,27 @@ namespace MusicApp.Api.Controllers
             _userService = userService;
         }
 
+        [HttpGet]
+        [Route("[action]")]
+
+        public async Task<IActionResult> confirmEmail([FromQuery(Name = "userId")] string userId, [FromQuery(Name = "token")] string token)
+        {
+            if(string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(token))
+            {
+                return NotFound();
+            }
+
+            var result = await _userService.ConfirmEmail(userId, token);
+            if(result.isSuccess !=null && result.isSuccess == true)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return Ok(result);
+            }
+        }
+
         [HttpPost]
         [Route("[action]")]
         [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]
@@ -41,12 +63,10 @@ namespace MusicApp.Api.Controllers
                     }
                     else
                     {
-
-
                         return Ok(result);
                         //login error
                     }
-                    //   return Ok(await _artistService.UpdateArtistProfileImage(updateProfilePhoto));
+                       //return Ok(await _artistService.UpdateArtistProfileImage(updateProfilePhoto));
 
 
                 }
