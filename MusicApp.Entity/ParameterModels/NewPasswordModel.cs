@@ -4,12 +4,10 @@ using System.Text;
 
 namespace MusicApp.Entity.ParameterModels
 {
-    public class UserEmailModel
+   public class NewPasswordModel
     {
-        public string Message { get; set; }
+        public string NewPassword { get; set; }
         public string Email { get; set; }
-
-        public string Title { get; set; }
-
+        public string Token { get; set; }
     }
 }

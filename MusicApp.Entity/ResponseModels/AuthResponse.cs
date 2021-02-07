@@ -9,7 +9,7 @@ namespace MusicApp.Entity.ResponseModels
         public T Result { get; set; }
         public bool? isSuccess { get; set; }
 
-        public DateTime ExpireDate { get; set; }
+        public DateTime? ExpireDate { get; set; }
 
         public List<ErrorModel> Errors { get; set; } = new List<ErrorModel>();
     }

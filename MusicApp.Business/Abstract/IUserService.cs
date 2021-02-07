@@ -14,5 +14,10 @@ namespace MusicApp.Business.Abstract
         Task<AuthResponse<string>> Register(UserRegisterModel userRegisterModel);
 
         Task<AuthResponse<string>> ConfirmEmail(string userId,string token);
+
+        Task<AuthResponse<string>> ForgotPassword(string email);
+
+        Task<AuthResponse<string>> UpdateNewPassword(NewPasswordModel);
+
     }
 }

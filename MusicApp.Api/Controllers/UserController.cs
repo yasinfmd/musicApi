@@ -25,24 +25,81 @@ namespace MusicApp.Api.Controllers
             _userService = userService;
         }
 
+        [HttpPost]
+        [Route("[action]")]
+        public async Task<IActionResult> forgotPassword(ResetPasswordModel resetPasswordModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    InfoLog(ControllerContext.ActionDescriptor.DisplayName);
+                    var result = await _userService.ForgotPassword(resetPasswordModel.Email);
+                    if (result.isSuccess != null && result.isSuccess == true)
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        return Ok(result);
+                        //login error
+                    }
+                }
+                return BadRequest();
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public async Task<IActionResult> resetPassword(NewPasswordModel newPasswordModel)
+        {
+            try
+            {
+                InfoLog(ControllerContext.ActionDescriptor.DisplayName);
+                var result = await _userService.UpdateNewPassword(newPasswordModel);
+                if (result.isSuccess != null && result.isSuccess == true)
+                {
+                    return Ok(result);
+                }
+                else
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+            }
+
+        }
         [HttpGet]
         [Route("[action]")]
-
         public async Task<IActionResult> confirmEmail([FromQuery(Name = "userId")] string userId, [FromQuery(Name = "token")] string token)
         {
-            if(string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(token))
+            try
             {
-                return NotFound();
-            }
+                if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(token))
+                {
+                    return NotFound();
+                }
 
-            var result = await _userService.ConfirmEmail(userId, token);
-            if(result.isSuccess !=null && result.isSuccess == true)
-            {
-                return Ok(result);
+                var result = await _userService.ConfirmEmail(userId, token);
+                if (result.isSuccess != null && result.isSuccess == true)
+                {
+                    return Ok(result);
+                }
+                else
+                {
+                    return Ok(result);
+                }
             }
-            else
+            catch (Exception exception)
             {
-                return Ok(result);
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
             }
         }
         [HttpPost]

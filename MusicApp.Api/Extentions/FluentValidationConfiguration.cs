@@ -24,6 +24,10 @@ namespace MusicApp.Api.Extentions
 				x.RegisterValidatorsFromAssemblyContaining<MusicValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<RegisterValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<LoginValidator>();
+				x.RegisterValidatorsFromAssemblyContaining<ResetPasswordValidator>();
+				x.RegisterValidatorsFromAssemblyContaining<NewPasswordValidator>();
+
+
 
 
 

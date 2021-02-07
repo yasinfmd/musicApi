@@ -30,7 +30,7 @@ namespace MusicApp.Business.Concrate
         public async Task<AuthResponse<string>> Register(UserRegisterModel userRegisterModel)
         {
             AuthResponse<string> baseResponse = new AuthResponse<string>();
-            var identityUser = new IdentityUser { Email = userRegisterModel.Email, UserName = userRegisterModel.Email };
+            var identityUser = new IdentityUser { Email = userRegisterModel.Email, UserName = userRegisterModel.Email,PhoneNumber=userRegisterModel.PhoneNumber };
             var result = await _userManager.CreateAsync(identityUser, userRegisterModel.Password);
 
             if (result.Succeeded)
@@ -39,11 +39,8 @@ namespace MusicApp.Business.Concrate
                 var encodedEmailToken = Encoding.UTF8.GetBytes(emailConfirm);
                 var validEmailToken = WebEncoders.Base64UrlEncode(encodedEmailToken);
                 string uri = $"{_configuration["Server"]}api/user/confirmEmail?userId={identityUser.Id}&token={validEmailToken}";
-                var jsonData = JsonSerializer.Serialize(new UserEmailModel() {Email=userRegisterModel.Email,Message=$"<h1>Email Adresi Onaylama</h1> <p>Lütfen Email Onaylayın <a href='{uri}'> Tıklayın</a> </p>"});
+                var jsonData = JsonSerializer.Serialize(new UserEmailModel() {Email=userRegisterModel.Email,Message=$"<h1>Email Adresi Onaylama</h1> <p>Lütfen Email Onaylayın <a href='{uri}'> Tıklayın</a> </p>",Title="Email Onayı"});
                 _publisher = new Publisher("mailQueque", jsonData);
-                _publisher = new Publisher("test", jsonData);
-
-
                 baseResponse.Result = "Kullancı Kayıt Olma İşlemi Başarıyla Gerçekleşti";
                 baseResponse.isSuccess = true;
             }
@@ -91,7 +88,7 @@ namespace MusicApp.Business.Concrate
 
             return baseResponse;
         }
-        public async Task<AuthResponse<string>> PasswordCheck(IdentityUser user, UserLoginModel userLoginModel)
+        public async Task<AuthResponse<string>> LoginHelper(IdentityUser user, UserLoginModel userLoginModel)
         {
             AuthResponse<string> baseResponse = new AuthResponse<string>();
             var passwordCheck = await _userManager.CheckPasswordAsync(user, userLoginModel.Password);
@@ -119,9 +116,8 @@ namespace MusicApp.Business.Concrate
                         new Claim(ClaimTypes.NameIdentifier,user.Id),
                         new Claim(ClaimTypes.Name,user.UserName),
                         new Claim("LoginTime",DateTime.Now.ToString()),
-                       
+                        new Claim(ClaimTypes.MobilePhone, user.PhoneNumber)
                 };
-                //new Claim(ClaimTypes.MobilePhone, user.PhoneNumber)
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SecretKey"]));
                 var token = new JwtSecurityToken(issuer: "localhost:5000", audience: "localhost:5000", claims: claims, expires: DateTime.Now.AddDays(1), signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256));
                 var stringTokenAsString = new JwtSecurityTokenHandler().WriteToken(token);
@@ -150,7 +146,7 @@ namespace MusicApp.Business.Concrate
                 {
                     await _userManager.SetLockoutEnabledAsync(user, false);
                     await _userManager.ResetAccessFailedCountAsync(user);
-                    baseResponse = await PasswordCheck(user, userLoginModel);
+                    baseResponse = await LoginHelper(user, userLoginModel);
                 }
                 else
                 {
@@ -161,7 +157,49 @@ namespace MusicApp.Business.Concrate
             }
             else
             {
-               baseResponse= await PasswordCheck(user, userLoginModel);
+               baseResponse= await LoginHelper(user, userLoginModel);
+            }
+            return baseResponse;
+        }
+
+        public async Task<AuthResponse<string>> ForgotPassword(string email)
+        {
+            AuthResponse<string> baseResponse = new AuthResponse<string>();
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                baseResponse.Result = "Kullancı Bulunamadı";
+                baseResponse.isSuccess = false;
+            }
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var encodedToken = Encoding.UTF8.GetBytes(token);
+            var validEmailToken = WebEncoders.Base64UrlEncode(encodedToken);
+            string uri = $"{_configuration["Server"]}api/user/resetPassword?email={email}&token={validEmailToken}";
+            var jsonData = JsonSerializer.Serialize(new UserEmailModel() { Email = email, Message = $"<h1>Parola Sıfırlama</h1> <p>Linke Tıklayarak Parolayı Sıfırlayın <a href='{uri}'> Tıklayın</a> </p>",Title="Parola Sıfırlama" });
+            _publisher = new Publisher("mailQueque", jsonData);
+            baseResponse.Result = "Kullancı Parola Sıfırlama Linki Başarıyla Gönderildi";
+            baseResponse.isSuccess = true;
+            return baseResponse;
+        }
+
+        public async Task<AuthResponse<string>> UpdateNewPassword(NewPasswordModel newPasswordModel )
+        {
+            AuthResponse<string> baseResponse = new AuthResponse<string>();
+            var user = await _userManager.FindByEmailAsync(newPasswordModel.Email);
+            var result = await _userManager.ResetPasswordAsync(user, newPasswordModel.Token, newPasswordModel.NewPassword);
+            if (result.Succeeded)
+            {
+                baseResponse.Result = "Kullancı Parolası  Başarıyla Değiştirildi";
+                baseResponse.isSuccess = true;
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    var errorItem = new ErrorModel(item.Code, item.Description);
+                    baseResponse.Errors.Add(errorItem);
+                }
+                baseResponse.isSuccess = false;
             }
             return baseResponse;
         }

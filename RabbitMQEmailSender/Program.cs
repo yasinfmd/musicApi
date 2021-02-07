@@ -36,7 +36,7 @@ namespace RabbitMQEmailSender
                         {
                             string serializeJson=Encoding.UTF8.GetString(e.Body.Span);
                             UserEmailModel user= JsonSerializer.Deserialize<UserEmailModel>(serializeJson);
-                            SendMail(user.Email, "Email Onayı", user.Message);
+                            SendMail(user.Email, user.Title, user.Message);
                             Console.WriteLine($"Email Başarıyla {user.Email} gönderildi");
                         };
                         Console.ReadLine();
