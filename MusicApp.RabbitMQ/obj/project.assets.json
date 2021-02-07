@@ -114,11 +114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj",
       "projectName": "MusicApp.RabbitMQ",
-      "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj",
+      "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj",
       "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.RabbitMQ\\obj\\",
+      "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",

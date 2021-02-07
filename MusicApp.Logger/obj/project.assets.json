@@ -5370,11 +5370,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
       "projectName": "MusicApp.Logger",
-      "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
+      "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
       "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\obj\\",
+      "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Logger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",

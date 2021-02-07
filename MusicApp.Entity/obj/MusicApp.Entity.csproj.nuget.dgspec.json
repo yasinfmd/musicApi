@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {}
+    "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
+    "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
         "projectName": "MusicApp.BaseEntity",
-        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
+        "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
         "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\obj\\",
+        "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.BaseEntity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
+    "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
         "projectName": "MusicApp.Entity",
-        "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
+        "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
         "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\obj\\",
+        "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
-                "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj"
+              "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj": {
+                "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj"
               }
             }
           }

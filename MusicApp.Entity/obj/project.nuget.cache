@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fRS9g7KgTh19Kop7R3mr9KNtV4mrmFC2YSspN1ubo4h08EAA24mCjxRunibVoDVi+FQzf1LIlnXQk+m7YiHElw==",
+  "dgSpecHash": "ml9pmlQFbF0Yt8uZGm2DEosf6wJuyTcxkPMr8Ag2f+OHGoSUcFxxY7+N6kOv1ZIEQ9wzYE3PBWmEZqzV8l2ctw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

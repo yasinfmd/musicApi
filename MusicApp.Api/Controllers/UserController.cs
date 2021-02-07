@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MusicApp.Business.Abstract;
+using MusicApp.Entity.ParameterModels;
 using MusicApp.Entity.ResponseModels;
 using MusicApp.Logger.Abstract;
 using MusicApp.RabbitMQ;
@@ -44,6 +45,36 @@ namespace MusicApp.Api.Controllers
                 return Ok(result);
             }
         }
+        [HttpPost]
+        [Route("[action]")]
+        [ProducesResponseType(typeof(BaseResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> login(UserLoginModel userLoginModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    InfoLog(ControllerContext.ActionDescriptor.DisplayName);
+                    var result = await _userService.Login(userLoginModel);
+                    if (result.isSuccess != null && result.isSuccess == true)
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        return Ok(result);
+                        //login error
+                    }
+                }
+                return BadRequest();
+            }
+            catch (Exception exception)
+            {
+                return ErrorInternal(exception, $"{ControllerContext.ActionDescriptor.DisplayName} Exception Message : {exception.Message} - {exception.InnerException}");
+
+            }
+        }
 
         [HttpPost]
         [Route("[action]")]
@@ -66,9 +97,6 @@ namespace MusicApp.Api.Controllers
                         return Ok(result);
                         //login error
                     }
-                       //return Ok(await _artistService.UpdateArtistProfileImage(updateProfilePhoto));
-
-
                 }
                 return BadRequest();
                    

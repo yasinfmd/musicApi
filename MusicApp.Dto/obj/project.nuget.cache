@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WYRgOINEafdniQn3L7UmHecN2YdmOnPyKAPucwePbP57nin4u7vQ9nTJbls9VBafES2+ElX+UhAOSxU+I6YDMg==",
+  "dgSpecHash": "FKXKGSYYxiC9gqrMbMjMQH/i9wP1muEezo2jo3EF5hG/pCMwsBRWWnKdROCh2SYMTnLkNe2gJr6zWvR/DCJWtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",

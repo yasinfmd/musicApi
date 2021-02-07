@@ -132,11 +132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\RabbitMQTest\\RabbitMQTest.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQTest\\RabbitMQTest.csproj",
       "projectName": "RabbitMQTest",
-      "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\RabbitMQTest\\RabbitMQTest.csproj",
+      "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQTest\\RabbitMQTest.csproj",
       "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\RabbitMQTest\\obj\\",
+      "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -153,8 +153,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj"
+            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj"
             }
           }
         }

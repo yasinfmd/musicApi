@@ -9,7 +9,13 @@ namespace MusicApp.Helper.Concrate
 {
     public class HelperManager : IHelper
     {
-      
+
+        public void LoginHelper()
+        {
+
+            throw new NotImplementedException();
+        }
+
         public string UploadStorage(string name,string fileName )
         {
 

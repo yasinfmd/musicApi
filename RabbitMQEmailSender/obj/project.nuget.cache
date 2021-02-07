@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qNM8Z31LgxdcPwfsye5iXyAtx7tAfla8osyk+eP/AWMPf9vBpwEW3MnTm6QGdejKaZurnsGY4z2pi9XFOnhMuw==",
+  "dgSpecHash": "DRSVV938ngtCFDwfY9ElS2S5ydUkZnId4bUoARRdtrkbbOxlx2ZDAQje3jwNi4oc5IqIHOjIiP2xQvV9cYHFig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\RabbitMQEmailSender\\RabbitMQEmailSender.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQEmailSender\\RabbitMQEmailSender.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\devart.data\\5.0.2604\\devart.data.5.0.2604.nupkg.sha512",

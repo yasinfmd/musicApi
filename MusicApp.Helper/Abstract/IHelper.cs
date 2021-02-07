@@ -7,5 +7,6 @@ namespace MusicApp.Helper.Abstract
     public interface IHelper
     {
         string UploadStorage(string name, string fileName);
+        void LoginHelper();
     }
 }

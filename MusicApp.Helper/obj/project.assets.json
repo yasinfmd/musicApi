@@ -3912,11 +3912,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
       "projectName": "MusicApp.Helper",
-      "projectPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
+      "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
       "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Helper\\obj\\",
+      "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",

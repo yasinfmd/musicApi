@@ -17,7 +17,7 @@ namespace MusicApp.DataAccess
        : base(options)
          {
 
-        }
+       }
         //public MusicAppDbContext(DbContextOptions<MusicAppDbContext> options)
         //     : base(options)
         // {
@@ -31,10 +31,10 @@ namespace MusicApp.DataAccess
         public DbSet<Albums> Albums { get; set; }
         public DbSet<Artist> Artist { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySQL("server=localhost;port=3306;database=music_app;user=root;password=");
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseMySQL("server=127.0.0.1;port=3306;database=music_app;user=root;password=");
+        //}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

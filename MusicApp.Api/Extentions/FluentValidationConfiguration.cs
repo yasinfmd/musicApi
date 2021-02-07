@@ -23,6 +23,8 @@ namespace MusicApp.Api.Extentions
 				x.RegisterValidatorsFromAssemblyContaining<AlbumValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<MusicValidator>();
 				x.RegisterValidatorsFromAssemblyContaining<RegisterValidator>();
+				x.RegisterValidatorsFromAssemblyContaining<LoginValidator>();
+
 
 
 				x.ImplicitlyValidateChildProperties = true;

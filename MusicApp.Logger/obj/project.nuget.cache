@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6jVBGMZsL+Km74F5cvTmXBjlf2S4CZTfv45YK1dM/7R+gpugaR+RgIsWJz/AaWJxw8igHPNWkrWeVuMvSMEZ2Q==",
+  "dgSpecHash": "33N4dCq8Qrjz6iEf7nJ8i7w29mMXN5bbTmFT7PG3usoAsnVGcu+dG2pG7smVekmkXSrY8W+wWqQNEsnCGTFe+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.0.4\\microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512",

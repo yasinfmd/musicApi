@@ -31,6 +31,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using MusicApp.Api.Localize;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace MusicApp
 {
@@ -58,6 +59,12 @@ namespace MusicApp
             {
                 opt.SuppressModelStateInvalidFilter = true;
             });
+                services.Configure<FormOptions>(o =>
+                {
+                    o.ValueLengthLimit = int.MaxValue;
+                    o.MultipartBodyLengthLimit = int.MaxValue;
+                    o.MemoryBufferThreshold = int.MaxValue;
+                });
 
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<ILogService, LogManager>();
@@ -110,9 +117,10 @@ namespace MusicApp
 
                 options.SignIn.RequireConfirmedEmail = true;
 
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
-                options.Lockout.MaxFailedAccessAttempts = 3;
-                options.Lockout.AllowedForNewUsers = true;
+
+                //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+                //options.Lockout.MaxFailedAccessAttempts = 5;
+                //options.Lockout.AllowedForNewUsers = true;
             }).AddEntityFrameworkStores<MusicAppDbContext>().AddDefaultTokenProviders().AddErrorDescriber<MultilanguageIdentityErrorDescriber>();
 
             services.AddAuthentication(auth =>

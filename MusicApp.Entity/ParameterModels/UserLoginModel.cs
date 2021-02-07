@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MusicApp.Entity.ResponseModels
+namespace MusicApp.Entity.ParameterModels
 {
-    public class UserRegisterModel
+    public class UserLoginModel
     {
         public string Email { get; set; }
         public string Password { get; set; }
-
-        public string PhoneNumber { get; set; }
     }
 }

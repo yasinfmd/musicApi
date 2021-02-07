@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YgH74damxQXsDyrT4W2NRyzEtLLw3BrOgv/tlAI3U8mADBpFrhmqne90F+l+SXx5EODFBk8lKmGYhk801ivxMA==",
+  "dgSpecHash": "dQu9wqD/gdgeP4u3cAxbgnMaholtdTVOVee8rjZLB4uRs77V9LH5FUHn0YH49KbNWzkdEc0dSw5Aqz9jvRzOAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\source\\repos\\musicApi\\RabbitMQTest\\RabbitMQTest.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQTest\\RabbitMQTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

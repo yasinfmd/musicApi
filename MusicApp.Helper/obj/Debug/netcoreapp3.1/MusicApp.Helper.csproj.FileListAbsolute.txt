@@ -7,3 +7,12 @@ C:\Users\ysndl\source\repos\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\Mus
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.csproj.CoreCompileInputs.cache
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.dll
 C:\Users\ysndl\source\repos\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.pdb
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\bin\Debug\netcoreapp3.1\MusicApp.Helper.deps.json
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\bin\Debug\netcoreapp3.1\MusicApp.Helper.dll
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\bin\Debug\netcoreapp3.1\MusicApp.Helper.pdb
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.csprojAssemblyReference.cache
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.AssemblyInfoInputs.cache
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.AssemblyInfo.cs
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.csproj.CoreCompileInputs.cache
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.dll
+C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.Helper\obj\Debug\netcoreapp3.1\MusicApp.Helper.pdb
