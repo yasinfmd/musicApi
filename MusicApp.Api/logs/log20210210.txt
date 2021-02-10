@@ -1,0 +1,21 @@
+10-02-2021 18:20:08.587 +03:00 [WRN] MusicApp.Api.Controllers.UserController.login (MusicApp.Api)
+10-02-2021 18:20:10.405 +03:00 [ERR] MusicApp.Api.Controllers.UserController.login (MusicApp.Api) Exception Message : Value cannot be null. (Parameter 'value') - 
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at MusicApp.Business.Concrate.UserServiceManager.LoginHelper(IdentityUser user, UserLoginModel userLoginModel) in C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.Business\Concrate\UserServiceManager.cs:line 113
+   at MusicApp.Business.Concrate.UserServiceManager.Login(UserLoginModel userLoginModel) in C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.Business\Concrate\UserServiceManager.cs:line 160
+   at MusicApp.Api.Controllers.UserController.login(UserLoginModel userLoginModel) in C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.Api\Controllers\UserController.cs:line 116
+10-02-2021 18:21:45.682 +03:00 [WRN] MusicApp.Api.Controllers.UserController.login (MusicApp.Api)
+10-02-2021 18:21:45.829 +03:00 [ERR] MusicApp.Api.Controllers.UserController.login (MusicApp.Api) Exception Message : Value cannot be null. (Parameter 'value') - 
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at MusicApp.Business.Concrate.UserServiceManager.LoginHelper(IdentityUser user, UserLoginModel userLoginModel) in C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.Business\Concrate\UserServiceManager.cs:line 113
+   at MusicApp.Business.Concrate.UserServiceManager.Login(UserLoginModel userLoginModel) in C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.Business\Concrate\UserServiceManager.cs:line 160
+   at MusicApp.Api.Controllers.UserController.login(UserLoginModel userLoginModel) in C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.Api\Controllers\UserController.cs:line 116
+10-02-2021 18:23:16.849 +03:00 [WRN] MusicApp.Api.Controllers.UserController.login (MusicApp.Api)
+10-02-2021 18:24:28.609 +03:00 [INF] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api)
+10-02-2021 18:24:28.752 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api) Total Music Count : 5
+10-02-2021 18:24:34.981 +03:00 [INF] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api)
+10-02-2021 18:24:34.999 +03:00 [WRN] MusicApp.Api.Controllers.MusicController.index (MusicApp.Api) Total Music Count : 5

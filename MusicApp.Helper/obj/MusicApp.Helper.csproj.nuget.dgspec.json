@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {}
+    "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
+    "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
+        "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
         "projectName": "MusicApp.Helper",
-        "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
+        "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
         "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\obj\\",
+        "outputPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

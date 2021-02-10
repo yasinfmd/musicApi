@@ -8588,11 +8588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Api\\MusicApp.Api.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Api\\MusicApp.Api.csproj",
       "projectName": "MusicApp.Api",
-      "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Api\\MusicApp.Api.csproj",
+      "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Api\\MusicApp.Api.csproj",
       "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Api\\obj\\",
+      "outputPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8609,23 +8609,23 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Logger\\MusicApp.Logger.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj"
             }
           }
         }
@@ -8703,7 +8703,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

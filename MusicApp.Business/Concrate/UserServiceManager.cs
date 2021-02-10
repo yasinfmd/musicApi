@@ -116,7 +116,7 @@ namespace MusicApp.Business.Concrate
                         new Claim(ClaimTypes.NameIdentifier,user.Id),
                         new Claim(ClaimTypes.Name,user.UserName),
                         new Claim("LoginTime",DateTime.Now.ToString()),
-                        new Claim(ClaimTypes.MobilePhone, user.PhoneNumber)
+                        new Claim(ClaimTypes.MobilePhone, user.PhoneNumber!=null?user.PhoneNumber:"")
                 };
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SecretKey"]));
                 var token = new JwtSecurityToken(issuer: "localhost:5000", audience: "localhost:5000", claims: claims, expires: DateTime.Now.AddDays(1), signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256));

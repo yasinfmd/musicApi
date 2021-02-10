@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U786JKeV7eH1MoyqPfexKM5mrgAQaWmwXS1Cj9r8PesAn71ltWbOLtiA21EesuZA8fXWwMrBkQFlFhTcf9L0vA==",
+  "dgSpecHash": "IJJojbIHJGdV9ytVxu885TtyLsxc/DtwPzdmdR5FlYp1aNCDif14DFJRG7HZ5EzROKawEZaip1HaUrRDqtkTag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Api\\MusicApp.Api.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Api\\MusicApp.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

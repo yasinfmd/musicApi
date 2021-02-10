@@ -6645,11 +6645,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
       "projectName": "MusicApp.DataAccess",
-      "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
+      "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.DataAccess\\MusicApp.DataAccess.csproj",
       "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6666,11 +6666,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Dto\\MusicApp.Dto.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj"
             }
           }
         }
@@ -6729,7 +6729,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

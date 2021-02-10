@@ -25,3 +25,12 @@ C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.
 C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.csproj.CoreCompileInputs.cache
 C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
 C:\Users\ysndl\Desktop\myapi\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.deps.json
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\bin\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.csprojAssemblyReference.cache
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.AssemblyInfoInputs.cache
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.AssemblyInfo.cs
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.csproj.CoreCompileInputs.cache
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.dll
+C:\Users\ysndl\Desktop\musicapp\musicApi\MusicApp.BaseEntity\obj\Debug\netcoreapp3.1\MusicApp.BaseEntity.pdb

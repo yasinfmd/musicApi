@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UkPdaMfrF4gGm2rJQUlhxdQmxhrQ1+soAiITyk7XctpC4FN3vYfVdhqaepX/vt7VGI1DK2BKWPAbMViouz+jmg==",
+  "dgSpecHash": "YTjpMYysRS0XIt+waOMmwHKyUIHCVB7M3mmVhw8C39B5ybbFE2XzVWGuB/pv1mlGOIlIPZJxHuQYKJGZBSI38A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.BaseEntity\\MusicApp.BaseEntity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

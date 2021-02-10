@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3RxofgnIzyO7+5Ah3a5Z+Z0n5w5WlXs0k/mtunVlz5yOn8lA7CJQ81Z5m/BFYtLUuSnBX9sZDdqSFsKuyky6Uw==",
+  "dgSpecHash": "0VuEwpfsr7nxrn5Cuf7+XN2q7VAp9NUcbUNAEUO87nCXl3dR+Ev9FsQT4ltBdHVErdAci4OrPx4eLpmj5GfR3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Business\\MusicApp.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",

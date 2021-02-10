@@ -17,7 +17,7 @@ namespace MusicApp.Business.Abstract
 
         Task<AuthResponse<string>> ForgotPassword(string email);
 
-        Task<AuthResponse<string>> UpdateNewPassword(NewPasswordModel);
+        Task<AuthResponse<string>> UpdateNewPassword(NewPasswordModel newPasswordModel);
 
     }
 }

@@ -4380,11 +4380,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQEmailSender\\RabbitMQEmailSender.csproj",
+      "projectUniqueName": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\RabbitMQEmailSender\\RabbitMQEmailSender.csproj",
       "projectName": "RabbitMQEmailSender",
-      "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQEmailSender\\RabbitMQEmailSender.csproj",
+      "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\RabbitMQEmailSender\\RabbitMQEmailSender.csproj",
       "packagesPath": "C:\\Users\\ysndl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\RabbitMQEmailSender\\obj\\",
+      "outputPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\RabbitMQEmailSender\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ysndl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4401,14 +4401,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Entity\\MusicApp.Entity.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj"
             },
-            "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj": {
-              "projectPath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj"
+            "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj": {
+              "projectPath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.RabbitMQ\\MusicApp.RabbitMQ.csproj"
             }
           }
         }
@@ -4437,7 +4437,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

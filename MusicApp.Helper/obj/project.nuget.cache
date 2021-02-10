@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qB266lKRhKqkabN3e+TQX6IorvgASUx0mCZ5boHc2pR1v+iIX0pkDXOEe4IGcVSna77x3XsNROerpuHUMZ6kyw==",
+  "dgSpecHash": "mxADF+j82f5O2EtHCSeG64cKtRSDam0LUSZzjvqNrZahPKU9wN4zgELanOCXt7JTkgAAuQYlpzid3CAnKlkqYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\myapi\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
+  "projectFilePath": "C:\\Users\\ysndl\\Desktop\\musicapp\\musicApi\\MusicApp.Helper\\MusicApp.Helper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ysndl\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\ysndl\\.nuget\\packages\\devart.data\\5.0.2604\\devart.data.5.0.2604.nupkg.sha512",
