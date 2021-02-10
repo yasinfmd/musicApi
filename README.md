@@ -42,3 +42,4 @@ diyerek projenin ayağa kaldırılması.
 2. Token kontrolü
 3. SignalR ile veri aktarımı
 4. Kullanıcı kayıt olması, doğrulaması email gönderimi
+5. Dosya Yükleme İşlemleri
